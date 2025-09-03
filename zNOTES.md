@@ -15,6 +15,8 @@
 
 - Begin implementing second User view to register available timeslots.
 
+- Rather than 3 clicks to register a slot, put register button on time itself i.e. on 16:00:00 button, and add an "i" or "Details" button to get info on registered participants
+
 - Go for 24 (1/H) timeslots as default but cap event creation to 15 days (half month)? Have expandable days which leads to slots for that day. Also have a select all option, which then allows deselection if needed.
 
 - Need a separate "registration" view and a "summary table" view of matching/overlapping slots for entire tourny participants, with a capability to select and filter down to certain teams. E.g. filter down to one team (your team), then a second team you want to play, or even three teams, or more...
