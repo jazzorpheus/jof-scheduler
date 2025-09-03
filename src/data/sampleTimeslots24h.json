@@ -1,0 +1,5935 @@
+[
+  {
+    "timeslotId": "ts1707260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T00:00:00",
+    "registered": {
+      "team_flaggots": ["jazz", "Jericho", "Quickster", "Sunny"],
+      "team_jediman": ["jazz", "Jericho", "Quickster", "Sunny"],
+      "team_idontgiveaflagidgaf": ["jazz", "Jericho", "Quickster", "Sunny"],
+      "team_rotkindlessteam": ["jazz", "Jericho", "Quickster", "Sunny"],
+      "team_theflagevarines": ["jazz", "Jericho", "Quickster", "Sunny"],
+      "team_jerkingonflags": ["jazz", "Jericho", "Quickster", "Sunny"],
+      "team_flag": ["jazz", "Jericho", "Quickster", "Sunny"],
+      "team_opcm": ["jazz", "Jericho", "Quickster", "Sunny"],
+      "team_creyonstinyfriends": ["jazz", "Jericho", "Quickster", "Sunny"],
+      "team_jimmytherentboys": ["jazz", "Jericho", "Quickster", "Sunny"]
+    }
+  },
+  {
+    "timeslotId": "ts1707260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1707262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-17T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1807262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-18T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts1907262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-19T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2007262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-20T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2107262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-21T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2207262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-22T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2307262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-23T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2407262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-24T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2507262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-25T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2607262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-26T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2707262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-27T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2807262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-28T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts2907262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-29T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007261300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T13:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007261400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T14:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007261500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T15:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007261600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T16:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007261700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T17:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007261800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T18:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007261900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T19:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007262000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T20:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007262100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T21:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007262200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T22:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3007262300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-30T23:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107260000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T00:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107260100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T01:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107260200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T02:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107260300",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T03:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107260400",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T04:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107260500",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T05:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107260600",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T06:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107260700",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T07:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107260800",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T08:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107260900",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T09:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107261000",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T10:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107261100",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T11:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  },
+  {
+    "timeslotId": "ts3107261200",
+    "eventId": "ctf_2026_round_robin",
+    "datetime": "2026-07-31T12:00:00",
+    "registered": {
+      "team_flaggots": [],
+      "team_jediman": [],
+      "team_idontgiveaflagidgaf": [],
+      "team_rotkindlessteam": [],
+      "team_theflagevarines": [],
+      "team_jerkingonflags": [],
+      "team_flag": [],
+      "team_opcm": [],
+      "team_creyonstinyfriends": [],
+      "team_jimmytherentboys": []
+    }
+  }
+]

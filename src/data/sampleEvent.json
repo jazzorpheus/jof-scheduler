@@ -1,0 +1,118 @@
+{
+  "id": "ctf_2026_round_robin",
+  "title": "Round Robin - JoF Clan Annual Capture the Flag Tournament",
+  "description": "The first round of JoF's annual Capture the Flag Tournament. You have one month to play every other team registered in the tourny. Please bear in mind that finding a time in which all members across two teams are available to play can be quite a challenge in itself, so please be patient and willing to put some effort into the process! The first step is to register ANY and ALL timeslots when there is at least a medium-high probability that you will actually be able to make it. Organization involving regular communication between team members and effective forward planning are key. Good luck!",
+  "startDate": "2026-07-17T00:00:00Z",
+  "endDate": "2026-08-17T23:59:00Z",
+  "createdBy": "kypdurron",
+  "teams": [
+    {
+      "id": "team_flaggots",
+      "name": "Flaggots",
+      "members": [
+        { "id": "akr", "name": "Akr", "captain": true },
+        { "id": "dantee", "name": "Dantee", "captain": false },
+        { "id": "tony", "name": "Tony", "captain": false },
+        { "id": "lastsamurai", "name": "Last Samurai", "captain": false }
+      ]
+    },
+    {
+      "id": "team_jediman",
+      "name": "Jediman",
+      "members": [
+        { "id": "xaimm", "name": "Xaimm", "captain": true },
+        { "id": "dilara", "name": "DiLara", "captain": false },
+        { "id": "kneecap", "name": "Kneecap", "captain": false },
+        { "id": "splat", "name": "Splat", "captain": false }
+      ]
+    },
+    {
+      "id": "team_idontgiveaflagidgaf",
+      "name": "I don't give a Flag (idgaF)",
+      "members": [
+        { "id": "vinry", "name": "vinry", "captain": true },
+        { "id": "dory", "name": "Dory", "captain": false },
+        { "id": "justneilone", "name": "JustNeilone", "captain": false },
+        { "id": "venom", "name": "Venom", "captain": false }
+      ]
+    },
+    {
+      "id": "team_rotkindlessteam",
+      "name": "Rotkindless team",
+      "members": [
+        { "id": "kypdurron", "name": "KypDurron", "captain": true },
+        { "id": "blashyrkh", "name": "Blashyrkh", "captain": false },
+        { "id": "mick", "name": "mick", "captain": false },
+        { "id": "face", "name": "face", "captain": false }
+      ]
+    },
+    {
+      "id": "team_theflagevarines",
+      "name": "The Flagevarines",
+      "members": [
+        { "id": "seven", "name": "SeveN", "captain": true },
+        { "id": "perso", "name": "Perso", "captain": false },
+        { "id": "joe", "name": "Joe", "captain": false },
+        { "id": "heards", "name": "Heards", "captain": false }
+      ]
+    },
+    {
+      "id": "team_jerkingonflags",
+      "name": "Jerking On Flags",
+      "members": [
+        { "id": "clix", "name": "cLix", "captain": true },
+        { "id": "jacobo", "name": "Jacobo", "captain": false },
+        { "id": "daerskinar", "name": "Daerskinar", "captain": false },
+        { "id": "gnost", "name": "Gnost", "captain": false }
+      ]
+    },
+    {
+      "id": "team_flag",
+      "name": "fläg",
+      "members": [
+        { "id": "kendark", "name": "KeN dARK", "captain": true },
+        { "id": "bbadger", "name": "BBadger", "captain": false },
+        { "id": "toxiee", "name": "Toxiee", "captain": false },
+        { "id": "gardfild", "name": "gardfild", "captain": false }
+      ]
+    },
+    {
+      "id": "team_opcm",
+      "name": "O P C M",
+      "members": [
+        { "id": "onnion", "name": "onnion", "captain": true },
+        { "id": "phreaky", "name": "PhreaKy", "captain": false },
+        { "id": "caex", "name": "caex", "captain": false },
+        { "id": "martin", "name": "Martin", "captain": false }
+      ]
+    },
+    {
+      "id": "team_creyonstinyfriends",
+      "name": "Creyon's Tiny Friends",
+      "members": [
+        { "id": "creyon", "name": "Creyon", "captain": true },
+        { "id": "ruxith", "name": "Ruxith", "captain": false },
+        { "id": "sheriff", "name": "SheRiff", "captain": false },
+        { "id": "rain", "name": "Rain", "captain": false }
+      ]
+    },
+    {
+      "id": "team_jimmytherentboys",
+      "name": "Jimmy & The Rentboys",
+      "members": [
+        { "id": "jazz", "name": "jazz", "captain": true },
+        { "id": "sunnyyy", "name": "Sunnyyy", "captain": false },
+        { "id": "quickster", "name": "Quickster", "captain": false },
+        { "id": "jericho", "name": "Jericho", "captain": false }
+      ]
+    }
+  ],
+  "settings": {
+    "mode": "tournament",
+    "minPlayersPerTeam": 3,
+    "maxPlayersPerTeam": 4,
+    "timeSlotDurationMinutes": 60,
+    "timezone": "UTC"
+  },
+  "uniqueUrl": "https://jof-scheduler.com/events/ctf_2026_round_robin"
+}
