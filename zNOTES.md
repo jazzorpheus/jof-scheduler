@@ -15,9 +15,14 @@
 
 - Begin implementing second User view to register available timeslots.
 
-- Decide if new "multiple DayCards per row is worth it" and merge or delete branch
+- Add "convenient" All Day timeslot selection, plus Morning, Afternoon, Evening select options to DayCards (causes registers/ticks to relevant timeslots). Call Morning 6am-11am, Afternoon 12pm-5pm, Evening 6pm-11pm.
 
-- Add "convenient" All Day timeslot selection, plus Morning, Afternoon, Evening select options to DayCards (causes register/tick to relevant timeslots). Call Morning 6am-11am, Afternoon 12pm-5pm, Evening 6pm-11pm.
+  - Feedback from Kyp:
+    - Hmm. Could we think something else for the register button and those V X icons.
+    - Maybe put just check mark there and once you click the element it becomes checked(like having border/background around it and invert colors once active and nonactive). And clicking that time again would make it not selected. So each of the timeslots would work as toggle. Then you wouldn’t need that cross icon.
+    - Also now when there’s those morning/evening checkboxes it’s not really clear that you can open each of those days.
+    - Maybe could move those checkboxes under the day once it’s open.
+      -Now as user I would just think I need to select full day/morning/evening but I have no clue I can actually pick those timeslots myself.
 
 - Add Cancel button after registration in addition to tick icon on individual timeslots and info modal.
 
