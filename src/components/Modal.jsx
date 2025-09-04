@@ -2,13 +2,13 @@
 import sampleEvent from "../data/sampleEvent.json";
 
 // Icons
-import { Check } from "lucide-react";
+import { Check, X } from "lucide-react";
 
 // Modal Component
 export default function Modal({ slot, onClose, registeredSlots, onRegister }) {
   if (!slot) return null;
 
-  const isRegistered = registeredSlots[slot.timeslotId]; // ✅ check registration
+  const isRegistered = registeredSlots[slot.timeslotId];
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
@@ -21,7 +21,7 @@ export default function Modal({ slot, onClose, registeredSlots, onRegister }) {
           ×
         </button>
 
-        {/* Header with datetime, event, and Register button */}
+        {/* Header with datetime, event, and Register/Deregister */}
         <div className="flex flex-wrap items-center justify-between mb-4 gap-2">
           <div>
             <h2 className="text-lg font-semibold">{slot.datetime}</h2>
@@ -29,7 +29,19 @@ export default function Modal({ slot, onClose, registeredSlots, onRegister }) {
           </div>
 
           {isRegistered ? (
-            <Check className="text-green-500" size={18} />
+            <div className="flex items-center gap-2">
+              <Check className="text-green-500" size={18} />
+              <button
+                onClick={() => {
+                  onRegister(slot.timeslotId);
+                  onClose();
+                }}
+                className="text-red-500 hover:text-red-700"
+                title="Deregister"
+              >
+                <X size={18} />
+              </button>
+            </div>
           ) : (
             <button
               onClick={() => {

@@ -24,7 +24,10 @@ export default function App() {
   const [registeredSlots, setRegisteredSlots] = useState({});
 
   const handleRegister = (slotId) => {
-    setRegisteredSlots((prev) => ({ ...prev, [slotId]: true }));
+    setRegisteredSlots((prev) => ({
+      ...prev,
+      [slotId]: !prev[slotId], // toggle registration
+    }));
   };
 
   return (
