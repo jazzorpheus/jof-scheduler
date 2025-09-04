@@ -17,9 +17,30 @@
 
 - Decide if new "multiple DayCards per row is worth it" and merge or delete branch
 
-- Add Cancel button after registration in addition to tick icon
+- Add "convenient" All Day timeslot selection, plus Morning, Afternoon, Evening select options to DayCards (causes register/tick to relevant timeslots). Call Morning 6am-11am, Afternoon 12pm-5pm, Evening 6pm-11pm.
 
-- Need a separate "registration" view and a "summary table" view of matching/overlapping slots for entire tourny participants, with a capability to select and filter down to certain teams. E.g. filter down to one team (your team), then a second team you want to play, or even three teams, or more...
-  NOTE: can render complete list of vacant timeslots on frontend without having to create that data in database, but once users register a specific timeslot, that slot gets created in database. (Makes sure not to waste database space.)
+- Add Cancel button after registration in addition to tick icon on individual timeslots and info modal.
+
+- For participants, need a separate "registration" view, then a "summary table/graphic" view to clearly display matching/overlapping slots for entire tourny participants, with capability to select and filter down to certain teams. E.g. filter down to one team (your team), then a second team you want to play, or even three teams, or more...
+  NOTE: can render complete set of vacant timeslots on frontend without having to create that data in database, but once users register specific timeslots, they get created in database. (Makes sure not to waste database space.)
+
+- For admins, need a "landing page" with "Create New Event" button, which takes them to an event creation form. Will need to contain at least the following fields:
+
+  - Title
+  - Description
+  - Start Date
+  - End Date
+  - Admin Name / Username
+  - Team Names
+    - Team Members
+  - Settings
+    - Game Mode (e.g. Multi-Team Tournament, Free For All / 1v1 Tournament, 2-Teams Event, etc.)
+      - E.g. Multi-Team Tournament would require at least:
+        - Min Players per Team
+        - Max Players per Team
+        - Timeslot Duration (in hours, e.g. 0.5, 1, 1.5, etc.)
+        - Timezone? Can later translate all timezones from UTC (at server end) to User end (UTC ± X based on User's timezone).
+
+Then unique URL will be generated based on event title.
 
 ## Questions
