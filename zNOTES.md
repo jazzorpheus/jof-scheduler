@@ -13,6 +13,10 @@
 
 - Begin implementing initial User view to register for event.
 
+  - Keep experimenting with motion library to fix issue of text being stretched on collapsing the timeslots grid + daycard header.
+
+  - Add extra polish such as a page heading, footer, etc.
+
 - Begin implementing second User view to register available timeslots.
 
 - For participants, need a separate "registration" view, then a "summary table/graphic" view to clearly display matching/overlapping slots for entire tourny participants, with capability to select and filter down to certain teams. E.g. filter down to one team (your team), then a second team you want to play, or even three teams, or more...
