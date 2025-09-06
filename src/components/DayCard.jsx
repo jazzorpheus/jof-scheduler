@@ -11,7 +11,7 @@ import Modal from "./Modal";
 import { ChevronDown, Info } from "lucide-react";
 
 export default function DayCard({
-  day,
+  day, // now an object: { date, timeslots, dayOfWeek?, dayOfMonth? }
   timeslots,
   registeredSlots,
   onRegister,
@@ -19,15 +19,15 @@ export default function DayCard({
   const [open, _setOpen] = useState(false);
   const [selectedSlot, setSelectedSlot] = useState(null);
   const [highlightedSlot, setHighlightedSlot] = useState(null);
-  const [highlightType, setHighlightType] = useState(null); // "register" | "deregister"
+  const [highlightType, setHighlightType] = useState(null);
 
-  // Format day
-  const dateObj = new Date(day);
-  const dayOfWeek = dateObj.toLocaleDateString(undefined, { weekday: "long" });
-  const dayOfMonth = dateObj.toLocaleDateString(undefined, {
-    day: "numeric",
-    month: "short",
-  });
+  // --- Format day safely ---
+  const dateObj = new Date(day.date + "T00:00:00"); // append time for reliable parsing
+  const dayOfWeek =
+    day.dayOfWeek || dateObj.toLocaleDateString(undefined, { weekday: "long" });
+  const dayOfMonth =
+    day.dayOfMonth ||
+    dateObj.toLocaleDateString(undefined, { day: "numeric", month: "short" });
 
   // --- Helpers ---
   const getHour = (slot) => new Date(slot.datetime).getHours();
@@ -100,7 +100,7 @@ export default function DayCard({
             <p className="text-md">{dayOfMonth}</p>
           </div>
           <div className="text-sm text-gray-600 whitespace-nowrap ml-2">
-            {registeredCount}/{timeslots.length} registered
+            {registeredCount}/{timeslots.length} selected
           </div>
           <ChevronDown
             className={`ml-2 transition-transform duration-200 ${
@@ -125,7 +125,7 @@ export default function DayCard({
             Full Day
           </label>
 
-          <div className="flex gap-4 mt-1">
+          <div className="flex flex-col xs:flex-row xs:flex-wrap xs:justify-center gap-2 mt-1">
             {["morning", "afternoon", "evening"].map((w) => (
               <label
                 key={w}
@@ -193,7 +193,7 @@ export default function DayCard({
 
                   {isRegistered && (
                     <span className="ml-2 text-green-700 text-xs font-semibold">
-                      Registered
+                      Selected
                     </span>
                   )}
 
