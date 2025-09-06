@@ -5,7 +5,7 @@ import { useState } from "react";
 import Modal from "./Modal";
 
 // Icons
-import { Info, Check, X } from "lucide-react";
+import { ChevronDown, Info } from "lucide-react";
 
 export default function DayCard({
   day,
@@ -13,8 +13,10 @@ export default function DayCard({
   registeredSlots,
   onRegister,
 }) {
-  const [open, setOpen] = useState(false);
+  const [open, _setOpen] = useState(false); // setter unused, prefixed to avoid ESLint warning
   const [selectedSlot, setSelectedSlot] = useState(null);
+  const [highlightedSlot, setHighlightedSlot] = useState(null);
+  const [highlightType, setHighlightType] = useState(null); // "register" | "deregister"
 
   // Format day
   const dateObj = new Date(day);
@@ -61,8 +63,19 @@ export default function DayCard({
   const handlePartDayChange = (window, e) =>
     toggleWindow(window, e.target.checked);
 
-  const handleSlotDeregister = (slot) => {
-    if (registeredSlots[slot.timeslotId]) onRegister(slot.timeslotId);
+  // Wrapped onRegister to highlight slot
+  const handleRegister = (slotId) => {
+    const isCurrentlyRegistered = registeredSlots[slotId];
+
+    onRegister(slotId); // toggles registration
+
+    setHighlightedSlot(slotId);
+    setHighlightType(isCurrentlyRegistered ? "deregister" : "register");
+
+    setTimeout(() => {
+      setHighlightedSlot(null);
+      setHighlightType(null);
+    }, 500);
   };
 
   const registeredCount = timeslots.filter(
@@ -78,9 +91,8 @@ export default function DayCard({
       {/* Day header */}
       <div
         className="px-4 py-3 bg-gray-200 rounded-xl flex flex-col gap-2 cursor-pointer hover:bg-gray-300 transition-colors"
-        onClick={() => setOpen(!open)}
+        onClick={() => _setOpen(!open)}
       >
-        {/* Expand/collapse text + registered count */}
         <div className="flex justify-between items-center">
           <div>
             <p className="text-lg font-semibold">{dayOfWeek}</p>
@@ -89,11 +101,16 @@ export default function DayCard({
           <div className="text-sm text-gray-600 whitespace-nowrap ml-2">
             {registeredCount}/{timeslots.length} registered
           </div>
+          <ChevronDown
+            className={`ml-2 transition-transform duration-200 ${
+              open ? "rotate-180" : ""
+            }`}
+            size={20}
+          />
         </div>
 
         {/* Bulk checkboxes */}
         <div className="flex flex-col items-center gap-2 mt-2">
-          {/* Full Day */}
           <label
             className="flex items-center gap-2 px-4 py-2 text-lg font-medium bg-gray-200 rounded-lg hover:bg-gray-400"
             onClick={(e) => e.stopPropagation()}
@@ -107,7 +124,6 @@ export default function DayCard({
             Full Day
           </label>
 
-          {/* Part-day checkboxes */}
           <div className="flex gap-4 mt-1">
             {["morning", "afternoon", "evening"].map((w) => (
               <label
@@ -136,47 +152,50 @@ export default function DayCard({
 
       {/* Timeslots grid */}
       {open && (
-        <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 p-3">
-          {timeslots.map((slot) => (
-            <div
-              key={slot.timeslotId}
-              className="relative px-2 py-2 bg-gray-100 rounded-lg text-sm font-medium flex justify-between items-center"
-            >
-              <span>{slot.datetime.split("T")[1]}</span>
+        <div className="w-full mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 p-3">
+          {timeslots.map((slot) => {
+            const isRegistered = registeredSlots[slot.timeslotId];
+            return (
+              <div
+                key={slot.timeslotId}
+                onClick={() => handleRegister(slot.timeslotId)}
+                className={`relative px-2 py-2 rounded-lg text-sm font-medium flex justify-between items-center cursor-pointer transition-colors
+                ${
+                  registeredSlots[slot.timeslotId]
+                    ? "bg-green-200 hover:bg-green-300"
+                    : "bg-gray-100 hover:bg-gray-200"
+                } 
+                ${
+                  highlightedSlot === slot.timeslotId
+                    ? highlightType === "register"
+                      ? "animate-slotHighlight-green"
+                      : "animate-slotHighlight-red"
+                    : ""
+                }`}
+              >
+                <span>{slot.datetime.split("T")[1].slice(0, 5)}</span>
 
-              <div className="flex items-center gap-1">
-                {/* Info/details button */}
-                <button
-                  onClick={() => setSelectedSlot(slot)}
-                  className="p-1 text-gray-600 hover:text-blue-500 hover:bg-white rounded-full border border-gray-300"
-                  title="View details"
-                >
-                  <Info size={16} />
-                </button>
-
-                {/* Registered / Deregister */}
-                {registeredSlots[slot.timeslotId] ? (
-                  <div className="flex items-center gap-1">
-                    <Check className="text-green-500" size={18} />
-                    <button
-                      onClick={() => handleSlotDeregister(slot)}
-                      className="text-red-500 hover:text-red-700"
-                      title="Deregister"
-                    >
-                      <X size={16} />
-                    </button>
-                  </div>
-                ) : (
-                  <button
-                    onClick={() => onRegister(slot.timeslotId)}
-                    className="px-2 py-1 bg-blue-500 text-white rounded text-xs hover:bg-blue-600 transition"
-                  >
-                    Register
-                  </button>
+                {isRegistered && (
+                  <span className="ml-2 text-green-700 text-xs font-semibold">
+                    Registered
+                  </span>
                 )}
+
+                <div
+                  className="flex items-center gap-1 ml-auto"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <button
+                    onClick={() => setSelectedSlot(slot)}
+                    className="p-1 text-gray-600 hover:text-blue-500 rounded-full border border-gray-300"
+                    title="View details"
+                  >
+                    <Info size={16} />
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
 
@@ -186,7 +205,7 @@ export default function DayCard({
           slot={selectedSlot}
           onClose={() => setSelectedSlot(null)}
           registeredSlots={registeredSlots}
-          onRegister={onRegister}
+          onRegister={handleRegister} // highlight works from modal too
         />
       )}
     </div>
