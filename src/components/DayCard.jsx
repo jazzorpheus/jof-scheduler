@@ -1,6 +1,9 @@
 // React
 import { useState } from "react";
 
+// Third-Party Libraries
+import { motion, AnimatePresence } from "motion/react";
+
 // Local Components
 import Modal from "./Modal";
 
@@ -13,7 +16,7 @@ export default function DayCard({
   registeredSlots,
   onRegister,
 }) {
-  const [open, _setOpen] = useState(false); // setter unused, prefixed to avoid ESLint warning
+  const [open, _setOpen] = useState(false);
   const [selectedSlot, setSelectedSlot] = useState(null);
   const [highlightedSlot, setHighlightedSlot] = useState(null);
   const [highlightType, setHighlightType] = useState(null); // "register" | "deregister"
@@ -36,7 +39,6 @@ export default function DayCard({
     fullday: timeslots,
   };
 
-  // Compute checkbox states from current registeredSlots
   const morningChecked = windows.morning.every(
     (s) => registeredSlots[s.timeslotId]
   );
@@ -50,7 +52,6 @@ export default function DayCard({
     (s) => registeredSlots[s.timeslotId]
   );
 
-  // Toggle slots in a window
   const toggleWindow = (window, checked) => {
     windows[window].forEach((slot) => {
       const isRegistered = registeredSlots[slot.timeslotId];
@@ -63,10 +64,8 @@ export default function DayCard({
   const handlePartDayChange = (window, e) =>
     toggleWindow(window, e.target.checked);
 
-  // Wrapped onRegister to highlight slot
   const handleRegister = (slotId) => {
     const isCurrentlyRegistered = registeredSlots[slotId];
-
     onRegister(slotId); // toggles registration
 
     setHighlightedSlot(slotId);
@@ -83,10 +82,12 @@ export default function DayCard({
   ).length;
 
   return (
-    <div
-      className={`border rounded-xl shadow-sm transition-all ${
-        open ? "col-span-full" : ""
-      }`}
+    <motion.div
+      layout
+      transition={{
+        layout: { type: "tween", duration: 0.25, ease: "easeInOut" },
+      }}
+      className={`border rounded-xl shadow-sm ${open ? "col-span-full" : ""}`}
     >
       {/* Day header */}
       <div
@@ -150,54 +151,70 @@ export default function DayCard({
         </div>
       </div>
 
-      {/* Timeslots grid */}
-      {open && (
-        <div className="w-full mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 p-3">
-          {timeslots.map((slot) => {
-            const isRegistered = registeredSlots[slot.timeslotId];
-            return (
-              <div
-                key={slot.timeslotId}
-                onClick={() => handleRegister(slot.timeslotId)}
-                className={`relative px-2 py-2 rounded-lg text-sm font-medium flex justify-between items-center cursor-pointer transition-colors
-                ${
-                  registeredSlots[slot.timeslotId]
-                    ? "bg-green-200 hover:bg-green-300"
-                    : "bg-gray-100 hover:bg-gray-200"
-                } 
-                ${
-                  highlightedSlot === slot.timeslotId
-                    ? highlightType === "register"
-                      ? "animate-slotHighlight-green"
-                      : "animate-slotHighlight-red"
-                    : ""
-                }`}
-              >
-                <span>{slot.datetime.split("T")[1].slice(0, 5)}</span>
-
-                {isRegistered && (
-                  <span className="ml-2 text-green-700 text-xs font-semibold">
-                    Registered
-                  </span>
-                )}
-
-                <div
-                  className="flex items-center gap-1 ml-auto"
-                  onClick={(e) => e.stopPropagation()}
+      {/* Timeslots grid sliding down */}
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ type: "tween", duration: 0.25, ease: "easeOut" }}
+            className="overflow-hidden w-full mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 p-3"
+          >
+            {timeslots.map((slot) => {
+              const isRegistered = registeredSlots[slot.timeslotId];
+              return (
+                <motion.div
+                  key={slot.timeslotId}
+                  layout
+                  transition={{
+                    layout: {
+                      type: "tween",
+                      duration: 0.25,
+                      ease: "easeInOut",
+                    },
+                  }}
+                  onClick={() => handleRegister(slot.timeslotId)}
+                  className={`relative px-2 py-2 rounded-lg text-sm font-medium flex justify-between items-center cursor-pointer transition-colors
+                    ${
+                      isRegistered
+                        ? "bg-green-200 hover:bg-green-300"
+                        : "bg-gray-100 hover:bg-gray-200"
+                    }
+                    ${
+                      highlightedSlot === slot.timeslotId
+                        ? highlightType === "register"
+                          ? "animate-slotHighlight-green"
+                          : "animate-slotHighlight-red"
+                        : ""
+                    }`}
                 >
-                  <button
-                    onClick={() => setSelectedSlot(slot)}
-                    className="p-1 text-gray-600 hover:text-blue-500 rounded-full border border-gray-300"
-                    title="View details"
+                  <span>{slot.datetime.split("T")[1].slice(0, 5)}</span>
+
+                  {isRegistered && (
+                    <span className="ml-2 text-green-700 text-xs font-semibold">
+                      Registered
+                    </span>
+                  )}
+
+                  <div
+                    className="flex items-center gap-1 ml-auto"
+                    onClick={(e) => e.stopPropagation()}
                   >
-                    <Info size={16} />
-                  </button>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      )}
+                    <button
+                      onClick={() => setSelectedSlot(slot)}
+                      className="p-1 text-gray-600 hover:text-blue-500 rounded-full border border-gray-300"
+                      title="View details"
+                    >
+                      <Info size={16} />
+                    </button>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Modal for selected timeslot */}
       {selectedSlot && (
@@ -205,9 +222,9 @@ export default function DayCard({
           slot={selectedSlot}
           onClose={() => setSelectedSlot(null)}
           registeredSlots={registeredSlots}
-          onRegister={handleRegister} // highlight works from modal too
+          onRegister={handleRegister}
         />
       )}
-    </div>
+    </motion.div>
   );
 }
