@@ -113,23 +113,22 @@ export default function DayCard({
         {/* Bulk checkboxes */}
         <div className="flex flex-col items-center gap-2 mt-2">
           <label
-            className="flex items-center gap-2 px-4 py-2 text-lg font-medium bg-gray-200 rounded-lg hover:bg-gray-400"
+            className="flex items-center gap-2 px-4 py-2 text-md font-medium bg-gray-200 rounded-lg hover:bg-gray-400"
             onClick={(e) => e.stopPropagation()}
           >
             <input
               type="checkbox"
               checked={fullDayChecked}
               onChange={handleFullDayChange}
-              className="w-5 h-5"
+              className="w-4 h-4"
             />
             Full Day
           </label>
-
-          <div className="flex flex-col xs:flex-row xs:flex-wrap xs:justify-center gap-2 mt-1">
+          <div className="flex flex-col sm:flex-row sm:flex-nowrap justify-center gap-2 mt-1">
             {["morning", "afternoon", "evening"].map((w) => (
               <label
                 key={w}
-                className="flex items-center gap-1 px-3 py-1 bg-gray-100 rounded-lg hover:bg-gray-200"
+                className="flex items-center gap-1 px-3 py-1 text-xs bg-gray-100 rounded-lg hover:bg-gray-200"
                 onClick={(e) => e.stopPropagation()}
               >
                 <input
@@ -142,7 +141,7 @@ export default function DayCard({
                     }[w]
                   }
                   onChange={(e) => handlePartDayChange(w, e)}
-                  className="w-4 h-4"
+                  className="w-3 h-3"
                 />
                 {w.charAt(0).toUpperCase() + w.slice(1)}
               </label>

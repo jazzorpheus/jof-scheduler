@@ -19,7 +19,7 @@ export default function AvailabilityPage({
             Please select your availability for the timeslots below. You
             don&apos;t have to be 100% certain that you can make all selected
             slots — this is just to get an idea of overlapping times that might
-            work for the group.
+            work for people.
           </p>
         </div>
       </header>
