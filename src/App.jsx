@@ -29,10 +29,10 @@ const groupByDay = (timeslots) => {
 
 export default function App() {
   const days = groupByDay(sampleTimeslots);
-  const [registeredSlots, setRegisteredSlots] = useState({});
+  const [selectedSlots, setSelectedSlots] = useState({});
 
-  const handleRegister = (slotId) => {
-    setRegisteredSlots((prev) => ({
+  const handleSelectSlots = (slotId) => {
+    setSelectedSlots((prev) => ({
       ...prev,
       [slotId]: !prev[slotId],
     }));
@@ -41,8 +41,8 @@ export default function App() {
   return (
     <AvailabilityPage
       days={days}
-      registeredSlots={registeredSlots}
-      handleRegister={handleRegister}
+      selectedSlots={selectedSlots}
+      handleSelectSlots={handleSelectSlots}
     />
   );
 }

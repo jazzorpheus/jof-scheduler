@@ -13,21 +13,9 @@
 
 - Begin implementing initial User view to register for event.
 
-  - Reword all cases of "register", "deregister", "registered", "deregistered", to "select" / "selected" etc! (BALLACHE! XD)
-
-  - Add extra polish such as a page heading, footer. Within header, beneath title, give a brief instruction like:
-
-  "Please select your availability for the timeslots below. You don't have to be 100% certain that you can make all selected slots, this is just to get an idea for when people have overlapping times that might work."
-
-  OR
-
-  "Please choose/select timeslots below based on when you think you are likely to be able to make it. This is just to get an idea for when people have overlapping times that might work."
-
-  - Fix Morning, Afternoon, Evening going outside of DayCard header on narrow screens --> resize text? or more dynamic handling?
+- **Begin implementing second User view to register available timeslots.**
 
   - Keep experimenting with motion library to fix issue of text being stretched on collapsing the timeslots grid + daycard header.
-
-- Begin implementing second User view to register available timeslots.
 
 - For participants, need a separate "registration" view, then a "summary table/graphic" view to clearly display matching/overlapping slots for entire tourny participants, with capability to select and filter down to certain teams. E.g. filter down to one team (your team), then a second team you want to play, or even three teams, or more...
   NOTE: can render complete set of vacant timeslots on frontend without having to create that data in database, but once users register specific timeslots, they get created in database. (Makes sure not to waste database space.)

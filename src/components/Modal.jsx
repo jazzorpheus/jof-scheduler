@@ -5,10 +5,10 @@ import sampleEvent from "../data/sampleEvent.json";
 import { Check, X } from "lucide-react";
 
 // Modal Component
-export default function Modal({ slot, onClose, registeredSlots, onRegister }) {
+export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
   if (!slot) return null;
 
-  const isRegistered = registeredSlots[slot.timeslotId];
+  const isSelected = selectedSlots[slot.timeslotId];
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
@@ -21,30 +21,30 @@ export default function Modal({ slot, onClose, registeredSlots, onRegister }) {
           ×
         </button>
 
-        {/* Header with datetime, event, and Register/Deregister */}
+        {/* Header with datetime, event, and time window checkbox menu */}
         <div className="flex flex-wrap items-center justify-between mb-4 gap-2">
           <div>
             <h2 className="text-lg font-semibold">{slot.datetime}</h2>
             <p className="text-sm text-gray-600">Event: {slot.eventId}</p>
           </div>
 
-          {isRegistered ? (
+          {isSelected ? (
             <button
               onClick={() => {
-                onRegister(slot.timeslotId);
+                onSelectSlot(slot.timeslotId);
                 onClose();
               }}
-              className="mr-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
+              className="mr-4 px-4 py-2 bg-rose-300 text-slate-800 font-bold rounded-lg hover:bg-rose-400 transition"
             >
               Cancel selection
             </button>
           ) : (
             <button
               onClick={() => {
-                onRegister(slot.timeslotId);
+                onSelectSlot(slot.timeslotId);
                 onClose();
               }}
-              className="mr-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+              className="mr-4 px-4 py-2 bg-sky-300 text-slate-800 font-bold rounded-lg hover:bg-sky-400 transition"
             >
               Select slot
             </button>
@@ -53,7 +53,7 @@ export default function Modal({ slot, onClose, registeredSlots, onRegister }) {
 
         {/* Teams/users grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
-          {Object.entries(slot.registered).map(([teamId, users]) => {
+          {Object.entries(slot.selected).map(([teamId, users]) => {
             const teamObj = sampleEvent.teams.find((t) => t.id === teamId);
             const teamName = teamObj?.name || teamId;
 
