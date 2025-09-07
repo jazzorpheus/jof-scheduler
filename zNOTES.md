@@ -9,11 +9,11 @@
   - Teams?
   - Users?
 
-- Begin implementing "Create new event" form to be filled out by Admin.
+- "Create new event" form to be filled out by Admin.
 
-- Begin implementing initial User view to register for event.
+- Initial User view to register for event.
 
-- **Begin implementing second User view to register available timeslots.**
+- **User view to register available timeslots.**
 
   - Keep experimenting with motion library to fix issue of text being stretched on collapsing the timeslots grid + daycard header.
 
