@@ -26,7 +26,7 @@ export default function AvailabilityPage({
       <header className="w-full bg-white shadow-md p-6 mb-8 sticky top-0 z-50">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-3xl font-bold mb-2">Select Your Availability</h1>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 text-md">
             Please select your availability for the timeslots below. You don't
             have to be 100% certain that you can make all selected slots — this
             is just to get an idea of overlapping times that might work for
