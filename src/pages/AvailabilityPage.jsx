@@ -29,8 +29,8 @@ export default function AvailabilityPage({
           <p className="text-gray-600 text-md">
             Please select your availability for the timeslots below. You don't
             have to be 100% certain that you can make all selected slots — this
-            is just to get an idea of overlapping times that might work for
-            people.
+            is just to get an idea of overlapping times that <i>might</i> work
+            for people.
           </p>
         </div>
       </header>
