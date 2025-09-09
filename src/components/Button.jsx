@@ -2,6 +2,7 @@
 import className from "classnames";
 import { twMerge } from "tailwind-merge";
 
+// Generic, reusable button component
 export default function Button({
   children,
   confirm,
@@ -25,7 +26,7 @@ export default function Button({
         // Info button: small circular with icon
         "p-1 text-gray-500 hover:text-blue-500 rounded-full border border-gray-200":
           info,
-        // Close button: absolute top-right ×
+        // Close button: gray absolute top-right x
         "absolute top-0 right-3 text-gray-500 hover:text-gray-700 text-xl":
           close,
       }

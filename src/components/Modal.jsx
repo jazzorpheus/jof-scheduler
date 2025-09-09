@@ -10,6 +10,26 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
 
   const isSelected = selectedSlots[slot.timeslotId];
 
+  // Format datetime
+  const dateObj = new Date(slot.datetime);
+  const formattedTime = dateObj.toLocaleTimeString("en-GB", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false, // ensures 24-hour format like 01:00
+  });
+  const formattedDate = dateObj.toLocaleDateString("en-GB", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+  const formattedDateTime = `${formattedTime}  ${formattedDate}`;
+
+  // Format event name
+  const formattedEventName = slot.eventId
+    .replace(/_/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
       <div className="bg-white rounded-xl shadow-lg p-6 relative inline-block max-h-[90vh] overflow-auto">
@@ -21,8 +41,8 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
         {/* Header with datetime, event, and time window checkbox menu */}
         <div className="flex flex-wrap items-center justify-between mb-4 gap-2">
           <div>
-            <h2 className="text-lg font-semibold">{slot.datetime}</h2>
-            <p className="text-sm text-gray-600">Event: {slot.eventId}</p>
+            <h2 className="text-lg font-semibold">{formattedDateTime}</h2>
+            <p className="text-sm text-gray-600">Event: {formattedEventName}</p>
           </div>
 
           {isSelected ? (
