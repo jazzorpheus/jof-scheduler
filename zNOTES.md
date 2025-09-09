@@ -19,7 +19,7 @@
     - [x] Create generic, highly reusable Button component
     - [x] Create Timeslot component
     - [x] Create DayCardHead component
-    - [ ] Create TeamRoster component
+    - [x] Create TeamRoster component
     - [ ] Create CheckboxMenu component?
     - [ ] Create PageBanner or PageHeader component?
 
