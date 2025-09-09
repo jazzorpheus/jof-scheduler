@@ -6,11 +6,12 @@ import clsx from "clsx";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 
-// Local Components
-import Modal from "./Modal";
-
 // Icons
 import { ChevronDown, Info } from "lucide-react";
+
+// Local Components
+import Modal from "./Modal";
+import Button from "./Button";
 
 export default function DayCard({
   day,
@@ -193,13 +194,14 @@ export default function DayCard({
                   className="flex items-center gap-1 ml-auto"
                   onClick={(e) => e.stopPropagation()}
                 >
-                  <button
-                    onClick={() => setSelectedSlot(slot)}
-                    className="p-1 text-gray-500 hover:text-blue-500 rounded-full transition-colors duration-200 border border-gray-200"
+                  {/* Info Button */}
+                  <Button
+                    info
                     title="View details"
+                    onClick={() => setSelectedSlot(slot)}
                   >
                     <Info size={16} />
-                  </button>
+                  </Button>
                 </div>
               </div>
             );

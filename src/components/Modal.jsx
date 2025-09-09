@@ -1,8 +1,8 @@
 // React
 import sampleEvent from "../data/sampleEvent.json";
 
-// Icons
-import { Check, X } from "lucide-react";
+// Local Components
+import Button from "./Button";
 
 // Modal Component
 export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
@@ -13,13 +13,10 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
       <div className="bg-white rounded-xl shadow-lg p-6 relative inline-block max-h-[90vh] overflow-auto">
-        {/* Close button */}
-        <button
-          onClick={onClose}
-          className="absolute top-0 right-3 text-gray-500 hover:text-gray-700 font-bold text-xl"
-        >
-          ×
-        </button>
+        {/* Close Button */}
+        <Button close onClick={onClose}>
+          x
+        </Button>
 
         {/* Header with datetime, event, and time window checkbox menu */}
         <div className="flex flex-wrap items-center justify-between mb-4 gap-2">
@@ -29,33 +26,29 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
           </div>
 
           {isSelected ? (
-            <button
+            // Cancel slot
+            <Button
+              cancel
               onClick={() => {
                 onSelectSlot(slot.timeslotId);
                 onClose();
               }}
-              className="mr-4 px-4 py-2 rounded-lg font-bold text-slate-800
-               bg-gradient-to-b from-rose-300 to-rose-400
-               shadow-md hover:shadow-lg
-               hover:from-rose-200 hover:to-rose-300
-               transition"
+              className="mr-3"
             >
               Cancel selection
-            </button>
+            </Button>
           ) : (
-            <button
+            // Select slot
+            <Button
+              confirm
               onClick={() => {
                 onSelectSlot(slot.timeslotId);
                 onClose();
               }}
-              className="mr-4 px-4 py-2 rounded-lg font-bold text-slate-800
-               bg-gradient-to-b from-sky-300 to-sky-400
-               shadow-md hover:shadow-lg
-               hover:from-sky-200 hover:to-sky-300
-               transition"
+              className="mr-3"
             >
               Select slot
-            </button>
+            </Button>
           )}
         </div>
 
