@@ -4,7 +4,7 @@ import { useState } from "react";
 // Sample Data
 import sampleTimeslots from "./data/sampleTimeslots24h.json";
 
-// Local Components
+// Local Pages
 import AvailabilityPage from "./pages/AvailabilityPage";
 
 // Group timeslots by day and add formatted strings

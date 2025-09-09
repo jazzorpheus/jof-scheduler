@@ -1,6 +1,5 @@
 // Third-Party Packages
 import className from "classnames";
-import PropTypes from "prop-types";
 import { twMerge } from "tailwind-merge";
 
 export default function Button({
@@ -41,20 +40,3 @@ export default function Button({
     </div>
   );
 }
-
-// Prop validation to ensure only one variation is true
-Button.propTypes = {
-  confirm: PropTypes.bool,
-  cancel: PropTypes.bool,
-  info: PropTypes.bool,
-  close: PropTypes.bool,
-  checkVariationValue: ({ confirm, cancel, info, close }) => {
-    const count =
-      Number(!!confirm) + Number(!!cancel) + Number(!!info) + Number(!!close);
-    if (count > 1) {
-      return new Error(
-        "Only one of confirm, cancel, info, or close can be true!"
-      );
-    }
-  },
-};
