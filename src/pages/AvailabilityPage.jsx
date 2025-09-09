@@ -3,6 +3,7 @@ import { useState } from "react";
 
 // Local Components
 import DayCard from "../components/DayCard";
+import PageFooter from "../components/PageFooter";
 
 export default function AvailabilityPage({
   days,
@@ -21,7 +22,7 @@ export default function AvailabilityPage({
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       {/* HEADER */}
       <header className="w-full bg-white shadow-md p-6 mb-8 sticky top-0 z-50">
         <div className="max-w-3xl mx-auto text-center">
@@ -36,7 +37,7 @@ export default function AvailabilityPage({
       </header>
 
       {/* MAIN CONTENT */}
-      <main className="max-w-5xl mx-auto px-4">
+      <main className="max-w-5xl mx-auto px-4 flex-1 pb-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {days.map((day) => (
             <DayCard
@@ -51,6 +52,9 @@ export default function AvailabilityPage({
           ))}
         </div>
       </main>
+
+      {/* FOOTER */}
+      <PageFooter />
     </div>
   );
 }
