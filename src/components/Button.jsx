@@ -1,5 +1,5 @@
 // Third-Party Packages
-import className from "classnames";
+import clsx from "clsx";
 import { twMerge } from "tailwind-merge";
 
 // Generic, reusable button component
@@ -12,7 +12,7 @@ export default function Button({
   ...rest
 }) {
   const classes = twMerge(
-    className(
+    clsx(
       rest.className,
       // Base styles for all buttons
       "font-bold",

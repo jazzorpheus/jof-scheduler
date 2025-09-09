@@ -18,7 +18,7 @@
   - **Refactor into separate helper functions and/or components where appropriate.**
     - [x] Create generic, highly reusable Button component
     - [x] Create Timeslot component
-    - [ ] Create DayCardHead component
+    - [x] Create DayCardHead component
     - [ ] Create TeamRoster component
     - [ ] Create CheckboxMenu component?
     - [ ] Create PageBanner or PageHeader component?

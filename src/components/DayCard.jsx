@@ -6,11 +6,9 @@ import clsx from "clsx";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 
-// Icons
-import { ChevronDown, Info } from "lucide-react";
-
 // Local Components
 import Modal from "./Modal";
+import DayCardHead from "./DayCardHead";
 import TimeslotCell from "./TimeslotCell";
 
 export default function DayCard({
@@ -24,13 +22,6 @@ export default function DayCard({
   const [selectedSlot, setSelectedSlot] = useState(null);
   const [highlightedSlot, setHighlightedSlot] = useState(null);
   const [highlightType, setHighlightType] = useState(null);
-
-  const dateObj = new Date(day.date + "T00:00:00");
-  const dayOfWeek =
-    day.dayOfWeek || dateObj.toLocaleDateString(undefined, { weekday: "long" });
-  const dayOfMonth =
-    day.dayOfMonth ||
-    dateObj.toLocaleDateString(undefined, { day: "numeric", month: "short" });
 
   const getHour = (slot) => new Date(slot.datetime).getHours();
 
@@ -84,6 +75,7 @@ export default function DayCard({
   ).length;
 
   return (
+    // Animate DayCard expansion into full timeslots grid
     <motion.div
       layout={window.innerWidth >= 640}
       transition={{
@@ -94,68 +86,21 @@ export default function DayCard({
         isOpen ? "col-span-full" : ""
       )}
     >
-      {/* Day header */}
-      <div
-        className="px-4 py-3 bg-gray-200 rounded-t-xl flex flex-col gap-2 cursor-pointer hover:bg-gray-300 transition-colors"
-        onClick={onToggle}
-      >
-        <div className="flex justify-between items-center">
-          <div>
-            <p className="text-lg font-semibold text-gray-800">{dayOfWeek}</p>
-            <p className="text-md text-gray-600">{dayOfMonth}</p>
-          </div>
-          <div className="ml-2 px-2 py-1 text-xs font-medium text-gray-700 bg-gray-300 rounded-full">
-            {selectedCount}/{timeslots.length}
-          </div>
-          <ChevronDown
-            className={clsx(
-              "ml-2 transition-transform duration-200",
-              isOpen ? "rotate-180" : ""
-            )}
-            size={20}
-          />
-        </div>
-
-        {/* Bulk checkboxes */}
-        <div className="flex flex-col items-center gap-2 mt-2">
-          <label
-            className="flex items-center gap-2 px-4 py-2 text-sm font-medium bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <input
-              type="checkbox"
-              checked={fullDayChecked}
-              onChange={handleFullDayChange}
-              className="w-4 h-4"
-            />
-            Full Day
-          </label>
-
-          <div className="flex flex-col sm:flex-row sm:flex-nowrap justify-center gap-2 mt-1">
-            {["morning", "afternoon", "evening"].map((w) => (
-              <label
-                key={w}
-                className="flex items-center gap-1 px-3 py-1 text-xs bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <input
-                  type="checkbox"
-                  checked={
-                    {
-                      morning: morningChecked,
-                      afternoon: afternoonChecked,
-                      evening: eveningChecked,
-                    }[w]
-                  }
-                  onChange={(e) => handlePartDayChange(w, e)}
-                  className="w-3 h-3"
-                />
-                {w.charAt(0).toUpperCase() + w.slice(1)}
-              </label>
-            ))}
-          </div>
-        </div>
-      </div>
+      {/* DayCard Header */}
+      <DayCardHead
+        dayOfWeek={day.dayOfWeek}
+        dayOfMonth={day.dayOfMonth}
+        selectedCount={selectedCount}
+        totalSlots={timeslots.length}
+        isOpen={isOpen}
+        onToggle={onToggle}
+        handleFullDayChange={handleFullDayChange}
+        handlePartDayChange={handlePartDayChange}
+        morningChecked={morningChecked}
+        afternoonChecked={afternoonChecked}
+        eveningChecked={eveningChecked}
+        fullDayChecked={fullDayChecked}
+      />
 
       {/* Timeslots grid */}
       {isOpen && (
@@ -176,7 +121,7 @@ export default function DayCard({
         </div>
       )}
 
-      {/* Modal for selected timeslot */}
+      {/* Modal for displaying info on timeslot */}
       {selectedSlot && (
         <Modal
           slot={selectedSlot}
