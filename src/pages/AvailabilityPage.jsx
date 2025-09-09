@@ -22,7 +22,7 @@ export default function AvailabilityPage({
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen bg-gray-50">
       {/* HEADER */}
       <header className="w-full bg-white shadow-md p-6 mb-8 sticky top-0 z-50">
         <div className="max-w-3xl mx-auto text-center">

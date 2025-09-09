@@ -15,6 +15,8 @@
 
 - **User view to register available timeslots.**
 
+- **Bottom of DayCardHead (when grid not expanded) is messed up :S**
+
   - **Refactor into separate helper functions and/or components where appropriate.**
     - [x] Create generic, highly reusable Button component
     - [x] Create Timeslot component
