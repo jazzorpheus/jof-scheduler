@@ -11,7 +11,7 @@ import { ChevronDown, Info } from "lucide-react";
 
 // Local Components
 import Modal from "./Modal";
-import Button from "./Button";
+import TimeslotCell from "./TimeslotCell";
 
 export default function DayCard({
   day,
@@ -159,51 +159,18 @@ export default function DayCard({
 
       {/* Timeslots grid */}
       {isOpen && (
-        <div
-          exit={{ opacity: 0 }}
-          className="overflow-hidden w-full mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 p-3"
-        >
+        <div className="overflow-hidden w-full mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 p-3">
           {timeslots.map((slot) => {
-            const isSelected = selectedSlots[slot.timeslotId];
             return (
-              <div
+              <TimeslotCell
                 key={slot.timeslotId}
-                onClick={() => handleSelectSlot(slot.timeslotId)}
-                className={clsx(
-                  "relative px-2 py-2 rounded-xl text-sm font-medium flex justify-between items-center cursor-pointer transition-colors",
-                  isSelected
-                    ? "bg-green-200 hover:bg-green-300"
-                    : "bg-gray-100 hover:bg-gray-200",
-                  highlightedSlot === slot.timeslotId &&
-                    (highlightType === "select"
-                      ? "animate-slotHighlight-green"
-                      : "animate-slotHighlight-red")
-                )}
-              >
-                <span className="font-mono text-sm tabular-nums">
-                  {slot.datetime.split("T")[1].slice(0, 5)}
-                </span>
-
-                {isSelected && (
-                  <span className="ml-2 text-green-700 text-xs font-semibold">
-                    Selected
-                  </span>
-                )}
-
-                <div
-                  className="flex items-center gap-1 ml-auto"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  {/* Info Button */}
-                  <Button
-                    info
-                    title="View details"
-                    onClick={() => setSelectedSlot(slot)}
-                  >
-                    <Info size={16} />
-                  </Button>
-                </div>
-              </div>
+                slot={slot}
+                isSelected={selectedSlots[slot.timeslotId] === true}
+                highlightedSlot={highlightedSlot}
+                highlightType={highlightType}
+                onSelect={handleSelectSlot}
+                onInfoClick={setSelectedSlot} // or your modal open handler
+              />
             );
           })}
         </div>
