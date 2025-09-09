@@ -15,7 +15,7 @@
 
 - **User view to register available timeslots.**
 
-  - Keep experimenting with motion library to fix issue of text being stretched on collapsing the timeslots grid + daycard header.
+  - Refactor into separate helper function and/or components where appropriate.
 
 - For participants, need a separate "registration" view, then a "summary table/graphic" view to clearly display matching/overlapping slots for entire tourny participants, with capability to select and filter down to certain teams. E.g. filter down to one team (your team), then a second team you want to play, or even three teams, or more...
   NOTE: can render complete set of vacant timeslots on frontend without having to create that data in database, but once users register specific timeslots, they get created in database. (Makes sure not to waste database space.)

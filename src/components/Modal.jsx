@@ -34,7 +34,11 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
                 onSelectSlot(slot.timeslotId);
                 onClose();
               }}
-              className="mr-4 px-4 py-2 bg-rose-300 text-slate-800 font-bold rounded-lg hover:bg-rose-400 transition"
+              className="mr-4 px-4 py-2 rounded-lg font-bold text-slate-800
+               bg-gradient-to-b from-rose-300 to-rose-400
+               shadow-md hover:shadow-lg
+               hover:from-rose-200 hover:to-rose-300
+               transition"
             >
               Cancel selection
             </button>
@@ -44,7 +48,11 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
                 onSelectSlot(slot.timeslotId);
                 onClose();
               }}
-              className="mr-4 px-4 py-2 bg-sky-300 text-slate-800 font-bold rounded-lg hover:bg-sky-400 transition"
+              className="mr-4 px-4 py-2 rounded-lg font-bold text-slate-800
+               bg-gradient-to-b from-sky-300 to-sky-400
+               shadow-md hover:shadow-lg
+               hover:from-sky-200 hover:to-sky-300
+               transition"
             >
               Select slot
             </button>

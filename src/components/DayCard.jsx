@@ -4,7 +4,7 @@ import { useState } from "react";
 // Third-Party Libraries
 import clsx from "clsx";
 // eslint-disable-next-line no-unused-vars
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 
 // Local Components
 import Modal from "./Modal";
@@ -84,9 +84,9 @@ export default function DayCard({
 
   return (
     <motion.div
-      layout
+      layout={window.innerWidth >= 640}
       transition={{
-        layout: { type: "tween", duration: 0.25, ease: "easeInOut" },
+        layout: { type: "tween", duration: 0.25, ease: "easeOut" },
       }}
       className={clsx(
         "border rounded-xl shadow-sm bg-gray-50",
@@ -157,62 +157,55 @@ export default function DayCard({
       </div>
 
       {/* Timeslots grid */}
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -5 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -5 }}
-            transition={{ type: "tween", duration: 0.2 }}
-            className="overflow-hidden w-full mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 p-3"
-          >
-            {timeslots.map((slot) => {
-              const isSelected = selectedSlots[slot.timeslotId];
-              return (
-                <motion.div
-                  key={slot.timeslotId}
-                  layout
-                  transition={{ layout: { type: "tween", duration: 0.2 } }}
-                  onClick={() => handleSelectSlot(slot.timeslotId)}
-                  className={clsx(
-                    "relative px-2 py-2 rounded-xl text-sm font-medium flex justify-between items-center cursor-pointer transition-colors",
-                    isSelected
-                      ? "bg-green-200 hover:bg-green-300"
-                      : "bg-gray-100 hover:bg-gray-200",
-                    highlightedSlot === slot.timeslotId &&
-                      (highlightType === "select"
-                        ? "animate-slotHighlight-green"
-                        : "animate-slotHighlight-red")
-                  )}
-                >
-                  <span className="font-mono text-sm tabular-nums">
-                    {slot.datetime.split("T")[1].slice(0, 5)}
+      {isOpen && (
+        <div
+          exit={{ opacity: 0 }}
+          className="overflow-hidden w-full mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 p-3"
+        >
+          {timeslots.map((slot) => {
+            const isSelected = selectedSlots[slot.timeslotId];
+            return (
+              <div
+                key={slot.timeslotId}
+                onClick={() => handleSelectSlot(slot.timeslotId)}
+                className={clsx(
+                  "relative px-2 py-2 rounded-xl text-sm font-medium flex justify-between items-center cursor-pointer transition-colors",
+                  isSelected
+                    ? "bg-green-200 hover:bg-green-300"
+                    : "bg-gray-100 hover:bg-gray-200",
+                  highlightedSlot === slot.timeslotId &&
+                    (highlightType === "select"
+                      ? "animate-slotHighlight-green"
+                      : "animate-slotHighlight-red")
+                )}
+              >
+                <span className="font-mono text-sm tabular-nums">
+                  {slot.datetime.split("T")[1].slice(0, 5)}
+                </span>
+
+                {isSelected && (
+                  <span className="ml-2 text-green-700 text-xs font-semibold">
+                    Selected
                   </span>
+                )}
 
-                  {isSelected && (
-                    <span className="ml-2 text-green-700 text-xs font-semibold">
-                      Selected
-                    </span>
-                  )}
-
-                  <div
-                    className="flex items-center gap-1 ml-auto"
-                    onClick={(e) => e.stopPropagation()}
+                <div
+                  className="flex items-center gap-1 ml-auto"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <button
+                    onClick={() => setSelectedSlot(slot)}
+                    className="p-1 text-gray-500 hover:text-blue-500 rounded-full transition-colors duration-200 border border-gray-200"
+                    title="View details"
                   >
-                    <button
-                      onClick={() => setSelectedSlot(slot)}
-                      className="p-1 text-gray-500 hover:text-blue-500 rounded-full transition-colors duration-200 border border-gray-200"
-                      title="View details"
-                    >
-                      <Info size={16} />
-                    </button>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </motion.div>
-        )}
-      </AnimatePresence>
+                    <Info size={16} />
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
 
       {/* Modal for selected timeslot */}
       {selectedSlot && (
