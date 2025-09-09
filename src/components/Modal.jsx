@@ -3,6 +3,7 @@ import sampleEvent from "../data/sampleEvent.json";
 
 // Local Components
 import Button from "./Button";
+import TeamRostersGrid from "./TeamRostersGrid";
 
 // Modal Component
 export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
@@ -73,26 +74,11 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
         </div>
 
         {/* Teams/users grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
-          {Object.entries(slot.selected).map(([teamId, users]) => {
-            const teamObj = sampleEvent.teams.find((t) => t.id === teamId);
-            const teamName = teamObj?.name || teamId;
-
-            return (
-              <div
-                key={teamId}
-                className="border rounded-lg p-2 bg-gray-50 flex flex-col"
-              >
-                <p className="font-medium text-sm mb-1">{teamName}</p>
-                <ul className="list-disc list-inside text-xs flex-1 space-y-5">
-                  {Array.from({ length: 4 }).map((_, i) => (
-                    <li key={i}>{users[i] || "---"}</li>
-                  ))}
-                </ul>
-              </div>
-            );
-          })}
-        </div>
+        <TeamRostersGrid
+          slotSelected={slot.selected}
+          teams={sampleEvent.teams}
+          rosterSize={sampleEvent.settings.maxPlayersPerTeam}
+        />
       </div>
     </div>
   );
