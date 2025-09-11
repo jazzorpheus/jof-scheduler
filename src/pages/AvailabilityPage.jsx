@@ -3,6 +3,7 @@ import { useState } from "react";
 
 // Local Components
 import DayCard from "../components/DayCard";
+import PageHeader from "../components/PageHeader";
 import PageFooter from "../components/PageFooter";
 
 // Page for selecting available timeslots
@@ -25,17 +26,11 @@ export default function AvailabilityPage({
   return (
     <div className="min-h-screen bg-gray-50">
       {/* HEADER */}
-      <header className="w-full bg-white shadow-md p-6 mb-8 sticky top-0 z-50">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-3xl font-bold mb-2">Select Your Availability</h1>
-          <p className="text-gray-600 text-md">
-            Please select your availability for the timeslots below. You don't
-            have to be 100% certain that you can make all selected slots — this
-            is just to get an idea of overlapping times that <i>might</i> work
-            for people.
-          </p>
-        </div>
-      </header>
+      <PageHeader title="Select Your Availability">
+        Please select your availability for the timeslots below. You don't have
+        to be 100% certain that you can make all selected slots — this is just
+        to get an idea of overlapping times that <i>might</i> work for people.
+      </PageHeader>
 
       {/* MAIN CONTENT */}
       <main className="max-w-5xl mx-auto px-4 flex-1 pb-20">

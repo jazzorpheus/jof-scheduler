@@ -1,27 +1,33 @@
+// React
+import { useMemo } from "react";
+
 // Menu for checking full day, morning, afternoon, evening time windows
 export default function CheckboxMenu({
   timeWindows,
   selectedSlots,
   onSelectSlot,
 }) {
-  const morningChecked = timeWindows.morning.every(
-    (s) => selectedSlots[s.timeslotId]
-  );
-  const afternoonChecked = timeWindows.afternoon.every(
-    (s) => selectedSlots[s.timeslotId]
-  );
-  const eveningChecked = timeWindows.evening.every(
-    (s) => selectedSlots[s.timeslotId]
-  );
-  const fullDayChecked = timeWindows.fullday.every(
-    (s) => selectedSlots[s.timeslotId]
-  );
+  const { morningChecked, afternoonChecked, eveningChecked, fullDayChecked } =
+    useMemo(() => {
+      const isWindowSelected = (window) =>
+        timeWindows[window].length > 0 &&
+        timeWindows[window].every((s) => selectedSlots[s.timeslotId]);
+
+      return {
+        morningChecked: isWindowSelected("morning"),
+        afternoonChecked: isWindowSelected("afternoon"),
+        eveningChecked: isWindowSelected("evening"),
+        fullDayChecked: isWindowSelected("fullday"),
+      };
+    }, [timeWindows, selectedSlots]);
 
   const toggleTimeWindow = (timeWindow, checked) => {
     timeWindows[timeWindow].forEach((slot) => {
       const isSelected = selectedSlots[slot.timeslotId];
-      if (checked && !isSelected) onSelectSlot(slot.timeslotId);
-      if (!checked && isSelected) onSelectSlot(slot.timeslotId);
+      // Only toggle if the slot's state is different from the target state
+      if (checked !== isSelected) {
+        onSelectSlot(slot.timeslotId);
+      }
     });
   };
 
