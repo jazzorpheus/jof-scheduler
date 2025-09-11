@@ -19,7 +19,10 @@ export default function DayCardHead({
 }) {
   return (
     <div
-      className="px-4 py-3 bg-gray-200 rounded-t-xl flex flex-col gap-2 cursor-pointer hover:bg-gray-300 transition-colors"
+      className={clsx(
+        "px-4 py-3 bg-gray-200 rounded-t-xl flex flex-col gap-2 cursor-pointer hover:bg-gray-300 transition-colors",
+        !isOpen && "rounded-b-xl"
+      )}
       onClick={onToggle}
     >
       {/* Top row: day info, selected count, dropdown */}
