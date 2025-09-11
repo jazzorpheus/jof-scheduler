@@ -11,6 +11,7 @@ import Modal from "./Modal";
 import DayCardHead from "./DayCardHead";
 import TimeslotsGrid from "./TimeslotsGrid";
 
+// Each day consists of a DayCardHead and expandable TimeslotsGrid
 export default function DayCard({
   day,
   timeslots,
@@ -25,7 +26,7 @@ export default function DayCard({
 
   const getHour = (slot) => new Date(slot.datetime).getHours();
 
-  const windows = {
+  const timeWindows = {
     morning: timeslots.filter((s) => getHour(s) >= 6 && getHour(s) <= 11),
     afternoon: timeslots.filter((s) => getHour(s) >= 12 && getHour(s) <= 17),
     evening: timeslots.filter((s) => getHour(s) >= 18 && getHour(s) <= 23),
@@ -50,7 +51,7 @@ export default function DayCard({
   ).length;
 
   const checkboxMenuProps = {
-    windows,
+    timeWindows,
     selectedSlots,
     onSelectSlot,
   };

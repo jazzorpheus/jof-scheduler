@@ -1,29 +1,34 @@
 // Menu for checking full day, morning, afternoon, evening time windows
-export default function CheckboxMenu({ windows, selectedSlots, onSelectSlot }) {
-  const morningChecked = windows.morning.every(
+export default function CheckboxMenu({
+  timeWindows,
+  selectedSlots,
+  onSelectSlot,
+}) {
+  const morningChecked = timeWindows.morning.every(
     (s) => selectedSlots[s.timeslotId]
   );
-  const afternoonChecked = windows.afternoon.every(
+  const afternoonChecked = timeWindows.afternoon.every(
     (s) => selectedSlots[s.timeslotId]
   );
-  const eveningChecked = windows.evening.every(
+  const eveningChecked = timeWindows.evening.every(
     (s) => selectedSlots[s.timeslotId]
   );
-  const fullDayChecked = windows.fullday.every(
+  const fullDayChecked = timeWindows.fullday.every(
     (s) => selectedSlots[s.timeslotId]
   );
 
-  const toggleWindow = (window, checked) => {
-    windows[window].forEach((slot) => {
+  const toggleTimeWindow = (timeWindow, checked) => {
+    timeWindows[timeWindow].forEach((slot) => {
       const isSelected = selectedSlots[slot.timeslotId];
       if (checked && !isSelected) onSelectSlot(slot.timeslotId);
       if (!checked && isSelected) onSelectSlot(slot.timeslotId);
     });
   };
 
-  const handleFullDayChange = (e) => toggleWindow("fullday", e.target.checked);
-  const handlePartDayChange = (window, e) =>
-    toggleWindow(window, e.target.checked);
+  const handleFullDayChange = (e) =>
+    toggleTimeWindow("fullday", e.target.checked);
+  const handlePartDayChange = (timeWindow, e) =>
+    toggleTimeWindow(timeWindow, e.target.checked);
 
   return (
     <div className="flex flex-col items-center gap-2 mt-2">
