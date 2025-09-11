@@ -27,9 +27,9 @@ export default function AvailabilityPage({
     <div className="min-h-screen bg-gray-50">
       {/* HEADER */}
       <PageHeader title="Select Your Availability">
-        Please select your availability for the timeslots below. You don't have
-        to be 100% certain that you can make all selected slots — this is just
-        to get an idea of overlapping times that <i>might</i> work for people.
+        Please select your availability from the timeslots below. You don't have
+        to be 100% certain you can make it to all the slots you select — we just
+        want an idea of times people tend to be available.
       </PageHeader>
 
       {/* MAIN CONTENT */}
