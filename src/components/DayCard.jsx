@@ -4,7 +4,7 @@ import { useState } from "react";
 // Third-Party Libraries
 import clsx from "clsx";
 // eslint-disable-next-line no-unused-vars
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 // Local Components
 import Modal from "./Modal";
@@ -32,31 +32,6 @@ export default function DayCard({
     fullday: timeslots,
   };
 
-  const morningChecked = windows.morning.every(
-    (s) => selectedSlots[s.timeslotId]
-  );
-  const afternoonChecked = windows.afternoon.every(
-    (s) => selectedSlots[s.timeslotId]
-  );
-  const eveningChecked = windows.evening.every(
-    (s) => selectedSlots[s.timeslotId]
-  );
-  const fullDayChecked = windows.fullday.every(
-    (s) => selectedSlots[s.timeslotId]
-  );
-
-  const toggleWindow = (window, checked) => {
-    windows[window].forEach((slot) => {
-      const isSelected = selectedSlots[slot.timeslotId];
-      if (checked && !isSelected) onSelectSlot(slot.timeslotId);
-      if (!checked && isSelected) onSelectSlot(slot.timeslotId);
-    });
-  };
-
-  const handleFullDayChange = (e) => toggleWindow("fullday", e.target.checked);
-  const handlePartDayChange = (window, e) =>
-    toggleWindow(window, e.target.checked);
-
   const handleSelectSlot = (slotId) => {
     const isCurrentlySelected = selectedSlots[slotId];
     onSelectSlot(slotId);
@@ -74,8 +49,14 @@ export default function DayCard({
     (slot) => selectedSlots[slot.timeslotId]
   ).length;
 
+  const checkboxMenuProps = {
+    windows,
+    selectedSlots,
+    onSelectSlot,
+  };
+
   return (
-    // Animate DayCard expansion into full timeslots grid
+    // Animate DayCard expansion into timeslots grid
     <motion.div
       layout={window.innerWidth >= 640}
       transition={{
@@ -94,12 +75,7 @@ export default function DayCard({
         totalSlots={timeslots.length}
         isOpen={isOpen}
         onToggle={onToggle}
-        handleFullDayChange={handleFullDayChange}
-        handlePartDayChange={handlePartDayChange}
-        morningChecked={morningChecked}
-        afternoonChecked={afternoonChecked}
-        eveningChecked={eveningChecked}
-        fullDayChecked={fullDayChecked}
+        checkboxMenuProps={checkboxMenuProps}
       />
 
       {/* Timeslots grid */}

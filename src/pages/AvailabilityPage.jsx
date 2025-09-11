@@ -5,6 +5,7 @@ import { useState } from "react";
 import DayCard from "../components/DayCard";
 import PageFooter from "../components/PageFooter";
 
+// Page for selecting available timeslots
 export default function AvailabilityPage({
   days,
   selectedSlots,
