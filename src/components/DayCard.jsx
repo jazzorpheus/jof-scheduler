@@ -1,10 +1,10 @@
-// React
-import { useState } from "react";
-
 // Third-Party Libraries
 import clsx from "clsx";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+
+// Custom Hooks
+import { useDayCard } from "../hooks/useDayCard";
 
 // Local Components
 import Modal from "./Modal";
@@ -20,35 +20,16 @@ export default function DayCard({
   isOpen,
   onToggle,
 }) {
-  const [selectedSlot, setSelectedSlot] = useState(null);
-  const [highlightedSlot, setHighlightedSlot] = useState(null);
-  const [highlightType, setHighlightType] = useState(null);
-
-  const getHour = (slot) => new Date(slot.datetime).getHours();
-
-  const timeWindows = {
-    morning: timeslots.filter((s) => getHour(s) >= 6 && getHour(s) <= 11),
-    afternoon: timeslots.filter((s) => getHour(s) >= 12 && getHour(s) <= 17),
-    evening: timeslots.filter((s) => getHour(s) >= 18 && getHour(s) <= 23),
-    fullday: timeslots,
-  };
-
-  const handleSelectSlot = (slotId) => {
-    const isCurrentlySelected = selectedSlots[slotId];
-    onSelectSlot(slotId);
-
-    setHighlightedSlot(slotId);
-    setHighlightType(isCurrentlySelected ? "deselect" : "select");
-
-    setTimeout(() => {
-      setHighlightedSlot(null);
-      setHighlightType(null);
-    }, 500);
-  };
-
-  const selectedCount = timeslots.filter(
-    (slot) => selectedSlots[slot.timeslotId]
-  ).length;
+  const {
+    selectedSlot,
+    setSelectedSlot,
+    highlightedSlot,
+    highlightType,
+    handleSelectSlot,
+    timeWindows,
+    selectedCount,
+    isLg,
+  } = useDayCard(timeslots, selectedSlots, onSelectSlot);
 
   const checkboxMenuProps = {
     timeWindows,
@@ -59,7 +40,7 @@ export default function DayCard({
   return (
     // Animate DayCard expansion into timeslots grid
     <motion.div
-      layout={window.innerWidth >= 640}
+      layout={isLg}
       transition={{
         layout: { type: "tween", duration: 0.25, ease: "easeOut" },
       }}
