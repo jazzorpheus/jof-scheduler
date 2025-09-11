@@ -4,19 +4,10 @@
 
 - Design basic schema for:
 
-  - Event,
-  - TimeSlots,
-  - Teams?
-  - Users?
+  - [x] Event,
+  - [x] TimeSlots,
 
-- "Create new event" form to be filled out by Admin.
-
-- Initial User view to register for event.
-
-- **User view to register available timeslots.**
-
-- [x] **Bottom of DayCardHead (when grid not expanded) is messed up :S**
-- **Refactor into separate helper functions and/or components where appropriate.**
+- Refactor User view to register available timeslots into separate helper functions and/or components where appropriate.
 
   - [x] Create generic, highly reusable Button component
   - [x] Create Timeslot component
@@ -24,11 +15,13 @@
   - [x] Create TeamRoster component
   - [x] Create CheckboxMenu component
   - [x] Create PageBanner or PageHeader component
+  - [x] Bottom of DayCardHead (when grid not expanded) is messed up :S
 
-- For participants, need a separate "registration" view, then a "summary table/graphic" view to clearly display matching/overlapping slots for entire tourny participants, with capability to select and filter down to certain teams. E.g. filter down to one team (your team), then a second team you want to play, or even three teams, or more...
-  NOTE: can render complete set of vacant timeslots on frontend without having to create that data in database, but once users register specific timeslots, they get created in database. (Makes sure not to waste database space.)
+- **"Create new event" form to be filled out by Admin.**
 
-- For admins, need a "landing page" with "Create New Event" button, which takes them to an event creation form. Will need to contain at least the following fields:
+  - [ ] Decide on basic form fields and begin implementing a first draft with React Hook Form!
+
+  Need a "landing page" with "Create New Event" button, which takes them to an event creation form. Will need to contain at least the following fields:
 
   - Title
   - Description
@@ -46,5 +39,10 @@
         - Timezone? Can later translate all timezones from UTC (at server end) to User end (UTC ± X based on User's timezone).
 
 Then unique URL will be generated based on event title.
+
+- Initial User view to register for event.
+
+- For participants, need a separate "registration" view, then a "summary table/graphic" view to clearly display matching/overlapping slots for entire tourny participants, with capability to select and filter down to certain teams. E.g. filter down to one team (your team), then a second team you want to play, or even three teams, or more...
+  NOTE: can render complete set of vacant timeslots on frontend without having to create that data in database, but once users register specific timeslots, they get created in database. (Makes sure not to waste database space.)
 
 ## Questions
