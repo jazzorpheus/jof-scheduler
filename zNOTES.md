@@ -15,8 +15,8 @@
   - [x] Create TeamRoster component
   - [x] Create CheckboxMenu component
   - [x] Create PageBanner or PageHeader component
-  - [x] Bottom of DayCardHead (when grid not expanded) is messed up :S
-  - [ ] Reduce AvailabilityPage header instructions size on narrower screens. (Make text take up full width, reduce title font size, etc.)
+  - [x] Bottom of DayCardHead (when grid not expanded) is messed up.
+  - [x] Reduce AvailabilityPage header instructions size on narrower screens. (Make text take up full width, reduce title font size, etc.)
 
 - **"Create new event" form to be filled out by Admin.**
 
