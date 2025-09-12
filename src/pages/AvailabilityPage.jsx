@@ -33,7 +33,7 @@ export default function AvailabilityPage({
       </PageHeader>
 
       {/* MAIN CONTENT */}
-      <main className="max-w-5xl mx-auto px-4 flex-1 pb-20">
+      <main className="mx-auto max-w-5xl flex-1 px-4 pt-8 pb-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {days.map((day) => (
             <DayCard
