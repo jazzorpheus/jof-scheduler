@@ -28,15 +28,16 @@
       1. **CreateEventPage**
       - doubles as landing page
       - admin creates a new event
-      2. **ParticipantSignupPage**
+      2. (HYPOTHETICAL) [**SignupEventPage**
       - participant "joins" an event (name, email, etc.)
-      - linked from unique invite url
+      - linked from unique invite url]
       3. **SelectAvailabilityPage**
       - participant picks timeslots
       - URL carries eventId and token
-      4. **SummaryPage**
+      4. **PlanMatchPage**
       - open/public view of aggregated availability
       - highlight overlaps visually (heatmap, tags, etc?)
+      - admin can "lock in" timeslots if 2 or more complete teams have signalled their potential availability via SelectAvailabilityPage. This sends out email to participants requiring confirmation to finalze match/event booking.
 
 - "Create new event" form to be filled out by Admin.
 
