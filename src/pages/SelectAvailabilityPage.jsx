@@ -7,7 +7,7 @@ import PageHeader from "../components/PageHeader";
 import PageFooter from "../components/PageFooter";
 
 // Page for selecting available timeslots
-export default function AvailabilityPage({
+export default function SelectAvailabilityPage({
   days,
   selectedSlots,
   handleSelectSlots,

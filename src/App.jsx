@@ -5,7 +5,7 @@ import { useState } from "react";
 import sampleTimeslots from "./data/sampleTimeslots24h.json";
 
 // Local Pages
-import AvailabilityPage from "./pages/AvailabilityPage";
+import SelectAvailabilityPage from "./pages/SelectAvailabilityPage";
 
 // Group timeslots by day and add formatted strings
 const groupByDay = (timeslots) => {
@@ -39,7 +39,7 @@ export default function App() {
   };
 
   return (
-    <AvailabilityPage
+    <SelectAvailabilityPage
       days={days}
       selectedSlots={selectedSlots}
       handleSelectSlots={handleSelectSlots}

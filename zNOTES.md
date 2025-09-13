@@ -12,13 +12,33 @@
   - [x] Create generic, highly reusable Button component
   - [x] Create Timeslot component
   - [x] Create DayCardHead component
-  - [x] Create TeamRoster component
   - [x] Create CheckboxMenu component
   - [x] Create PageBanner or PageHeader component
   - [x] Bottom of DayCardHead (when grid not expanded) is messed up.
+  - [x] Create TeamRoster and TeamRostersGrid components
+  - [x] Create TimeslotCell and TimeslotsGrid components
+  - [x] Create PageHeader and PageFooter
+  - [x] Create useDayCard custom hook
   - [x] Reduce AvailabilityPage header instructions size on narrower screens. (Make text take up full width, reduce title font size, etc.)
 
-- **"Create new event" form to be filled out by Admin.**
+- **Set up React Router**
+
+  - [ ] Decide on suitable routing structure and pathnames that will mirror AWS / DynamoDB backend.
+    - Idea so far is to have:
+      1. **CreateEventPage**
+      - doubles as landing page
+      - admin creates a new event
+      2. **ParticipantSignupPage**
+      - participant "joins" an event (name, email, etc.)
+      - linked from unique invite url
+      3. **SelectAvailabilityPage**
+      - participant picks timeslots
+      - URL carries eventId and token
+      4. **SummaryPage**
+      - open/public view of aggregated availability
+      - highlight overlaps visually (heatmap, tags, etc?)
+
+- "Create new event" form to be filled out by Admin.
 
   - [ ] Decide on basic form fields and begin implementing a first draft with React Hook Form!
 
