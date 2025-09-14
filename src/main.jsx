@@ -16,7 +16,6 @@ const router = createRouter({ routeTree });
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* <App /> WAS HERE */}
     <RouterProvider router={router} />
   </StrictMode>
 );
