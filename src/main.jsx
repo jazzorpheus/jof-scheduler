@@ -5,9 +5,6 @@ import { createRoot } from "react-dom/client";
 // Styling
 import "./index.css";
 
-// Local Components
-import App from "./App.jsx";
-
 // TanStack Router
 import { RouterProvider, createRouter } from "@tanstack/react-router";
 
