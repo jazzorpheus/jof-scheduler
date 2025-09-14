@@ -3,12 +3,10 @@
 ## To Do
 
 - Design basic schema for:
-
   - [x] Event,
   - [x] TimeSlots,
 
 - Refactor User view to register available timeslots into separate helper functions and/or components where appropriate.
-
   - [x] Create generic, highly reusable Button component
   - [x] Create Timeslot component
   - [x] Create DayCardHead component
@@ -22,7 +20,6 @@
   - [x] Reduce AvailabilityPage header instructions size on narrower screens. (Make text take up full width, reduce title font size, etc.)
 
 - **Set up React Router**
-
   - [ ] Decide on suitable routing structure and pathnames that will mirror AWS / DynamoDB backend.
     - Idea so far is to have:
       1. **CreateEventPage**
@@ -40,11 +37,9 @@
       - admin can "lock in" timeslots if 2 or more complete teams have signalled their potential availability via SelectAvailabilityPage. This sends out email to participants requiring confirmation to finalze match/event booking.
 
 - "Create new event" form to be filled out by Admin.
-
   - [ ] Decide on basic form fields and begin implementing a first draft with React Hook Form!
 
   Need a "landing page" with "Create New Event" button, which takes them to an event creation form. Will need to contain at least the following fields:
-
   - Title
   - Description
   - Start Date
