@@ -18,7 +18,7 @@ const RootLayout = () => {
             key={to}
             to={to}
             className="
-              px-2 py-1 font-medium text-gray-700 
+              px-2 py-1 font-medium text-gray-700 text-center [&.active]:font-bold text-base min-[0px]:text-sm
               hover:text-blue-600 hover:border-b-2 hover:border-blue-400 transition
               [&.active]:text-blue-600 [&.active]:border-b-2 [&.active]:border-blue-600
             "
