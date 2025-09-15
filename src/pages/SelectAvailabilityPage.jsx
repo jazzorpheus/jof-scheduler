@@ -1,17 +1,37 @@
 // React
 import { useState } from "react";
 
+// Sample Data
+import sampleTimeslots from "../data/sampleTimeslots24h.json";
+
 // Local Components
 import DayCard from "../components/DayCard";
 import PageHeader from "../components/PageHeader";
 import PageFooter from "../components/PageFooter";
 
+// Group timeslots by day and add formatted strings
+const groupByDay = (timeslots) => {
+  const days = {};
+  timeslots.forEach((slot) => {
+    const day = slot.datetime.split("T")[0];
+    if (!days[day]) days[day] = [];
+    days[day].push(slot);
+  });
+
+  return Object.entries(days).map(([date, timeslots]) => {
+    const d = new Date(date);
+    const dayOfWeek = d.toLocaleDateString("en-US", { weekday: "long" });
+    const dayOfMonth = d.toLocaleDateString("en-US", {
+      day: "numeric",
+      month: "short",
+    });
+    return { date, timeslots, dayOfWeek, dayOfMonth };
+  });
+};
+const days = groupByDay(sampleTimeslots);
+
 // Page for selecting available timeslots
-export default function SelectAvailabilityPage({
-  days,
-  selectedSlots,
-  handleSelectSlots,
-}) {
+export default function SelectAvailabilityPage() {
   const [openStates, setOpenStates] = useState(
     days.reduce((acc, day) => {
       acc[day.date] = false;
@@ -19,8 +39,17 @@ export default function SelectAvailabilityPage({
     }, {})
   );
 
+  const [selectedSlots, setSelectedSlots] = useState({});
+
   const toggleSingle = (date) => {
     setOpenStates((prev) => ({ ...prev, [date]: !prev[date] }));
+  };
+
+  const handleSelectSlots = (slotId) => {
+    setSelectedSlots((prev) => ({
+      ...prev,
+      [slotId]: !prev[slotId],
+    }));
   };
 
   return (

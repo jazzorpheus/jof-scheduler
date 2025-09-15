@@ -1,13 +1,10 @@
+// Local Pages
+import HomePage from "../pages/HomePage";
+
+// TanStack Router
 import { createFileRoute } from "@tanstack/react-router";
 
+// Create route
 export const Route = createFileRoute("/")({
-  component: Index,
+  component: HomePage,
 });
-
-function Index() {
-  return (
-    <div className="p-2">
-      <h3>Welcome Home!</h3>
-    </div>
-  );
-}
