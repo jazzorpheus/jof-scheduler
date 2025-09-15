@@ -19,6 +19,8 @@
   - [x] Create useDayCard custom hook
   - [x] Reduce AvailabilityPage header instructions size on narrower screens. (Make text take up full width, reduce title font size, etc.)
 
+- **! FIX availability page scrolling when scrolled to bottom of modal on smaller screens!**
+
 - **Set up React Router**
   - [ ] Decide on suitable routing structure and pathnames that will mirror AWS / DynamoDB backend.
     - Idea so far is to have:
