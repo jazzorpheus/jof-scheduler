@@ -11,11 +11,17 @@ import { RouterProvider, createRouter } from "@tanstack/react-router";
 // Import the generated route tree
 import { routeTree } from "./routeTree.gen";
 
-// Create a new router instance
+// Context Provider (for locale + timezone)
+import { LocaleProvider } from "./utils/lib/LocaleContext";
+
+// --- Create router instance ---
 const router = createRouter({ routeTree });
 
+// --- Render App with LocaleProvider ---
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <LocaleProvider>
+      <RouterProvider router={router} />
+    </LocaleProvider>
   </StrictMode>
 );

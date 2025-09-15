@@ -1,32 +1,47 @@
 // React
+import { useContext } from "react";
+
+// Local Data
 import sampleEvent from "../data/sampleEvent.json";
 
 // Local Components
 import Button from "./Button";
 import TeamRostersGrid from "./TeamRostersGrid";
 
+// Local Context
+import { LocaleContext } from "../utils/lib/LocaleContext";
+
 // Modal Component
 export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
+  // Read from context
+  const { locale, timeZone } = useContext(LocaleContext);
+
   if (!slot) return null;
 
   const isSelected = selectedSlots[slot.timeslotId];
 
-  // Format datetime
+  // --------------------
+  // Format datetime according to user's locale & timezone
+  // --------------------
   const dateObj = new Date(slot.datetime);
-  const formattedTime = dateObj.toLocaleTimeString("en-GB", {
+  const formattedTime = dateObj.toLocaleTimeString(locale, {
     hour: "2-digit",
     minute: "2-digit",
-    hour12: false, // ensures 24-hour format like 01:00
+    hour12: false,
+    timeZone,
   });
-  const formattedDate = dateObj.toLocaleDateString("en-GB", {
+  const formattedDate = dateObj.toLocaleDateString(locale, {
     weekday: "long",
     day: "numeric",
-    month: "long",
+    month: "short",
     year: "numeric",
+    timeZone,
   });
   const formattedDateTime = `${formattedTime}  ${formattedDate}`;
 
+  // --------------------
   // Format event name
+  // --------------------
   const formattedEventName = slot.eventId
     .replace(/_/g, " ")
     .replace(/\b\w/g, (c) => c.toUpperCase());

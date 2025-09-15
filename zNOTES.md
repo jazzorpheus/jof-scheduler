@@ -63,3 +63,5 @@ Then unique URL will be generated based on event title.
   NOTE: can render complete set of vacant timeslots on frontend without having to create that data in database, but once users register specific timeslots, they get created in database. (Makes sure not to waste database space.)
 
 ## Questions
+
+Remind me what the full backend + database stack is? DynamoDB, AWS Lambda, Amazon API Gateway? Anything else?
