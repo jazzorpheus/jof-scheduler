@@ -1,3 +1,6 @@
+// Local Components
+import CreateEventForm from "../components/CreateEventForm";
+
 export default function CreateEventPage() {
-  return <h1>Welcome to Create Event Page!</h1>;
+  return <CreateEventForm />;
 }
