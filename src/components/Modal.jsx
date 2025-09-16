@@ -1,5 +1,5 @@
 // React
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 
 // Local Data
 import sampleEvent from "../data/sampleEvent.json";
@@ -14,26 +14,6 @@ import { LocaleContext } from "../utils/lib/LocaleContext";
 // Modal Component
 export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
   const { locale, timeZone } = useContext(LocaleContext);
-
-  // Scroll Lock Effect
-  // Ensures page doesn't scroll after modal scrolled to bottom
-  useEffect(() => {
-    if (!slot) return;
-
-    const scrollY = window.scrollY;
-    document.body.style.position = "fixed";
-    document.body.style.top = `-${scrollY}px`;
-    document.body.style.left = "0";
-    document.body.style.right = "0";
-
-    return () => {
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.left = "";
-      document.body.style.right = "";
-      window.scrollTo(0, scrollY);
-    };
-  }, [slot]);
 
   if (!slot) return null;
 
