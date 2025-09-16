@@ -1,5 +1,5 @@
 // React
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 // Local Data
 import sampleEvent from "../data/sampleEvent.json";
@@ -13,16 +13,32 @@ import { LocaleContext } from "../utils/lib/LocaleContext";
 
 // Modal Component
 export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
-  // Read from context
   const { locale, timeZone } = useContext(LocaleContext);
+
+  // Scroll Lock Effect
+  // Ensures page doesn't scroll after modal scrolled to bottom
+  useEffect(() => {
+    if (!slot) return;
+
+    const scrollY = window.scrollY;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.left = "0";
+    document.body.style.right = "0";
+
+    return () => {
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      window.scrollTo(0, scrollY);
+    };
+  }, [slot]);
 
   if (!slot) return null;
 
   const isSelected = selectedSlots[slot.timeslotId];
 
-  // --------------------
-  // Format datetime according to user's locale & timezone
-  // --------------------
   const dateObj = new Date(slot.datetime);
   const formattedTime = dateObj.toLocaleTimeString(locale, {
     hour: "2-digit",
@@ -39,9 +55,6 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
   });
   const formattedDateTime = `${formattedTime}  ${formattedDate}`;
 
-  // --------------------
-  // Format event name
-  // --------------------
   const formattedEventName = slot.eventId
     .replace(/_/g, " ")
     .replace(/\b\w/g, (c) => c.toUpperCase());
@@ -49,12 +62,10 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
       <div className="bg-white rounded-xl shadow-lg p-6 relative inline-block max-h-[90vh] overflow-auto">
-        {/* Close Button */}
         <Button close onClick={onClose}>
           x
         </Button>
 
-        {/* Header with datetime, event, and time window checkbox menu */}
         <div className="flex flex-wrap items-center justify-between mb-4 gap-2">
           <div>
             <h2 className="text-lg font-semibold">{formattedDateTime}</h2>
@@ -62,7 +73,6 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
           </div>
 
           {isSelected ? (
-            // Cancel slot
             <Button
               cancel
               onClick={() => {
@@ -74,7 +84,6 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
               Cancel selection
             </Button>
           ) : (
-            // Select slot
             <Button
               confirm
               onClick={() => {
@@ -88,7 +97,6 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
           )}
         </div>
 
-        {/* Teams/users grid */}
         <TeamRostersGrid
           slotSelected={slot.selected}
           teams={sampleEvent.teams}

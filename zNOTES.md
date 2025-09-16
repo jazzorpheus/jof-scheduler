@@ -19,10 +19,8 @@
   - [x] Create useDayCard custom hook
   - [x] Reduce AvailabilityPage header instructions size on narrower screens. (Make text take up full width, reduce title font size, etc.)
 
-- **! FIX availability page scrolling when scrolled to bottom of modal on smaller screens!**
-
-- **Set up React Router**
-  - [ ] Decide on suitable routing structure and pathnames that will mirror AWS / DynamoDB backend.
+- Set up React Router
+  - [x] Decide on suitable routing structure and pathnames that will mirror AWS / DynamoDB backend.
     - Idea so far is to have:
       1. **CreateEventPage**
       - doubles as landing page
@@ -38,10 +36,14 @@
       - highlight overlaps visually (heatmap, tags, etc?)
       - admin can "lock in" timeslots if 2 or more complete teams have signalled their potential availability via SelectAvailabilityPage. This sends out email to participants requiring confirmation to finalze match/event booking.
 
-- "Create new event" form to be filled out by Admin.
+- **! FIX fast refresh issues:**
+  - Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
+  - Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+
+- **"Create new event" form to be filled out by Admin.**
   - [ ] Decide on basic form fields and begin implementing a first draft with React Hook Form!
 
-  Need a "landing page" with "Create New Event" button, which takes them to an event creation form. Will need to contain at least the following fields:
+  Will need to contain at least the following fields:
   - Title
   - Description
   - Start Date
@@ -57,7 +59,7 @@
         - Timeslot Duration (in hours, e.g. 0.5, 1, 1.5, etc.)
         - Timezone? Can later translate all timezones from UTC (at server end) to User end (UTC ± X based on User's timezone).
 
-Then unique URL will be generated based on event title.
+  Then unique URL will be generated based on event title.
 
 - Initial User view to register for event.
 
