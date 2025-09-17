@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ensures page scrollbar doesn't disappear when opening Modal */
+/* Without this everything shifts to the right by the width of scrollbar */
+html {
+  overflow-y: scroll;
+}
+
 /* Animation upon selecting a slot */
 @keyframes slotHighlightGreen {
   0% {

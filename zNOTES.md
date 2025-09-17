@@ -36,7 +36,7 @@
       - highlight overlaps visually (heatmap, tags, etc?)
       - admin can "lock in" timeslots if 2 or more complete teams have signalled their potential availability via SelectAvailabilityPage. This sends out email to participants requiring confirmation to finalze match/event booking.
 
-- **! FIX modal scrolling issue with createPortal!**
+- [x] FIX modal scrolling issue with createPortal!
 
 - **! FIX fast refresh issues:**
   - Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
