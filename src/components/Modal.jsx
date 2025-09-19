@@ -55,9 +55,15 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
   return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
       <div className="bg-white rounded-xl shadow-lg p-6 relative inline-block max-h-[90vh] overflow-auto">
-        <Button close onClick={onClose}>
-          x
-        </Button>
+        <div className="sticky top-0 flex justify-end bg-white z-10">
+          <Button
+            close
+            onClick={onClose}
+            className="-translate-y-6 translate-x-7"
+          >
+            x
+          </Button>
+        </div>
 
         <div className="flex flex-wrap items-center justify-between mb-4 gap-2">
           <div>
