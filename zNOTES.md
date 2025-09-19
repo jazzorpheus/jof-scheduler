@@ -63,7 +63,7 @@
 
   Then unique URL will be generated based on event title.
 
-- Initial User view to register for event.
+- Initial User view showing events already registered to (via forum). Whichever event is "checked/selected" will change what User sees on subsequent pages, i.e. AvailabilityPage and PlanMatch page.
 
 - For participants, need a separate "registration" view, then a "summary table/graphic" view to clearly display matching/overlapping slots for entire tourny participants, with capability to select and filter down to certain teams. E.g. filter down to one team (your team), then a second team you want to play, or even three teams, or more...
   NOTE: can render complete set of vacant timeslots on frontend without having to create that data in database, but once users register specific timeslots, they get created in database. (Makes sure not to waste database space.)
