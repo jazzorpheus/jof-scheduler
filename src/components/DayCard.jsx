@@ -37,12 +37,6 @@ export default function DayCard({
     onSelectSlot,
   };
 
-  function handleCloseModal() {
-    setSelectedSlot(null);
-    setJustClosed(true);
-    setTimeout(() => setJustClosed(false), 300); // slightly longer than your transition
-  }
-
   return (
     // Animate DayCard expansion into timeslots grid
     <motion.div

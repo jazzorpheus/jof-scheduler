@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ensures page scrollbar doesn't disappear when opening Modal */
-/* Without this everything shifts to the right by the width of scrollbar */
+/* Ensures things don't shift to the right when opening modal */
+/* (Since scrollbar disappears) */
 html {
-  overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
 
 /* Animation upon selecting a slot */
