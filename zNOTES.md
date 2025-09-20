@@ -121,3 +121,5 @@ Then unique URL will be generated based on event title.
 ## Questions
 
 Remind me what the full backend + database stack is? DynamoDB, AWS Lambda, Amazon API Gateway? Anything else?
+
+Increasing team member size on event creation form doesn't update all teams, it excludes updating any teams where more members have been added than max size before increasing max size form field, then pressing again updates ALL teams as desired, but only when extra member has been added beyond the max player count on previous team
