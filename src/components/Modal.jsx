@@ -59,7 +59,7 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
           <Button
             close
             onClick={onClose}
-            className="-translate-y-6 translate-x-7"
+            className="-translate-y-7 translate-x-7"
           >
             x
           </Button>
@@ -74,22 +74,22 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
           {isSelected ? (
             <Button
               cancel
+              className="px-4 py-2"
               onClick={() => {
                 onSelectSlot(slot.timeslotId);
                 onClose();
               }}
-              className="mr-3"
             >
               Cancel selection
             </Button>
           ) : (
             <Button
               confirm
+              className="px-4 py-2"
               onClick={() => {
                 onSelectSlot(slot.timeslotId);
                 onClose();
               }}
-              className="mr-3"
             >
               Select slot
             </Button>

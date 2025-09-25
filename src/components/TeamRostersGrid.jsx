@@ -5,7 +5,7 @@ import TeamRoster from "./TeamRoster";
 export default function TeamRostersGrid({ slotSelected, teams, rosterSize }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
-      {Object.entries(slotSelected).map(([teamId, members]) => {
+      {Object.entries(slotSelected).map(([teamId, players]) => {
         const teamObj = teams.find((t) => t.id === teamId);
         const teamName = teamObj?.name || teamId;
 
@@ -13,7 +13,7 @@ export default function TeamRostersGrid({ slotSelected, teams, rosterSize }) {
           <TeamRoster
             key={teamId}
             teamName={teamName}
-            teamMembers={members}
+            teamPlayers={players}
             rosterSize={rosterSize}
           />
         );

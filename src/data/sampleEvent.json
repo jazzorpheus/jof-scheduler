@@ -1,7 +1,7 @@
 {
   "id": "ctf_2026_round_robin",
   "title": "Round Robin - JoF Clan Annual Capture the Flag Tournament",
-  "description": "The first round of JoF's annual Capture the Flag Tournament. You have one month to play every other team registered in the tourny. Please bear in mind that finding a time in which all members across two teams are available to play can be quite a challenge in itself, so please be patient and willing to put some effort into the process! The first step is to select ANY and ALL timeslots where there is at least a medium-high probability that you will be able to make it. Organization involving regular communication between team members and effective forward planning are key. Good luck!",
+  "description": "The first round of JoF's annual Capture the Flag Tournament. You have one month to play every other team registered in the tourny. Please bear in mind that finding a time in which all players across two teams are available to play can be quite a challenge in itself, so please be patient and willing to put some effort into the process! The first step is to select ANY and ALL timeslots where there is at least a medium-high probability that you will be able to make it. Organization involving regular communication between team players and effective forward planning are key. Good luck!",
   "startDate": "2026-07-17T00:00:00Z",
   "endDate": "2026-08-17T23:59:00Z",
   "createdBy": "kypdurron",
@@ -9,7 +9,7 @@
     {
       "id": "team_flaggots",
       "name": "Flaggots",
-      "members": [
+      "players": [
         { "id": "akr", "name": "Akr", "captain": true },
         { "id": "dantee", "name": "Dantee", "captain": false },
         { "id": "tony", "name": "Tony", "captain": false },
@@ -19,7 +19,7 @@
     {
       "id": "team_jediman",
       "name": "Jediman",
-      "members": [
+      "players": [
         { "id": "xaimm", "name": "Xaimm", "captain": true },
         { "id": "dilara", "name": "DiLara", "captain": false },
         { "id": "kneecap", "name": "Kneecap", "captain": false },
@@ -29,7 +29,7 @@
     {
       "id": "team_idontgiveaflagidgaf",
       "name": "I don't give a Flag (idgaF)",
-      "members": [
+      "players": [
         { "id": "vinry", "name": "vinry", "captain": true },
         { "id": "dory", "name": "Dory", "captain": false },
         { "id": "justneilone", "name": "JustNeilone", "captain": false },
@@ -39,7 +39,7 @@
     {
       "id": "team_rotkindlessteam",
       "name": "Rotkindless team",
-      "members": [
+      "players": [
         { "id": "kypdurron", "name": "KypDurron", "captain": true },
         { "id": "blashyrkh", "name": "Blashyrkh", "captain": false },
         { "id": "mick", "name": "mick", "captain": false },
@@ -49,7 +49,7 @@
     {
       "id": "team_theflagevarines",
       "name": "The Flagevarines",
-      "members": [
+      "players": [
         { "id": "seven", "name": "SeveN", "captain": true },
         { "id": "perso", "name": "Perso", "captain": false },
         { "id": "joe", "name": "Joe", "captain": false },
@@ -59,7 +59,7 @@
     {
       "id": "team_jerkingonflags",
       "name": "Jerking On Flags",
-      "members": [
+      "players": [
         { "id": "clix", "name": "cLix", "captain": true },
         { "id": "jacobo", "name": "Jacobo", "captain": false },
         { "id": "daerskinar", "name": "Daerskinar", "captain": false },
@@ -69,7 +69,7 @@
     {
       "id": "team_flag",
       "name": "fläg",
-      "members": [
+      "players": [
         { "id": "kendark", "name": "KeN dARK", "captain": true },
         { "id": "bbadger", "name": "BBadger", "captain": false },
         { "id": "toxiee", "name": "Toxiee", "captain": false },
@@ -79,7 +79,7 @@
     {
       "id": "team_opcm",
       "name": "O P C M",
-      "members": [
+      "players": [
         { "id": "onnion", "name": "onnion", "captain": true },
         { "id": "phreaky", "name": "PhreaKy", "captain": false },
         { "id": "caex", "name": "caex", "captain": false },
@@ -89,7 +89,7 @@
     {
       "id": "team_creyonstinyfriends",
       "name": "Creyon's Tiny Friends",
-      "members": [
+      "players": [
         { "id": "creyon", "name": "Creyon", "captain": true },
         { "id": "ruxith", "name": "Ruxith", "captain": false },
         { "id": "sheriff", "name": "SheRiff", "captain": false },
@@ -99,7 +99,7 @@
     {
       "id": "team_jimmytherentboys",
       "name": "Jimmy & The Rentboys",
-      "members": [
+      "players": [
         { "id": "jazz", "name": "jazz", "captain": true },
         { "id": "sunnyyy", "name": "Sunnyyy", "captain": false },
         { "id": "quickster", "name": "Quickster", "captain": false },
