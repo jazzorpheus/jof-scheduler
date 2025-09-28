@@ -1,4 +1,3 @@
-// EditableTeamRostersGrid.jsx
 import { useTeams } from "../context/TeamsContext";
 import EditableTeamRoster from "./EditableTeamRoster";
 
@@ -7,11 +6,12 @@ export default function EditableTeamRostersGrid() {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
-      {Object.entries(teams).map(([teamName, teamPlayers]) => (
+      {teams.map((team) => (
         <EditableTeamRoster
-          key={teamName}
-          teamName={teamName}
-          teamPlayers={teamPlayers}
+          key={team.gridPosition} // stable key
+          gridPosition={team.gridPosition} // pass gridPosition
+          teamName={team.name}
+          teamPlayers={team.players}
           rosterSize={rosterSize}
           onAddPlayer={addPlayer}
           onRemovePlayer={removePlayer}

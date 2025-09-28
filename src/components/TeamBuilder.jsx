@@ -2,21 +2,29 @@
 import { TeamsProvider, useTeams } from "../context/TeamsContext";
 
 // Local Components
-import Button from "./Button";
 import EditableTeamRostersGrid from "./EditableTeamRostersGrid";
 
 // Inputs that consume context
 function NumTeamsInput() {
   const { numTeams, setNumTeams } = useTeams();
+
+  const handleChange = (e) => {
+    let val = parseInt(e.target.value, 10);
+    if (isNaN(val)) val = 2;
+    if (val < 2) val = 2;
+    if (val > 15) val = 15;
+    setNumTeams(val);
+  };
+
   return (
     <label className="flex items-center space-x-2">
       <span className="text-sm font-medium">Number of Teams</span>
       <input
         type="number"
-        min={1}
-        max={12}
+        min={2}
+        max={15}
         value={numTeams}
-        onChange={(e) => setNumTeams(parseInt(e.target.value, 10) || 1)}
+        onChange={handleChange}
         className="w-20 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
       />
     </label>
@@ -25,15 +33,24 @@ function NumTeamsInput() {
 
 function RosterSizeInput() {
   const { rosterSize, setRosterSize } = useTeams();
+
+  const handleChange = (e) => {
+    let val = parseInt(e.target.value, 10);
+    if (isNaN(val)) val = 2;
+    if (val < 2) val = 2;
+    if (val > 15) val = 15;
+    setRosterSize(val);
+  };
+
   return (
     <label className="flex items-center space-x-2">
       <span className="text-sm font-medium">Players per Team</span>
       <input
         type="number"
-        min={1}
+        min={2}
         max={15}
         value={rosterSize}
-        onChange={(e) => setRosterSize(parseInt(e.target.value, 10) || 1)}
+        onChange={handleChange}
         className="w-20 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
       />
     </label>
