@@ -155,10 +155,10 @@ export default function EditableTeamRoster({
           return (
             <li
               key={i}
-              className={`flex items-center justify-between px-1 py-0.5 rounded ${
+              className={`flex items-center justify-between px-1 py-0.5 rounded cursor-pointer ${
                 !player
-                  ? "border border-gray-300 cursor-pointer hover:bg-gray-100"
-                  : "cursor-pointer hover:bg-gray-100"
+                  ? "border border-gray-300 hover:bg-sky-100" // empty slot
+                  : "hover:bg-sky-100" // filled slot
               }`}
               onClick={() => startEditPlayer(i, player)}
             >
@@ -182,11 +182,11 @@ export default function EditableTeamRoster({
                 <span
                   className={
                     player
-                      ? "text-gray-800"
+                      ? "text-gray-800 cursor-pointer hover:text-blue-500"
                       : "text-gray-400 italic select-none"
                   }
                 >
-                  {player || "Add player…"}
+                  {player || "Add player"}
                 </span>
               </div>
               {player && (
