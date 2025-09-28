@@ -1,3 +1,3 @@
 export default function HomePage() {
-  return <h1>Welcome Home!</h1>;
+  return <h1 className="text-center">Welcome Home!</h1>;
 }

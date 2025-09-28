@@ -12,7 +12,7 @@ const RootLayout = () => {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="flex gap-6 p-4 bg-white shadow-sm rounded-b-lg">
+      <nav className="flex justify-center gap-6 p-4 bg-white shadow-sm rounded-b-lg">
         {navLinks.map(({ to, label }) => (
           <Link
             key={to}
