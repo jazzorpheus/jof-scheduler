@@ -1,58 +1,144 @@
 // Context
 import { TeamsProvider, useTeams } from "../context/TeamsContext";
+import React from "react";
 
 // Local Components
 import EditableTeamRostersGrid from "./EditableTeamRostersGrid";
 
-// Inputs that consume context
 function NumTeamsInput() {
   const { numTeams, setNumTeams } = useTeams();
+  const [tempValue, setTempValue] = React.useState(String(numTeams));
 
   const handleChange = (e) => {
-    let val = parseInt(e.target.value, 10);
-    if (isNaN(val)) val = 2;
-    if (val < 2) val = 2;
-    if (val > 15) val = 15;
+    setTempValue(e.target.value);
+  };
+
+  const handleBlur = () => {
+    let val = parseInt(tempValue, 10);
+    if (isNaN(val)) {
+      val = 10;
+    } else if (val < 2) {
+      val = 2;
+    } else if (val > 15) {
+      val = 15;
+    }
     setNumTeams(val);
+    setTempValue(String(val));
+  };
+
+  const increment = () => {
+    let val = parseInt(tempValue, 10);
+    if (isNaN(val)) val = 10;
+    val = Math.min(val + 1, 15);
+    setNumTeams(val);
+    setTempValue(String(val));
+  };
+
+  const decrement = () => {
+    let val = parseInt(tempValue, 10);
+    if (isNaN(val)) val = 10;
+    val = Math.max(val - 1, 2);
+    setNumTeams(val);
+    setTempValue(String(val));
   };
 
   return (
     <label className="flex items-center space-x-2">
       <span className="text-sm font-medium">Number of Teams</span>
-      <input
-        type="number"
-        min={2}
-        max={15}
-        value={numTeams}
-        onChange={handleChange}
-        className="w-20 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
-      />
+      <div className="flex items-stretch border border-gray-300 rounded">
+        <input
+          type="text"
+          value={tempValue}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          className="w-10 px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+        <div className="flex flex-col border-l border-gray-300">
+          <button
+            type="button"
+            onClick={increment}
+            className="flex-1 border-b border-gray-300 text-gray-700 px-1 text-sm select-none"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            onClick={decrement}
+            className="flex-1 text-gray-700 px-1 text-sm select-none"
+          >
+            –
+          </button>
+        </div>
+      </div>
     </label>
   );
 }
 
 function RosterSizeInput() {
   const { rosterSize, setRosterSize } = useTeams();
+  const [tempValue, setTempValue] = React.useState(String(rosterSize));
 
   const handleChange = (e) => {
-    let val = parseInt(e.target.value, 10);
-    if (isNaN(val)) val = 2;
-    if (val < 2) val = 2;
-    if (val > 15) val = 15;
+    setTempValue(e.target.value);
+  };
+
+  const handleBlur = () => {
+    let val = parseInt(tempValue, 10);
+    if (isNaN(val)) {
+      val = 10;
+    } else if (val < 2) {
+      val = 2;
+    } else if (val > 15) {
+      val = 15;
+    }
     setRosterSize(val);
+    setTempValue(String(val));
+  };
+
+  const increment = () => {
+    let val = parseInt(tempValue, 10);
+    if (isNaN(val)) val = 10;
+    val = Math.min(val + 1, 15);
+    setRosterSize(val);
+    setTempValue(String(val));
+  };
+
+  const decrement = () => {
+    let val = parseInt(tempValue, 10);
+    if (isNaN(val)) val = 10;
+    val = Math.max(val - 1, 2);
+    setRosterSize(val);
+    setTempValue(String(val));
   };
 
   return (
     <label className="flex items-center space-x-2">
       <span className="text-sm font-medium">Players per Team</span>
-      <input
-        type="number"
-        min={2}
-        max={15}
-        value={rosterSize}
-        onChange={handleChange}
-        className="w-20 border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
-      />
+      <div className="flex items-stretch border border-gray-300 rounded">
+        <input
+          type="text"
+          value={tempValue}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          className="w-10 px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+        <div className="flex flex-col border-l border-gray-300">
+          <button
+            type="button"
+            onClick={increment}
+            className="flex-1 border-b border-gray-300 text-gray-700 px-1 text-sm select-none"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            onClick={decrement}
+            className="flex-1 text-gray-700 px-1 text-sm select-none"
+          >
+            –
+          </button>
+        </div>
+      </div>
     </label>
   );
 }
