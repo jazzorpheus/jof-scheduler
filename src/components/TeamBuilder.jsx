@@ -15,13 +15,9 @@ function NumTeamsInput() {
 
   const handleBlur = () => {
     let val = parseInt(tempValue, 10);
-    if (isNaN(val)) {
-      val = 10;
-    } else if (val < 2) {
-      val = 2;
-    } else if (val > 15) {
-      val = 15;
-    }
+    if (isNaN(val)) val = 10;
+    else if (val < 2) val = 2;
+    else if (val > 15) val = 15;
     setNumTeams(val);
     setTempValue(String(val));
   };
@@ -51,20 +47,21 @@ function NumTeamsInput() {
           value={tempValue}
           onChange={handleChange}
           onBlur={handleBlur}
-          className="w-10 px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          onFocus={(e) => e.target.select()}
+          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
         <div className="flex flex-col border-l border-gray-300">
           <button
             type="button"
             onClick={increment}
-            className="flex-1 border-b border-gray-300 text-gray-700 px-1 text-sm select-none"
+            className="flex-1 w-6 border-b border-gray-300 text-gray-700 px-1 text-sm select-none hover:bg-blue-100"
           >
             +
           </button>
           <button
             type="button"
             onClick={decrement}
-            className="flex-1 text-gray-700 px-1 text-sm select-none"
+            className="flex-1 w-6 text-gray-700 px-1 text-sm select-none hover:bg-blue-100"
           >
             –
           </button>
@@ -84,13 +81,9 @@ function RosterSizeInput() {
 
   const handleBlur = () => {
     let val = parseInt(tempValue, 10);
-    if (isNaN(val)) {
-      val = 10;
-    } else if (val < 2) {
-      val = 2;
-    } else if (val > 15) {
-      val = 15;
-    }
+    if (isNaN(val)) val = 10;
+    else if (val < 2) val = 2;
+    else if (val > 15) val = 15;
     setRosterSize(val);
     setTempValue(String(val));
   };
@@ -120,20 +113,21 @@ function RosterSizeInput() {
           value={tempValue}
           onChange={handleChange}
           onBlur={handleBlur}
-          className="w-10 px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          onFocus={(e) => e.target.select()}
+          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
         <div className="flex flex-col border-l border-gray-300">
           <button
             type="button"
             onClick={increment}
-            className="flex-1 border-b border-gray-300 text-gray-700 px-1 text-sm select-none"
+            className="flex-1 w-6 border-b border-gray-300 text-gray-700 px-1 text-sm select-none hover:bg-blue-100"
           >
             +
           </button>
           <button
             type="button"
             onClick={decrement}
-            className="flex-1 text-gray-700 px-1 text-sm select-none"
+            className="flex-1 w-6 text-gray-700 px-1 text-sm select-none hover:bg-blue-100"
           >
             –
           </button>
