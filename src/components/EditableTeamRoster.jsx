@@ -86,7 +86,7 @@ export default function EditableTeamRoster({
   };
 
   return (
-    <div className="border rounded-lg p-2 bg-gray-50 flex flex-col space-y-2">
+    <div className="border rounded-lg p-2 bg-gray-50 dark:bg-jof-blue-med flex flex-col space-y-2">
       <div className="flex items-center justify-between">
         {isEditingName ? (
           <input

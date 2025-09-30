@@ -48,20 +48,20 @@ function NumTeamsInput() {
           onChange={handleChange}
           onBlur={handleBlur}
           onFocus={(e) => e.target.select()}
-          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-med"
         />
         <div className="flex flex-col border-l border-gray-300">
           <button
             type="button"
             onClick={increment}
-            className="flex-1 w-6 border-b border-gray-300 text-gray-700 px-1 text-sm select-none hover:bg-blue-100"
+            className="flex-1 w-6 border-b border-gray-300 text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-blue-100"
           >
             +
           </button>
           <button
             type="button"
             onClick={decrement}
-            className="flex-1 w-6 text-gray-700 px-1 text-sm select-none hover:bg-blue-100"
+            className="flex-1 w-6 text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-blue-100"
           >
             –
           </button>
@@ -114,20 +114,20 @@ function RosterSizeInput() {
           onChange={handleChange}
           onBlur={handleBlur}
           onFocus={(e) => e.target.select()}
-          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-med"
         />
         <div className="flex flex-col border-l border-gray-300">
           <button
             type="button"
             onClick={increment}
-            className="flex-1 w-6 border-b border-gray-300 text-gray-700 px-1 text-sm select-none hover:bg-blue-100"
+            className="flex-1 w-6 border-b border-gray-300 text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-blue-100"
           >
             +
           </button>
           <button
             type="button"
             onClick={decrement}
-            className="flex-1 w-6 text-gray-700 px-1 text-sm select-none hover:bg-blue-100"
+            className="flex-1 w-6 text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-blue-100"
           >
             –
           </button>
@@ -140,11 +140,11 @@ function RosterSizeInput() {
 export default function TeamBuilder() {
   return (
     <TeamsProvider>
-      <div className="relative border rounded-lg p-4 shadow-sm bg-white w-full mx-auto mt-4">
+      <div className="relative border rounded-lg p-4 shadow-sm bg-white dark:bg-jof-blue-med w-full mx-auto mt-4 ">
         {/* Heading */}
-        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 flex items-center text-gray-600">
+        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 flex items-center text-gray-600 dark:text-gray-300">
           <div className="border-t border-gray-300 flex-grow mr-3 -mt-1"></div>
-          <h2 className="text-xl font-bold leading-none relative -top-0.7 bg-white px-2">
+          <h2 className="text-xl font-bold leading-none relative -top-0.7 bg-white dark:bg-jof-blue-med px-2 rounded-xl">
             Teams Builder
           </h2>
           <div className="border-t border-gray-300 flex-grow ml-3 -mt-1"></div>
