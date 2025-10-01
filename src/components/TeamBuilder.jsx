@@ -140,7 +140,7 @@ function RosterSizeInput() {
 export default function TeamBuilder() {
   return (
     <TeamsProvider>
-      <div className="relative border rounded-lg p-4 shadow-sm bg-white dark:bg-jof-blue-med w-full mx-auto mt-4 ">
+      <div className="relative border rounded-lg p-4 shadow-sm bg-white dark:bg-jof-blue-med w-full mx-auto mt-3 ">
         {/* Heading */}
         <div className=" rounded-full absolute -top-3 left-1/2 transform -translate-x-1/2 flex items-center text-gray-600 dark:text-white dark:bg-sky-500">
           <div className="border-t border-gray-300 flex-grow mr-3 -mt-1"></div>

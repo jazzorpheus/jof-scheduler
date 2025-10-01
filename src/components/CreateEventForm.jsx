@@ -21,7 +21,7 @@ export default function CreateEventForm() {
       <h1 className="text-2xl font-bold mb-4 text-center">Create Event</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         {/* Event metadata */}
-        <div className="space-y-2">
+        <div className="space-y-2 mb-[30px]">
           <label className="block">
             Title
             <input
@@ -60,7 +60,7 @@ export default function CreateEventForm() {
         <div className="flex justify-center mt-4">
           <Button
             confirm
-            className="px-16 py-2 dark:border-2 dark:border-blue-900"
+            className="px-16 py-2 dark:border-2 dark:border-sky-400"
           >
             Save Event
           </Button>
