@@ -4,6 +4,8 @@
   - Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
   - Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
 
-- Try adding a dark theme using Tailwind modern method, i.e. pure CSS, no config editing needed.
+- Go through entire app with fine-toothed comb, choosing most slick colour scheme and visual design for dark theme
 
-- Try wiring up dark theme to select menu of light/dark. Make dark default and style similar to jofhub
+- Refactor \_\_root.jsx focusing on separation of concerns
+
+- Refactor larger component files, especially those which are 150+ lines

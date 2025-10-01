@@ -86,8 +86,11 @@ export default function EditableTeamRoster({
   };
 
   return (
-    <div className="border rounded-lg p-2 bg-gray-50 dark:bg-jof-blue-med flex flex-col space-y-2">
-      <div className="flex items-center justify-between">
+    <div className="border rounded-lg p-2 bg-gray-50 dark:bg-jof-blue-med flex flex-col space-y-2 dark:text-white">
+      <div
+        onClick={handleNameClick}
+        className="group flex items-center justify-between cursor-pointer hover:text-blue-500 dark:hover:text-sky-300"
+      >
         {isEditingName ? (
           <input
             ref={nameInputRef}
@@ -97,19 +100,17 @@ export default function EditableTeamRoster({
             onBlur={handleNameBlur}
             onKeyDown={handleNameKeyPress}
             autoFocus
-            className="border-b border-gray-400 px-1 text-sm font-medium w-full"
+            className="px-1 text-sm font-medium w-full dark:bg-jof-blue-dark"
           />
         ) : (
           <>
-            <span
-              className="text-sm font-medium cursor-pointer hover:text-blue-500"
-              onClick={handleNameClick}
-            >
+            <span className="text-sm font-medium" onClick={handleNameClick}>
               {teamName}
             </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-gray-400 hover:text-gray-600 cursor-pointer"
+              className="h-4 w-4 text-gray-400 group-hover:text-blue-500 
+              dark:text-white dark:group-hover:text-sky-300"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -146,7 +147,11 @@ export default function EditableTeamRoster({
                     }
                   }}
                   autoFocus
-                  className="flex-1 min-w-0 border-b border-gray-400 px-1 text-sm"
+                  className="flex-1 min-w-0 px-1 py-0.5 text-sm rounded 
+                   bg-jof-blue-dark text-white 
+                   placeholder-gray-300 
+                   outline-none"
+                  placeholder=""
                 />
               </li>
             );
@@ -155,10 +160,11 @@ export default function EditableTeamRoster({
           return (
             <li
               key={i}
+              tabIndex={0}
               className={`flex items-center justify-between px-1 py-0.5 rounded cursor-pointer ${
                 !player
-                  ? "border border-gray-300 hover:bg-sky-100" // empty slot
-                  : "hover:bg-sky-100" // filled slot
+                  ? "border border-gray-300  hover:bg-sky-200 dark:border-white dark:hover:bg-jof-blue-light dark:focus:bg-jof-blue-dark" // empty slot
+                  : "hover:bg-sky-200 dark:border-white dark:hover:bg-jof-blue-light dark:focus:bg-jof-blue-dark" // filled slot
               }`}
               onClick={() => startEditPlayer(i, player)}
             >
@@ -182,7 +188,7 @@ export default function EditableTeamRoster({
                 <span
                   className={
                     player
-                      ? "text-gray-800 cursor-pointer hover:text-blue-500"
+                      ? "text-gray-800 cursor-pointer hover:text-blue-500 dark:text-white dark:hover:text-blue-300"
                       : "text-gray-400 italic select-none"
                   }
                 >

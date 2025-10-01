@@ -142,10 +142,10 @@ export default function TeamBuilder() {
     <TeamsProvider>
       <div className="relative border rounded-lg p-4 shadow-sm bg-white dark:bg-jof-blue-med w-full mx-auto mt-4 ">
         {/* Heading */}
-        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 flex items-center text-gray-600 dark:text-gray-300">
+        <div className=" rounded-full absolute -top-3 left-1/2 transform -translate-x-1/2 flex items-center text-gray-600 dark:text-white dark:bg-sky-500">
           <div className="border-t border-gray-300 flex-grow mr-3 -mt-1"></div>
-          <h2 className="text-xl font-bold leading-none relative -top-0.7 bg-white dark:bg-jof-blue-med px-2 rounded-xl">
-            Teams Builder
+          <h2 className="text-xl font-bold text-center leading-none relative -top-0.7 bg-white dark:bg-jof-blue-med px-2 rounded-xl">
+            Team Builder
           </h2>
           <div className="border-t border-gray-300 flex-grow ml-3 -mt-1"></div>
         </div>

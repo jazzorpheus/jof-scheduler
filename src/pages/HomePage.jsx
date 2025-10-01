@@ -1,3 +1,7 @@
 export default function HomePage() {
-  return <h1 className="text-center">Welcome Home!</h1>;
+  return (
+    <div className="h-screen">
+      <h1 className="text-center dark:text-white">Welcome Home!</h1>
+    </div>
+  );
 }

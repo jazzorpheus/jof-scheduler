@@ -1,3 +1,9 @@
 export default function PlanMatchPage() {
-  return <h1>Welcome to Plan Match Page!</h1>;
+  return (
+    <div className="h-screen">
+      <h1 className="text-center dark:text-white">
+        Welcome to Plan Match Page!
+      </h1>
+    </div>
+  );
 }

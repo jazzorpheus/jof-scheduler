@@ -85,7 +85,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full bg-gray-200 dark:bg-jof-blue-med text-gray-800 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-jof-blue-light transition-colors duration-300 focus:outline-none focus:ring-offset-2 focus:ring-blue-300"
+      className="fixed top-0 right-0 p-2 z-50 scale-75 rounded-full text-gray-600 hover:bg-gray-300 dark:text-white dark:bg-jof-blue-dark dark:hover:bg-blue-950"
       aria-label="Toggle theme"
     >
       {theme === "light" ? <MoonIcon /> : <SunIcon />}
@@ -107,16 +107,15 @@ const RootLayout = () => {
     <ThemeProvider>
       <div className="dark:bg-jof-blue-dark">
         {/* NAVBAR */}
-        <nav className="flex justify-center gap-6 p-4 bg-white dark:bg-jof-blue-dark shadow-sm rounded-b-lg">
+        <nav className="flex justify-center items-center gap-6 p-4 bg-white dark:bg-jof-blue-dark shadow-sm rounded-b-lg">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}
               to={to}
               className="
-              px-2 py-1 font-medium text-gray-700 dark:text-white text-center [&.active]:font-bold text-base min-[0px]:text-sm
-              hover:text-blue-600 hover:border-b-2 hover:border-blue-400 transition
-              [&.active]:text-blue-600 dark:[&.active]:text-blue-300 [&.active]:border-b-2 [&.active]:border-blue-600 dark:[&.active]:border-blue-300
-            "
+               px-2 py-1 font-medium text-gray-700  text-center min-[0px]:text-sm hover:border-b-2 
+              hover:border-blue-600 [&.active]:text-blue-600  [&.active]:border-b-2 [&.active]:border-blue-600 
+              dark:text-white dark:[&.active]:text-blue-300 dark:hover:border-blue-400 dark:[&.active]:border-blue-400"
             >
               {label}
             </Link>
