@@ -107,7 +107,7 @@ const RootLayout = () => {
     <ThemeProvider>
       <div className="dark:bg-jof-blue-dark">
         {/* NAVBAR */}
-        <nav className="flex justify-center items-center gap-6 p-4 bg-white dark:bg-jof-blue-dark shadow-sm rounded-b-lg">
+        <nav className="flex justify-center items-center gap-6 p-4 bg-white dark:bg-jof-blue-med shadow-sm mb-3">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}
@@ -124,7 +124,7 @@ const RootLayout = () => {
         </nav>
 
         {/* Divider */}
-        <hr className="my-2 border-gray-300" />
+        {/* <hr className="mt-2 py-2 border-gray-300 dark:border-white dark:bg-jof-blue-dark" /> */}
 
         {/* Page content */}
         <Outlet />
