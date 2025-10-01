@@ -60,7 +60,7 @@ export default function CreateEventForm() {
         <div className="flex justify-center mt-4">
           <Button
             confirm
-            className="px-16 py-2 dark:border-2 dark:border-sky-400"
+            className="px-16 py-2 dark:border-2 dark:border-white dark:hover:border-sky-400"
           >
             Save Event
           </Button>
