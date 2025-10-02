@@ -8,11 +8,10 @@ export default {
         xs: "375px",
       },
       colors: {
-        // "jof-blue-dark": "#041A26",
         "jof-blue-dark": "#051720",
-        // "jof-blue-med": "#03273D",
         "jof-blue-med": "#03273c",
-        // "jof-blue-light": "#3A5E76",
+        "jof-blue-med-light": "#003554",
+        "jof-blue-light-med": "#004166",
         "jof-blue-light": "#76b0d5",
       },
     },

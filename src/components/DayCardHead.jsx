@@ -20,7 +20,7 @@ export default function DayCardHead({
   return (
     <div
       className={clsx(
-        "px-4 py-3 bg-gray-200 rounded-t-xl flex flex-col gap-2 cursor-pointer hover:bg-gray-300 transition-colors",
+        "px-4 py-3 bg-gray-200 rounded-t-xl flex flex-col gap-2 cursor-pointer hover:bg-gray-300 transition-colors dark:text-white dark:bg-jof-blue-med dark:hover:bg-jof-blue-light-med",
         !isOpen && "rounded-b-xl"
       )}
       onClick={onToggle}
@@ -28,10 +28,12 @@ export default function DayCardHead({
       {/* Top row: day info, selected count, dropdown */}
       <div className="flex justify-between items-center">
         <div>
-          <p className="text-lg font-semibold text-gray-800">{dayOfWeek}</p>
-          <p className="text-md text-gray-600">{dayOfMonth}</p>
+          <p className="text-lg font-semibold text-gray-800 dark:text-white">
+            {dayOfWeek}
+          </p>
+          <p className="text-md text-gray-600 dark:text-white">{dayOfMonth}</p>
         </div>
-        <div className="ml-2 px-2 py-1 text-xs font-medium text-gray-700 bg-gray-300 rounded-full">
+        <div className="ml-2 px-2 py-1 text-xs font-medium text-gray-700 bg-gray-300 rounded-full dark:text-white dark:bg-jof-blue-med-light">
           {selectedCount}/{totalSlots}
         </div>
         <ChevronDown
