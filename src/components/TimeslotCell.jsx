@@ -21,9 +21,9 @@ export default function TimeslotCell({
     <div
       onClick={handleClick}
       className={clsx(
-        "relative px-2 py-2 rounded-xl text-sm font-medium flex justify-between items-center cursor-pointer transition-colors",
+        "relative px-2 py-2 rounded-xl text-sm font-medium flex justify-between items-center cursor-pointer transition-colors dark:text-white dark:bg-jof-blue-light-med",
         isSelected
-          ? "bg-green-200 hover:bg-green-300"
+          ? "bg-green-200 hover:bg-green-300 dark:text-gray-600 dark:bg-green-300"
           : "bg-gray-100 hover:bg-gray-200",
         highlightedSlot === slot.timeslotId &&
           (highlightType === "select"
