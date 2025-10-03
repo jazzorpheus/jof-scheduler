@@ -168,11 +168,11 @@ export default function EditableTeamRoster({
               }`}
               onClick={() => startEditPlayer(i, player)}
             >
-              <div className="flex items-center space-x-1">
+              <div className="group flex items-center space-x-1">
                 {!player && (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-3 w-3 text-gray-400"
+                    className="h-3 w-3 text-gray-400 dark:group-hover:text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -189,7 +189,7 @@ export default function EditableTeamRoster({
                   className={
                     player
                       ? "text-gray-800 cursor-pointer hover:text-blue-500 dark:text-white dark:hover:text-blue-300"
-                      : "text-gray-400 italic select-none"
+                      : "text-gray-400 italic select-none dark:group-hover:text-white"
                   }
                 >
                   {player || "Add player"}

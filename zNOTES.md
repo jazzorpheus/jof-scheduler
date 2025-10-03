@@ -4,6 +4,14 @@
   - Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
   - Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
 
+- Similar to jofhub, have navbar links blue, but instead have white underline when hovered, and turn white when active/focused?
+
+- Turn white padding/margin between daycardhead and timeslotsgrid jof-blue-light.
+
+- Modal dark styling, jof-blue-dark background, jof-blue-med roster background, white text (light blue on event name under datetime), gradient on select slot button with white border as on create event form. Need a dark-themed cancel slot button.
+
+- Make selected slots more obvious, like permanent green "aura" / border. (Try a "lightsaber effect".)
+
 - Go through entire app with fine-toothed comb, choosing most slick colour scheme and visual design for dark theme
 
 - Refactor \_\_root.jsx focusing on separation of concerns

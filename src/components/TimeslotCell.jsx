@@ -23,8 +23,8 @@ export default function TimeslotCell({
       className={clsx(
         "relative px-2 py-2 rounded-xl text-sm font-medium flex justify-between items-center cursor-pointer transition-colors dark:text-white dark:bg-jof-blue-light-med",
         isSelected
-          ? "bg-green-200 hover:bg-green-300 dark:text-gray-600 dark:bg-green-300"
-          : "bg-gray-100 hover:bg-gray-200",
+          ? "bg-green-200 hover:bg-green-300 dark:text-white dark:hover:jof-blue-dark"
+          : "bg-gray-100 hover:bg-gray-200 dark:hover:bg-jof-blue-light",
         highlightedSlot === slot.timeslotId &&
           (highlightType === "select"
             ? "animate-slotHighlight-green"
