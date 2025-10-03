@@ -2,40 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ensures things don't shift to the right when opening modal */
-/* (Since scrollbar disappears) */
 html {
   scrollbar-gutter: stable;
 }
 
-/* Animation upon selecting a slot */
-@keyframes slotHighlightGreen {
+@keyframes slotHighlightBlue {
   0% {
-    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.8);
+    box-shadow: 0 0 0 1px rgba(147, 197, 253, 0.9);
   }
-  50% {
-    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.4);
+  30% {
+    box-shadow:
+      0 0 4px 1px rgba(147, 197, 253, 0.9),
+      0 0 8px 3px rgba(147, 197, 253, 0.6),
+      0 0 12px 5px rgba(147, 197, 253, 0.4);
+  }
+  60% {
+    box-shadow:
+      0 0 3px 1px rgba(147, 197, 253, 0.7),
+      0 0 6px 2px rgba(147, 197, 253, 0.5),
+      0 0 10px 4px rgba(147, 197, 253, 0.3);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    box-shadow: 0 0 0 0 rgba(147, 197, 253, 0);
   }
 }
+
 @keyframes slotHighlightRed {
   0% {
-    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.8);
+    box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.9);
   }
-  50% {
-    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.4);
+  30% {
+    box-shadow:
+      0 0 4px 1px rgba(239, 68, 68, 0.9),
+      0 0 8px 3px rgba(239, 68, 68, 0.6),
+      0 0 12px 5px rgba(239, 68, 68, 0.4);
+  }
+  60% {
+    box-shadow:
+      0 0 3px 1px rgba(239, 68, 68, 0.7),
+      0 0 6px 2px rgba(239, 68, 68, 0.5),
+      0 0 10px 4px rgba(239, 68, 68, 0.3);
   }
   100% {
     box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
   }
 }
-.animate-slotHighlight-green {
-  animation: slotHighlightGreen 0.7s ease-out;
-  background-color: #ecfdf5;
+
+.animate-slotHighlight-blue {
+  animation: slotHighlightBlue 0.7s ease-out;
+  background-color: #dbeafe;
 }
+
 .animate-slotHighlight-red {
   animation: slotHighlightRed 0.7s ease-out;
   background-color: #fee2e2;
+}
+
+.saber-blade-blue {
+  background: linear-gradient(
+    to bottom,
+    rgba(147, 197, 253, 0.3) 0%,
+    rgba(255, 255, 255, 0.95) 45%,
+    rgba(255, 255, 255, 0.95) 55%,
+    rgba(147, 197, 253, 0.3) 100%
+  );
+  border: 1px solid #93c5fd;
+  box-shadow:
+    0 0 4px 1px rgba(147, 197, 253, 0.9),
+    0 0 8px 3px rgba(147, 197, 253, 0.6),
+    0 0 12px 5px rgba(147, 197, 253, 0.4);
+  border-radius: 0.75rem;
+  color: white;
+  animation: ignite 0.25s ease-out;
+  transform-origin: right center;
+}
+
+@keyframes ignite {
+  from {
+    opacity: 0;
+    transform: scaleX(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
 }
