@@ -4,6 +4,8 @@
   - Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
   - Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
 
+- Collapsing daycard when scrolled to near bottom of page causes massive white flash at bottom :S
+
 - Similar to jofhub, have navbar links blue, but instead have white underline when hovered, and turn white when active/focused?
 
 - Turn white padding/margin between daycardhead and timeslotsgrid jof-blue-light.
