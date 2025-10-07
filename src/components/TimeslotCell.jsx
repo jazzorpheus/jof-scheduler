@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import clsx from "clsx";
 import { Info } from "lucide-react";
 import Button from "./Button";
@@ -8,7 +9,17 @@ export default function TimeslotCell({
   onSelect,
   onInfoClick,
 }) {
-  const handleClick = () => onSelect(slot.timeslotId);
+  const [wasInteracted, setWasInteracted] = useState(false);
+
+  // Track if user has interacted with this slot at least once
+  useEffect(() => {
+    if (isSelected) setWasInteracted(true);
+  }, [isSelected]);
+
+  const handleClick = () => {
+    onSelect(slot.timeslotId);
+    setWasInteracted(true);
+  };
 
   return (
     <div
@@ -18,7 +29,7 @@ export default function TimeslotCell({
         "saber-blade-blue",
         isSelected
           ? "animate-ignite glow-flash glow-steady"
-          : "animate-extinguish"
+          : wasInteracted && "animate-extinguish"
       )}
     >
       <span
