@@ -24,14 +24,14 @@ export default function TimeslotCell({
       <span
         className={clsx(
           "font-mono text-sm tabular-nums",
-          isSelected && "text-black font-bold"
+          isSelected && "text-gray-800 font-bold"
         )}
       >
         {slot.datetime.split("T")[1].slice(0, 5)}
       </span>
 
       {isSelected && (
-        <span className="ml-2 text-xs font-bold text-black">Selected</span>
+        <span className="ml-2 text-xs font-bold text-gray-800">Selected</span>
       )}
 
       <div
