@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html,
+body {
   scrollbar-gutter: stable;
+  background-color: #051720;
 }
 
 /* --- Slot highlight animation --- */

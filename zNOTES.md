@@ -5,6 +5,16 @@
   - Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
 
 - **! BUG** Collapsing daycard when scrolled to near bottom of page causes massive white flash at bottom :S
+  - FIX:
+
+  ```
+  html,
+  body {
+  scrollbar-gutter: stable;
+  background-color: #051720;
+  }
+
+  ```
 
 - Improve dark color scheme on SelectAvailabilityPage.
   - Make sure hover is not white on (i) button on timeslot cells
