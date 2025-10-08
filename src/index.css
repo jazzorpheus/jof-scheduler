@@ -59,11 +59,11 @@ html {
 }
 
 .animate-ignite::before {
-  animation: ignite-bg 0.25s ease-out forwards;
+  animation: ignite-bg 0.5s ease-out forwards;
 }
 
 .animate-extinguish::before {
-  animation: extinguish-bg 0.25s ease-out forwards;
+  animation: extinguish-bg 0.5s ease-out forwards;
 }
 
 @keyframes ignite-bg {
