@@ -6,7 +6,7 @@
 
 - No. of teams / players make change happen after pressing Enter!
 
-- **! BUG** Fix sabers powering down on timeslots grid opening
+- **! BUG** Fix sabers powering up on timeslots grid opening
 
 - Make lightsaber slots darker on dark and lighter on light theme.
 
