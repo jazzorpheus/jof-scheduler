@@ -4,15 +4,19 @@
   - Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
   - Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
 
-- No. of teams / players make change happen after pressing Enter!
+- **! BUG** Collapsing daycard when scrolled to near bottom of page causes massive white flash at bottom :S
 
-- **! BUG** Fix sabers powering up on timeslots grid opening
+- Improve dark color scheme on SelectAvailabilityPage.
+  - Make sure hover is not white on (i) button on timeslot cells
+  - Darken hover effect on time window checkbox menu items
+  - Add suble hover effect to timeslot cells
+  -
+
+- No. of teams / players make change happen after pressing Enter!
 
 - Make lightsaber slots darker on dark and lighter on light theme.
 
 - Re-do light styling on Select Availability page AND Create New Event page!
-
-- **! BUG** Collapsing daycard when scrolled to near bottom of page causes massive white flash at bottom :S
 
 - Polish up dark styling on Select Availability page
   - Ignited saber time and icon colors
