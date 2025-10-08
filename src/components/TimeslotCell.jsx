@@ -52,7 +52,11 @@ export default function TimeslotCell({
         <Button
           info
           title="View details"
-          className={clsx(isSelected && "text-black")}
+          className={
+            !isSelected
+              ? "text-gray-500 border-slate-400 dark:border-slate-200 hover:text-blue-500 dark:hover:text-white"
+              : "hover:text-blue-500 dark:border-white dark:text-jof-blue-med-light dark:hover:border-jof-blue-med-light"
+          }
           onClick={() => onInfoClick(slot)}
         >
           <Info size={16} />

@@ -17,8 +17,8 @@
   ```
 
 - Improve dark color scheme on SelectAvailabilityPage.
-  - Make sure hover is not white on (i) button on timeslot cells
-  - Darken hover effect on time window checkbox menu items
+  - Keep playing around with (i) button text-color and border-color, light/dark, hover, etc.
+  - Darken hover effect on time window checkbox menu items (slightly!)
   - Add suble hover effect to timeslot cells
   -
 
