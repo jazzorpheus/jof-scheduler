@@ -44,7 +44,7 @@ export default function SelectAvailabilityPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-jof-blue-dark">
+    <div className="min-h-screen bg-gray-50 dark:bg-jof-blue-900">
       {/* HEADER */}
       <PageHeader title="Select Your Availability">
         You don't have to be 100% certain you can make it to all the slots you

@@ -1,6 +1,6 @@
 export default function PageHeader({ title, children }) {
   return (
-    <header className="sticky top-0 z-10 bg-white shadow-sm dark:bg-jof-blue-med">
+    <header className="sticky top-0 z-10 bg-white shadow-sm dark:bg-jof-blue-700">
       <div className="mx-auto max-w-5xl px-4 py-6 text-center sm:px-6 lg:px-8">
         <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl dark:text-white">
           {title}

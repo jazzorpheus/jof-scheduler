@@ -85,7 +85,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="fixed top-0 right-0 p-2 z-50 scale-75 rounded-full text-gray-600 hover:bg-gray-300 dark:text-white dark:bg-jof-blue-dark dark:hover:bg-blue-950"
+      className="fixed top-0 right-0 p-2 z-50 scale-75 rounded-full text-gray-600 hover:bg-gray-300 dark:text-white dark:bg-jof-blue-900 dark:hover:bg-blue-950"
       aria-label="Toggle theme"
     >
       {theme === "light" ? <MoonIcon /> : <SunIcon />}
@@ -105,9 +105,9 @@ const RootLayout = () => {
 
   return (
     <ThemeProvider>
-      <div className="dark:bg-jof-blue-dark">
+      <div className="dark:bg-jof-blue-900">
         {/* NAVBAR */}
-        <nav className="flex justify-center items-center gap-6 p-4 bg-white dark:bg-jof-blue-med shadow-sm mb-3">
+        <nav className="flex justify-center items-center gap-6 p-4 bg-white dark:bg-jof-blue-700 shadow-sm mb-3">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}
@@ -124,7 +124,7 @@ const RootLayout = () => {
         </nav>
 
         {/* Divider */}
-        {/* <hr className="mt-2 py-2 border-gray-300 dark:border-white dark:bg-jof-blue-dark" /> */}
+        {/* <hr className="mt-2 py-2 border-gray-300 dark:border-white dark:bg-jof-blue-900" /> */}
 
         {/* Page content */}
         <Outlet />

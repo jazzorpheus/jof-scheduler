@@ -4,22 +4,17 @@
   - Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
   - Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
 
-- **! BUG** Collapsing daycard when scrolled to near bottom of page causes massive white flash at bottom :S
-  - FIX:
-
-  ```
-  html,
-  body {
-  scrollbar-gutter: stable;
-  background-color: #051720;
-  }
-
-  ```
+- Overhaul Tailwind custom colors config
+  - Use similar naming system to Tailwind, e.g. jof-blue-light, jof-blue-200, ...
+  - Set up jof-blue-... and jof-gray-... color shades
+  -
 
 - Improve dark color scheme on SelectAvailabilityPage.
-  - Keep playing around with (i) button text-color and border-color, light/dark, hover, etc.
-  - Darken hover effect on time window checkbox menu items (slightly!)
+  - Remove border on (i) button, have simple light gray on dark theme and dark gray on light, subtle hover effects
+  - Darken hover effect on time window checkbox menu items on dark theme
   - Add suble hover effect to timeslot cells
+  - Add shadow / 3D effects to timeslot cells
+  - Eliminate all whites cos dark mode is meant to be dark :D
   -
 
 - No. of teams / players make change happen after pressing Enter!

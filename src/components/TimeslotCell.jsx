@@ -25,7 +25,7 @@ export default function TimeslotCell({
     <div
       onClick={handleClick}
       className={clsx(
-        "relative px-2 py-2 rounded-xl text-sm flex justify-between items-center cursor-pointer transition-colors dark:text-white dark:bg-jof-blue-med-light",
+        "relative px-2 py-2 my-[2px] rounded-xl text-sm flex justify-between items-center cursor-pointer transition-colors dark:text-white dark:bg-gradient-to-b dark:from-jof-blue-600 dark:to-jof-blue-900 dark:hover:bg-gradient-to-b dark:hover:from-jof-blue-500 dark:hover:to-jof-blue-800",
         "saber-blade-blue",
         isSelected
           ? "animate-ignite glow-flash glow-steady"
@@ -54,8 +54,8 @@ export default function TimeslotCell({
           title="View details"
           className={
             !isSelected
-              ? "text-gray-500 border-slate-400 dark:border-slate-200 hover:text-blue-500 dark:hover:text-white"
-              : "hover:text-blue-500 dark:border-white dark:text-jof-blue-med-light dark:hover:border-jof-blue-med-light"
+              ? "text-gray-500 hover:text-blue-500 dark:hover:text-white"
+              : "hover:text-white dark:text-jof-blue-600 dark:hover:text-jof-blue-400"
           }
           onClick={() => onInfoClick(slot)}
         >

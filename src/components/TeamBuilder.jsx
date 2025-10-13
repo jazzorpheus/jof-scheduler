@@ -48,7 +48,7 @@ function NumTeamsInput() {
           onChange={handleChange}
           onBlur={handleBlur}
           onFocus={(e) => e.target.select()}
-          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-med"
+          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-700"
         />
         <div className="flex flex-col border-l border-gray-300">
           <button
@@ -114,7 +114,7 @@ function RosterSizeInput() {
           onChange={handleChange}
           onBlur={handleBlur}
           onFocus={(e) => e.target.select()}
-          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-med"
+          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-700"
         />
         <div className="flex flex-col border-l border-gray-300">
           <button
@@ -140,11 +140,11 @@ function RosterSizeInput() {
 export default function TeamBuilder() {
   return (
     <TeamsProvider>
-      <div className="relative border rounded-lg p-4 shadow-sm bg-white dark:bg-jof-blue-med w-full mx-auto mt-3 ">
+      <div className="relative border rounded-lg p-4 shadow-sm bg-white dark:bg-jof-blue-700 w-full mx-auto mt-3 ">
         {/* Heading */}
-        <div className=" rounded-full absolute -top-3 left-1/2 transform -translate-x-1/2 flex items-center text-gray-600 dark:text-white dark:bg-jof-blue-light">
+        <div className="rounded-full absolute -top-3 left-1/2 transform -translate-x-1/2 flex items-center text-gray-600 dark:text-white dark:bg-jof-blue-light">
           <div className="border-t border-gray-300 flex-grow mr-3 -mt-1"></div>
-          <h2 className="text-xl font-bold text-center leading-none relative -top-0.7 bg-white dark:bg-jof-blue-med px-2 rounded-xl">
+          <h2 className="text-xl font-bold text-center leading-none relative -top-0.7 bg-white dark:bg-jof-blue-700 px-4 rounded-xl">
             Team Builder
           </h2>
           <div className="border-t border-gray-300 flex-grow ml-3 -mt-1"></div>

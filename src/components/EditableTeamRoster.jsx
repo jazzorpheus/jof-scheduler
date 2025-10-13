@@ -86,7 +86,7 @@ export default function EditableTeamRoster({
   };
 
   return (
-    <div className="border rounded-lg p-2 bg-gray-50 dark:bg-jof-blue-med flex flex-col space-y-2 dark:text-white">
+    <div className="border rounded-lg p-2 bg-gray-50 dark:bg-jof-blue-700 flex flex-col space-y-2 dark:text-white">
       <div
         onClick={handleNameClick}
         className="group flex items-center justify-between cursor-pointer hover:text-blue-500 dark:hover:text-sky-300"
@@ -100,7 +100,7 @@ export default function EditableTeamRoster({
             onBlur={handleNameBlur}
             onKeyDown={handleNameKeyPress}
             autoFocus
-            className="px-1 text-sm font-medium w-full dark:bg-jof-blue-dark"
+            className="px-1 text-sm font-medium w-full dark:bg-jof-blue-900"
           />
         ) : (
           <>
@@ -148,7 +148,7 @@ export default function EditableTeamRoster({
                   }}
                   autoFocus
                   className="flex-1 min-w-0 px-1 py-0.5 text-sm rounded 
-                   bg-jof-blue-dark text-white 
+                   bg-jof-blue-900 text-white 
                    placeholder-gray-300 
                    outline-none"
                   placeholder=""
@@ -163,8 +163,8 @@ export default function EditableTeamRoster({
               tabIndex={0}
               className={`flex items-center justify-between px-1 py-0.5 rounded cursor-pointer ${
                 !player
-                  ? "border border-gray-300  hover:bg-sky-200 dark:border-white dark:hover:bg-jof-blue-light dark:focus:bg-jof-blue-dark" // empty slot
-                  : "hover:bg-sky-200 dark:border-white dark:hover:bg-jof-blue-light dark:focus:bg-jof-blue-dark" // filled slot
+                  ? "border border-gray-300  hover:bg-sky-200 dark:border-white dark:hover:bg-jof-blue-500 dark:focus:bg-jof-blue-900" // empty slot
+                  : "hover:bg-sky-200 dark:border-white dark:hover:bg-jof-blue-500 dark:focus:bg-jof-blue-900" // filled slot
               }`}
               onClick={() => startEditPlayer(i, player)}
             >
