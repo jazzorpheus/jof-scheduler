@@ -7,15 +7,9 @@
 - Overhaul Tailwind custom colors config
   - Use similar naming system to Tailwind, e.g. jof-blue-light, jof-blue-200, ...
   - Set up jof-blue-... and jof-gray-... color shades
-  -
+  - ...
 
 - Improve dark color scheme on SelectAvailabilityPage.
-  - Remove border on (i) button, have simple light gray on dark theme and dark gray on light, subtle hover effects
-  - Darken hover effect on time window checkbox menu items on dark theme
-  - Add suble hover effect to timeslot cells
-  - Add shadow / 3D effects to timeslot cells
-  - Eliminate all whites cos dark mode is meant to be dark :D
-  -
 
 - No. of teams / players make change happen after pressing Enter!
 

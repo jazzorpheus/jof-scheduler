@@ -20,7 +20,7 @@ export default function DayCardHead({
   return (
     <div
       className={clsx(
-        "px-4 py-3 bg-gray-200 rounded-t-xl flex flex-col gap-2 cursor-pointer hover:bg-gray-300 transition-colors dark:text-white dark:bg-jof-blue-700 dark:hover:bg-jof-blue-600",
+        "px-4 py-3 bg-gray-200 rounded-t-xl flex flex-col gap-2 cursor-pointer hover:bg-gray-300 transition-colors dark:text-white dark:bg-gradient-to-b dark:from-jof-blue-700 dark:to-jof-blue-900 dark:hover:bg-gradient-to-b dark:hover:from-jof-blue-600 dark:hover:to-jof-blue-800",
         !isOpen && "rounded-b-xl"
       )}
       onClick={onToggle}
