@@ -40,8 +40,10 @@ function NumTeamsInput() {
 
   return (
     <label className="flex items-center space-x-2">
-      <span className="text-sm font-medium">Number of Teams</span>
-      <div className="flex items-stretch border border-gray-300 rounded">
+      <span className="text-sm font-medium dark:text-sky-300">
+        Number of Teams:
+      </span>
+      <div className="flex items-stretch border border-jof-blue-light rounded">
         <input
           type="text"
           value={tempValue}
@@ -50,11 +52,11 @@ function NumTeamsInput() {
           onFocus={(e) => e.target.select()}
           className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-700"
         />
-        <div className="flex flex-col border-l border-gray-300">
+        <div className="flex flex-col border-l border-jof-blue-light">
           <button
             type="button"
             onClick={increment}
-            className="flex-1 w-6 border-b border-gray-300 text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-blue-100"
+            className="flex-1 w-6 border-b border-jof-blue-light text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-blue-100"
           >
             +
           </button>
@@ -106,8 +108,10 @@ function RosterSizeInput() {
 
   return (
     <label className="flex items-center space-x-2">
-      <span className="text-sm font-medium">Players per Team</span>
-      <div className="flex items-stretch border border-gray-300 rounded">
+      <span className="text-sm font-medium dark:text-sky-300">
+        Players per Team:
+      </span>
+      <div className="flex items-stretch border border-jof-blue-light rounded">
         <input
           type="text"
           value={tempValue}
@@ -116,11 +120,11 @@ function RosterSizeInput() {
           onFocus={(e) => e.target.select()}
           className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-700"
         />
-        <div className="flex flex-col border-l border-gray-300">
+        <div className="flex flex-col border-l border-jof-blue-light">
           <button
             type="button"
             onClick={increment}
-            className="flex-1 w-6 border-b border-gray-300 text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-blue-100"
+            className="flex-1 w-6 border-b border-jof-blue-light text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-blue-100"
           >
             +
           </button>
@@ -140,14 +144,14 @@ function RosterSizeInput() {
 export default function TeamBuilder() {
   return (
     <TeamsProvider>
-      <div className="relative border rounded-lg p-4 shadow-sm bg-white dark:bg-jof-blue-700 w-full mx-auto mt-3 ">
+      <div className="relative border border-jof-blue-light rounded-lg p-4 shadow-sm bg-white dark:bg-jof-blue-700 w-full mx-auto mt-3 ">
         {/* Heading */}
         <div className="rounded-full absolute -top-3 left-1/2 transform -translate-x-1/2 flex items-center text-gray-600 dark:text-white dark:bg-jof-blue-light">
-          <div className="border-t border-gray-300 flex-grow mr-3 -mt-1"></div>
+          <div className="border-t border-jof-blue-light flex-grow mr-3 -mt-1"></div>
           <h2 className="text-xl font-bold text-center leading-none relative -top-0.7 bg-white dark:bg-jof-blue-700 px-4 rounded-xl">
             Team Builder
           </h2>
-          <div className="border-t border-gray-300 flex-grow ml-3 -mt-1"></div>
+          <div className="border-t border-jof-blue-light flex-grow ml-3 -mt-1"></div>
         </div>
 
         {/* Controls row */}

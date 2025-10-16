@@ -86,10 +86,10 @@ export default function EditableTeamRoster({
   };
 
   return (
-    <div className="border rounded-lg p-2 bg-gray-50 dark:bg-jof-blue-700 flex flex-col space-y-2 dark:text-white">
+    <div className="border border-jof-blue-light rounded-lg p-2 bg-gray-50 dark:bg-jof-blue-700 flex flex-col space-y-2 dark:text-white">
       <div
         onClick={handleNameClick}
-        className="group flex items-center justify-between cursor-pointer hover:text-blue-500 dark:hover:text-sky-300"
+        className="group flex items-center justify-between cursor-pointer dark:text-sky-300 dark:hover:text-white"
       >
         {isEditingName ? (
           <input
@@ -110,7 +110,7 @@ export default function EditableTeamRoster({
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4 text-gray-400 group-hover:text-blue-500 
-              dark:text-white dark:group-hover:text-sky-300"
+              dark:text-jof-blue-light dark:group-hover:text-white"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -163,8 +163,8 @@ export default function EditableTeamRoster({
               tabIndex={0}
               className={`flex items-center justify-between px-1 py-0.5 rounded cursor-pointer ${
                 !player
-                  ? "border border-gray-300  hover:bg-sky-200 dark:border-white dark:hover:bg-jof-blue-500 dark:focus:bg-jof-blue-900" // empty slot
-                  : "hover:bg-sky-200 dark:border-white dark:hover:bg-jof-blue-500 dark:focus:bg-jof-blue-900" // filled slot
+                  ? "hover:bg-sky-200 border border-jof-blue-light dark:hover:bg-jof-blue-500 dark:hover:border-white dark:focus:bg-jof-blue-900" // empty slot
+                  : "hover:bg-sky-200 border border-jof-blue-light dark:hover:bg-jof-blue-500 dark:hover:border-white dark:focus:bg-jof-blue-900" // filled slot
               }`}
               onClick={() => startEditPlayer(i, player)}
             >
@@ -188,7 +188,7 @@ export default function EditableTeamRoster({
                 <span
                   className={
                     player
-                      ? "text-gray-800 cursor-pointer hover:text-blue-500 dark:text-white dark:hover:text-blue-300"
+                      ? "text-gray-800 cursor-pointer hover:text-blue-500 dark:text-white"
                       : "text-gray-400 italic select-none dark:group-hover:text-white"
                   }
                 >
