@@ -89,7 +89,7 @@ export default function EditableTeamRoster({
     <div className="border border-jof-blue-light rounded-lg p-2 bg-gray-50 dark:bg-jof-blue-700 flex flex-col space-y-2 dark:text-white">
       <div
         onClick={handleNameClick}
-        className="group flex items-center justify-between cursor-pointer dark:text-sky-300 dark:hover:text-white"
+        className="group flex items-center justify-between cursor-pointer dark:text-jof-blue-light dark:hover:text-white"
       >
         {isEditingName ? (
           <input

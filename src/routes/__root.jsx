@@ -114,8 +114,8 @@ const RootLayout = () => {
               to={to}
               className="
               px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center hover:border-b-2 
-              hover:border-sky-300 [&.active]:text-white [&.active]:border-b-2 [&.active]:border-sky-300 
-              dark:text-sky-300 dark:[&.active]:text-white dark:hover:text-white dark:hover:border-sky-300"
+              hover:border-jof-blue-light [&.active]:text-white [&.active]:border-b-2 [&.active]:border-jof-blue-light 
+              dark:text-jof-blue-light dark:[&.active]:text-white dark:hover:text-white dark:hover:border-jof-blue-light"
             >
               {label}
             </Link>
