@@ -6,8 +6,6 @@
 
 - No. of teams / players make change happen after pressing Enter!
 
-- +/- button background too white when focused on dark mode
-
 - Make lightsaber slots darker on dark and lighter on light theme.
 
 - Re-do light styling on Select Availability page AND Create New Event page!

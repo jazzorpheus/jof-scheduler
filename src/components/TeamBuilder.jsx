@@ -56,14 +56,14 @@ function NumTeamsInput() {
           <button
             type="button"
             onClick={increment}
-            className="flex-1 w-6 border-b border-jof-blue-light text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-blue-100"
+            className="flex-1 w-6 border-b border-jof-blue-light text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-jof-blue-500 rounded"
           >
             +
           </button>
           <button
             type="button"
             onClick={decrement}
-            className="flex-1 w-6 text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-blue-100"
+            className="flex-1 w-6 text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-jof-blue-500"
           >
             –
           </button>
@@ -124,14 +124,14 @@ function RosterSizeInput() {
           <button
             type="button"
             onClick={increment}
-            className="flex-1 w-6 border-b border-jof-blue-light text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-blue-100"
+            className="flex-1 w-6 border-b border-jof-blue-light text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-jof-blue-500"
           >
             +
           </button>
           <button
             type="button"
             onClick={decrement}
-            className="flex-1 w-6 text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-blue-100"
+            className="flex-1 w-6 text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-jof-blue-500"
           >
             –
           </button>
