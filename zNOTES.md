@@ -4,13 +4,6 @@
   - Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
   - Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
 
-- Overhaul Tailwind custom colors config
-  - Use similar naming system to Tailwind, e.g. jof-blue-light, jof-blue-200, ...
-  - Set up jof-blue-... and jof-gray-... color shades
-  - ...
-
-- Improve dark color scheme on SelectAvailabilityPage.
-
 - No. of teams / players make change happen after pressing Enter!
 
 - Make lightsaber slots darker on dark and lighter on light theme.

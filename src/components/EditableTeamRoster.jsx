@@ -100,11 +100,14 @@ export default function EditableTeamRoster({
             onBlur={handleNameBlur}
             onKeyDown={handleNameKeyPress}
             autoFocus
-            className="px-1 text-sm font-medium w-full dark:bg-jof-blue-900"
+            className="px-1 text-md font-medium w-full dark:bg-jof-blue-900"
           />
         ) : (
           <>
-            <span className="text-sm font-medium" onClick={handleNameClick}>
+            <span
+              className="text-md font-medium text-center"
+              onClick={handleNameClick}
+            >
               {teamName}
             </span>
             <svg

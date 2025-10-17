@@ -40,7 +40,7 @@ function NumTeamsInput() {
 
   return (
     <label className="flex items-center space-x-2">
-      <span className="text-sm font-medium dark:text-sky-300">
+      <span className="text-md font-medium dark:text-sky-300">
         Number of Teams:
       </span>
       <div className="flex items-stretch border border-jof-blue-light rounded">
@@ -108,7 +108,7 @@ function RosterSizeInput() {
 
   return (
     <label className="flex items-center space-x-2">
-      <span className="text-sm font-medium dark:text-sky-300">
+      <span className="text-md font-medium dark:text-sky-300">
         Players per Team:
       </span>
       <div className="flex items-stretch border border-jof-blue-light rounded">
@@ -155,7 +155,7 @@ export default function TeamBuilder() {
         </div>
 
         {/* Controls row */}
-        <div className="flex items-center space-x-4 mt-8 w-full">
+        <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-4 mt-8 w-full">
           <NumTeamsInput />
           <RosterSizeInput />
         </div>

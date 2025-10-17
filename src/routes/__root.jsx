@@ -113,9 +113,9 @@ const RootLayout = () => {
               key={to}
               to={to}
               className="
-               px-2 py-1 font-medium text-gray-700  text-center min-[0px]:text-sm hover:border-b-2 
-              hover:border-blue-600 [&.active]:text-blue-600  [&.active]:border-b-2 [&.active]:border-blue-600 
-              dark:text-white dark:[&.active]:text-blue-300 dark:hover:border-blue-400 dark:[&.active]:border-blue-400"
+              px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center hover:border-b-2 
+              hover:border-sky-300 [&.active]:text-white [&.active]:border-b-2 [&.active]:border-sky-300 
+              dark:text-sky-300 dark:[&.active]:text-white dark:hover:text-white dark:hover:border-sky-300"
             >
               {label}
             </Link>
