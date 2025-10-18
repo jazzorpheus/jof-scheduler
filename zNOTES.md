@@ -4,8 +4,6 @@
   - Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
   - Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
 
-- Temporarily disable light theme toggle to focus on polishing dark theme and moving onto wiring up create event to select availability.
-
 - No. of teams / players make change happen after pressing Enter!
 
 - Experiment with removing borders from create event form

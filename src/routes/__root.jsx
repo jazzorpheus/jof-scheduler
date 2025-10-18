@@ -18,7 +18,9 @@ const ThemeProvider = ({ children }) => {
     const userPrefersDark =
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches;
-    return storedTheme || (userPrefersDark ? "dark" : "light");
+    // ! Temporarily disabled light theme
+    // return storedTheme || (userPrefersDark ? "dark" : "light");
+    return "dark";
   });
 
   useEffect(() => {
@@ -29,7 +31,9 @@ const ThemeProvider = ({ children }) => {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    // ! Temporarily disabled light theme
+    // setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    setTheme("dark");
   };
 
   const value = { theme, toggleTheme };
@@ -85,7 +89,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="fixed top-0 right-0 p-2 z-50 scale-75 rounded-full text-gray-600 hover:bg-gray-300 dark:text-white dark:bg-jof-blue-900 dark:hover:bg-blue-950"
+      className="fixed top-0 right-0 p-2 z-50 scale-75 rounded-full text-gray-600 hover:bg-gray-300 dark:text-white dark:bg-jof-blue-900 dark:hover:bg-blue-800"
       aria-label="Toggle theme"
     >
       {theme === "light" ? <MoonIcon /> : <SunIcon />}
