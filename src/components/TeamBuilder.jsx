@@ -22,6 +22,13 @@ function NumTeamsInput() {
     setTempValue(String(val));
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      e.target.blur();
+    }
+  };
+
   const increment = () => {
     let val = parseInt(tempValue, 10);
     if (isNaN(val)) val = 10;
@@ -49,6 +56,7 @@ function NumTeamsInput() {
           value={tempValue}
           onChange={handleChange}
           onBlur={handleBlur}
+          onKeyDown={handleKeyDown}
           onFocus={(e) => e.target.select()}
           className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-700"
         />
@@ -90,6 +98,13 @@ function RosterSizeInput() {
     setTempValue(String(val));
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      e.target.blur();
+    }
+  };
+
   const increment = () => {
     let val = parseInt(tempValue, 10);
     if (isNaN(val)) val = 10;
@@ -117,6 +132,7 @@ function RosterSizeInput() {
           value={tempValue}
           onChange={handleChange}
           onBlur={handleBlur}
+          onKeyDown={handleKeyDown}
           onFocus={(e) => e.target.select()}
           className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-700"
         />
