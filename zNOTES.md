@@ -4,9 +4,14 @@
   - Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
   - Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
 
-- No. of teams / players make change happen after pressing Enter!
-
-- Experiment with removing borders from create event form
+- Copy form on https://jofacademy.eu/registration.php
+  - No border except when inputs are focused
+  - Label: input horizontally aligned? Or...
+  - MaterialUI Version: https://mui.com/material-ui/react-text-field/ implemented with Tailwind + CSS + React State?
+    KypDurron — 14:32
+    "Well I guess you could control the order of elements with some prop
+    Like change the order tailwind class based on state
+    But idk if you can get that nice transition there. Maybe."
 
 - Make lightsaber timeslots blue-er when selected.
 
