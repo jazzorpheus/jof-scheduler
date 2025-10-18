@@ -4,21 +4,18 @@
   - Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
   - Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
 
+- Temporarily disable light theme toggle to focus on polishing dark theme and moving onto wiring up create event to select availability.
+
 - No. of teams / players make change happen after pressing Enter!
 
-- Make lightsaber slots darker on dark and lighter on light theme.
+- Experiment with removing borders from create event form
 
-- Re-do light styling on Select Availability page AND Create New Event page!
+- Make lightsaber timeslots blue-er when selected.
 
-- Polish up dark styling on Select Availability page
-  - Ignited saber time and icon colors
-
-- Experiment: Similar to jofhub, have navbar links blue, but instead have white underline when hovered, and turn white when active/focused?
-
-- Modal dark styling, jof-blue-dark background, jof-blue-med roster background, white text (light blue on event name under datetime), gradient on select slot button with white border as on create event form. Need a dark-themed cancel slot button.
-
-- Go through entire app with fine-toothed comb, choosing most slick colour scheme and visual design for dark theme
+- Do dark theme on Modal, style buttons.
 
 - Refactor \_\_root.jsx focusing on separation of concerns
 
 - Refactor larger component files, especially those which are 150+ lines
+
+- Make final decision on which views are going where, e.g. have a landing page with "Create New Event" and "View Registered Events" links
