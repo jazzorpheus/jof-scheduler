@@ -22,20 +22,49 @@ export default function CreateEventForm() {
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         {/* Event metadata */}
         <div className="space-y-2 mb-[30px]">
-          <label className="block">
-            Title
+          <div className="relative">
             <input
               {...register("title")}
-              className="border border-jof-blue-light rounded px-2 py-1 w-full dark:bg-jof-blue-700 dark:hover:bg-jof-blue-600 dark:focus:bg-jof-blue-900"
+              id="title"
+              placeholder=" "
+              className="peer w-full border border-jof-blue-light rounded px-2 pt-4 pb-2 
+               bg-transparent dark:bg-jof-blue-700 dark:hover:bg-jof-blue-600 
+               dark:focus:bg-jof-blue-900 text-gray-100 
+               focus:outline-none focus:border-jof-blue-light"
             />
-          </label>
-          <label className="block">
-            Description
+            <label
+              htmlFor="title"
+              className="absolute left-2 top-2 text-gray-400 transition-all duration-200 
+               peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base
+               peer-focus:top-0 peer-focus:text-sm peer-focus:text-jof-blue-light"
+            >
+              Title
+            </label>
+          </div>
+
+          {/* *************************************************************************************************************************** */}
+
+          <div className="relative">
             <textarea
               {...register("description")}
-              className="border border-jof-blue-light rounded px-2 py-1 w-full dark:bg-jof-blue-700 dark:hover:bg-jof-blue-600 dark:focus:bg-jof-blue-900"
+              id="description"
+              placeholder=" "
+              rows="3"
+              className="peer w-full border border-jof-blue-light rounded px-2 pt-5 pb-2 
+               bg-transparent dark:bg-jof-blue-700 dark:hover:bg-jof-blue-600 
+               dark:focus:bg-jof-blue-900 text-gray-100 resize-none 
+               focus:outline-none focus:border-jof-blue-light"
             />
-          </label>
+            <label
+              htmlFor="description"
+              className="absolute left-2 top-2 text-gray-400 transition-all duration-200 
+               peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base
+               peer-focus:top-1 peer-focus:text-sm peer-focus:text-jof-blue-light"
+            >
+              Description
+            </label>
+          </div>
+
           <label className="block">
             Start Date
             <input

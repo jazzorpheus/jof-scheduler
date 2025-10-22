@@ -11,7 +11,8 @@
     KypDurron — 14:32
     "Well I guess you could control the order of elements with some prop
     Like change the order tailwind class based on state
-    But idk if you can get that nice transition there. Maybe."
+    But idk if you can get that nice transition there. Maybe.
+    Wrap the label and input to flex and set the order with order class."
 
 - Make lightsaber timeslots blue-er when selected.
 
