@@ -36,7 +36,7 @@ export default function CreateEventForm() {
               htmlFor="title"
               className="absolute left-2 top-2 text-gray-400 transition-all duration-200 
                peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base
-               peer-focus:top-0 peer-focus:text-sm peer-focus:text-jof-blue-light"
+               peer-focus:top-1 peer-focus:text-sm peer-focus:text-jof-blue-light"
             >
               Title
             </label>
