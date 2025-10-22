@@ -13,6 +13,10 @@
     Like change the order tailwind class based on state
     But idk if you can get that nice transition there. Maybe.
     Wrap the label and input to flex and set the order with order class."
+    KypDurron — 19:07
+    This could be tricky. Basically absolute position with background on that label that then is over the border.
+    Or some - margin hack
+    Like margin top -10px
 
 - Make lightsaber timeslots blue-er when selected.
 
