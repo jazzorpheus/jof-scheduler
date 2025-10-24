@@ -50,7 +50,7 @@ function NumTeamsInput() {
       <span className="text-md font-medium dark:text-jof-blue-light">
         Number of Teams:
       </span>
-      <div className="flex items-stretch border border-jof-blue-light rounded">
+      <div className="flex items-stretch border border-jof-blue-light rounded-sm">
         <input
           type="text"
           value={tempValue}
@@ -64,7 +64,7 @@ function NumTeamsInput() {
           <button
             type="button"
             onClick={increment}
-            className="flex-1 w-6 border-b border-jof-blue-light text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-jof-blue-500 rounded"
+            className="flex-1 w-6 border-b border-jof-blue-light text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-jof-blue-500"
           >
             +
           </button>
@@ -126,7 +126,7 @@ function RosterSizeInput() {
       <span className="text-md font-medium dark:text-jof-blue-light">
         Players per Team:
       </span>
-      <div className="flex items-stretch border border-jof-blue-light rounded">
+      <div className="flex items-stretch border border-jof-blue-light rounded-sm">
         <input
           type="text"
           value={tempValue}

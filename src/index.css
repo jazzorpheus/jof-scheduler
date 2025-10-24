@@ -8,6 +8,13 @@ body {
   background-color: #051a26;
 }
 
+/* To ensure borders don't expand elements */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 /* --- Slot highlight animation --- */
 @keyframes slotHighlightBlue {
   0% {

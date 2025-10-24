@@ -1,6 +1,33 @@
 import { useForm } from "react-hook-form";
+import { useRef } from "react";
 import TeamBuilder from "./TeamBuilder";
 import Button from "./Button";
+
+// Small internal component for auto-expanding textarea
+function AutoResizeTextarea({ register, name, id, ...props }) {
+  const ref = useRef();
+
+  const handleInput = () => {
+    const el = ref.current;
+    el.style.height = "auto";
+    el.style.height = `${el.scrollHeight}px`;
+  };
+
+  return (
+    <textarea
+      {...register(name)}
+      {...props}
+      id={id}
+      ref={ref}
+      onInput={handleInput}
+      rows={3}
+      className="peer w-full border dark:border-jof-blue-900 rounded px-2 pt-5 pb-2 
+                 bg-transparent dark:bg-jof-blue-900 dark:hover:border-white
+                 dark:focus:border-jof-blue-light text-gray-100 overflow-hidden 
+                 focus:outline-none focus:border-jof-blue-light transition-[height] duration-150 ease-in-out"
+    />
+  );
+}
 
 export default function CreateEventForm() {
   const { register, handleSubmit } = useForm({
@@ -22,55 +49,53 @@ export default function CreateEventForm() {
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         {/* Event metadata */}
         <div className="space-y-2 mb-[30px]">
+          {/* *************************************************************************************************************************** */}
           <div className="relative">
             <input
               {...register("title")}
               id="title"
               placeholder=" "
-              className="peer w-full rounded px-2 pt-5 pb-2 
-               bg-transparent dark:bg-jof-blue-900 dark:hover:bg-jof-blue-600 
-               dark:focus:bg-jof-blue-900 text-gray-100 
-               focus:outline-none focus:border-jof-blue-light"
+              className="peer w-full border dark:border-jof-blue-900 hover:border dark:hover:border-white dark:focus:border-jof-blue-light 
+              rounded px-2 pt-5 pb-2 bg-transparent dark:bg-jof-blue-900 text-gray-100 
+              focus:outline-none focus:border-jof-blue-light"
             />
             <label
               htmlFor="title"
-              className=" peer-focus:bg-jof-blue-900 px-2 absolute left-2 top-2 text-gray-400 transition-all duration-200 
-               peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base
-               peer-focus:top-1 peer-focus:text-sm peer-focus:text-jof-blue-light"
+              className="absolute left-2 top-2 text-gray-400 transition-all duration-200 
+              peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base
+              peer-focus:top-1 peer-focus:text-sm peer-focus:text-jof-blue-light
+              peer-[&:not(:placeholder-shown)]:top-1 peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:text-jof-blue-light"
             >
               Title
             </label>
           </div>
 
-          {/* *************************************************************************************************************************** */}
-
           <div className="relative">
-            <textarea
-              {...register("description")}
+            <AutoResizeTextarea
+              register={register}
+              name="description"
               id="description"
               placeholder=" "
-              rows="3"
-              className="peer w-full border border-jof-blue-light rounded px-2 pt-5 pb-2 
-               bg-transparent dark:bg-jof-blue-700 dark:hover:bg-jof-blue-600 
-               dark:focus:bg-jof-blue-900 text-gray-100 resize-none 
-               focus:outline-none focus:border-jof-blue-light"
             />
             <label
               htmlFor="description"
               className="absolute left-2 top-2 text-gray-400 transition-all duration-200 
-               peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base
-               peer-focus:top-1 peer-focus:text-sm peer-focus:text-jof-blue-light"
+              peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base
+              peer-focus:top-1 peer-focus:text-sm peer-focus:text-jof-blue-light
+              peer-[&:not(:placeholder-shown)]:top-1 peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:text-jof-blue-light"
             >
               Description
             </label>
           </div>
+
+          {/* *************************************************************************************************************************** */}
 
           <label className="block">
             Start Date
             <input
               type="date"
               {...register("startDate")}
-              className="border border-jof-blue-light rounded px-2 py-1 w-full dark:bg-jof-blue-700 dark:hover:bg-jof-blue-600 dark:focus:bg-jof-blue-900"
+              className="border dark:border-jof-blue-900 rounded px-2 py-1 w-full dark:bg-jof-blue-900 dark:hover:border-white dark:focus:border-jof-blue-light"
             />
           </label>
           <label className="block">
@@ -78,7 +103,7 @@ export default function CreateEventForm() {
             <input
               type="date"
               {...register("endDate")}
-              className="border border-jof-blue-light rounded px-2 py-1 w-full dark:bg-jof-blue-700 dark:hover:bg-jof-blue-600 dark:focus:bg-jof-blue-900"
+              className="border dark:border-jof-blue-900 rounded px-2 py-1 w-full dark:bg-jof-blue-900 dark:hover:border-white"
             />
           </label>
         </div>

@@ -164,18 +164,15 @@ export default function EditableTeamRoster({
             <li
               key={i}
               tabIndex={0}
-              className={`flex items-center justify-between px-1 py-0.5 rounded cursor-pointer ${
-                !player
-                  ? "hover:bg-sky-200 border border-jof-blue-light dark:hover:bg-jof-blue-500 dark:hover:border-white dark:focus:bg-jof-blue-900" // empty slot
-                  : "hover:bg-sky-200 border border-jof-blue-light dark:hover:bg-jof-blue-500 dark:hover:border-white dark:focus:bg-jof-blue-900" // filled slot
-              }`}
+              className={`group flex items-center justify-between px-1 py-0.5 rounded cursor-pointer 
+              dark:bg-jof-blue-900 hover:dark:text-white`}
               onClick={() => startEditPlayer(i, player)}
             >
-              <div className="group flex items-center space-x-1">
+              <div className="flex items-center space-x-1">
                 {!player && (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-3 w-3 text-gray-400 dark:group-hover:text-white"
+                    className="h-3 w-3 text-gray-400 group-hover:text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -192,7 +189,7 @@ export default function EditableTeamRoster({
                   className={
                     player
                       ? "text-gray-800 cursor-pointer hover:text-blue-500 dark:text-white"
-                      : "text-gray-400 italic select-none dark:group-hover:text-white"
+                      : "text-gray-400 italic select-none group-hover:text-white"
                   }
                 >
                   {player || "Add player"}
