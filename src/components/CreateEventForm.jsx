@@ -116,7 +116,7 @@ export default function CreateEventForm() {
             confirm
             className="px-16 py-2 dark:border-2 dark:border-jof-blue-light dark:hover:text-white dark:hover:border-white"
           >
-            Save Event
+            Create Event
           </Button>
         </div>
       </form>

@@ -22,6 +22,8 @@
 
 - Do dark theme on Modal, style buttons.
 
+- DayCard expansions janky and border momentarily appears. Fix.
+
 - Refactor \_\_root.jsx focusing on separation of concerns
 
 - Refactor larger component files, especially those which are 150+ lines
