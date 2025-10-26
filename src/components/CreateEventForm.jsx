@@ -49,7 +49,6 @@ export default function CreateEventForm() {
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         {/* Event metadata */}
         <div className="space-y-2 mb-[30px]">
-          {/* *************************************************************************************************************************** */}
           <div className="relative">
             <input
               {...register("title")}
@@ -90,22 +89,51 @@ export default function CreateEventForm() {
 
           {/* *************************************************************************************************************************** */}
 
-          <label className="block">
-            Start Date
+          {/* *************************************************************************************************************************** */}
+
+          <div className="relative">
             <input
               type="date"
               {...register("startDate")}
-              className="border dark:border-jof-blue-900 rounded px-2 py-1 w-full dark:bg-jof-blue-900 dark:hover:border-white dark:focus:border-jof-blue-light"
+              id="startDate"
+              className="w-full border dark:border-jof-blue-900 dark:hover:border-white dark:focus:border-jof-blue-light 
+    rounded px-2 pt-5 pb-2 bg-transparent dark:bg-jof-blue-900 text-gray-100 
+    focus:outline-none focus:border-jof-blue-light appearance-none"
             />
-          </label>
-          <label className="block">
-            End Date
+            <label
+              htmlFor="startDate"
+              className="absolute left-2 top-1 text-sm text-jof-blue-light"
+            >
+              Start Date
+            </label>
+            <span className="absolute right-3 top-[58%] -translate-y-1/2 text-gray-400 pointer-events-none">
+              📅
+            </span>
+          </div>
+
+          <div className="relative">
             <input
               type="date"
               {...register("endDate")}
-              className="border dark:border-jof-blue-900 rounded px-2 py-1 w-full dark:bg-jof-blue-900 dark:hover:border-white"
+              id="endDate"
+              className="w-full border dark:border-jof-blue-900 dark:hover:border-white dark:focus:border-jof-blue-light 
+    rounded px-2 pt-5 pb-2 bg-transparent dark:bg-jof-blue-900 text-gray-100 
+    focus:outline-none focus:border-jof-blue-light appearance-none"
             />
-          </label>
+            <label
+              htmlFor="endDate"
+              className="absolute left-2 top-1 text-sm text-jof-blue-light"
+            >
+              End Date
+            </label>
+            <span className="absolute right-3 top-[58%] -translate-y-1/2 text-gray-400 pointer-events-none">
+              📅
+            </span>
+          </div>
+
+          {/* *************************************************************************************************************************** */}
+
+          {/* *************************************************************************************************************************** */}
         </div>
 
         {/* TeamBuilder placeholder */}
