@@ -4,6 +4,8 @@
   - Fast refresh only works when a file only exports components. Move your React context(s) to a separate file.
   - Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
 
+- Figure out how to stop part of the border going missing on No. of Teams and Players per Team inputs when making rounded
+
 - Copy form on https://jofacademy.eu/registration.php
   - No border except when inputs are focused
   - Label: input horizontally aligned? Or...

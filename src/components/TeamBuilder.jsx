@@ -50,7 +50,7 @@ function NumTeamsInput() {
       <span className="text-md font-medium dark:text-jof-blue-light">
         Number of Teams:
       </span>
-      <div className="flex items-stretch border border-jof-blue-light rounded-sm">
+      <div className="flex items-stretch border border-jof-blue-light rounded-lg">
         <input
           type="text"
           value={tempValue}
@@ -58,7 +58,7 @@ function NumTeamsInput() {
           onBlur={handleBlur}
           onKeyDown={handleKeyDown}
           onFocus={(e) => e.target.select()}
-          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-700"
+          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-900 dark:hover:bg-jof-blue-700"
         />
         <div className="flex flex-col border-l border-jof-blue-light">
           <button
@@ -126,7 +126,7 @@ function RosterSizeInput() {
       <span className="text-md font-medium dark:text-jof-blue-light">
         Players per Team:
       </span>
-      <div className="flex items-stretch border border-jof-blue-light rounded-sm">
+      <div className="flex items-stretch border border-jof-blue-light rounded-lg">
         <input
           type="text"
           value={tempValue}
@@ -134,7 +134,7 @@ function RosterSizeInput() {
           onBlur={handleBlur}
           onKeyDown={handleKeyDown}
           onFocus={(e) => e.target.select()}
-          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-700"
+          className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-jof-blue-900 dark:hover:bg-jof-blue-700"
         />
         <div className="flex flex-col border-l border-jof-blue-light">
           <button
@@ -160,7 +160,7 @@ function RosterSizeInput() {
 export default function TeamBuilder() {
   return (
     <TeamsProvider>
-      <div className="relative border border-jof-blue-light rounded-lg p-4 shadow-sm bg-white dark:bg-jof-blue-700 w-full mx-auto mt-3 ">
+      <div className="relative rounded-lg p-4 shadow-sm bg-white dark:bg-jof-blue-900 w-full mx-auto mt-3 ">
         {/* Heading */}
         <div className="rounded-full absolute -top-3 left-1/2 transform -translate-x-1/2 flex items-center text-gray-600 dark:text-white dark:bg-jof-blue-light">
           <div className="border-t border-jof-blue-light flex-grow mr-3 -mt-1"></div>
