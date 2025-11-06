@@ -16,7 +16,7 @@ export default function Button({
   const classes = twMerge(
     clsx(rest.className, baseClasses, {
       // Confirm button: sky colored
-      "text-slate-800 bg-gradient-to-b from-sky-200 to-jof-blue-light shadow-md hover:shadow-lg hover:from-jof-blue-light hover:to-sky-400 dark:text-sky-200 dark:bg-gradient-to-b dark:from-jof-blue-600 dark:to-jof-blue-900 dark:hover:shadow-xl dark:hover:from-jof-blue-500 dark:hover:to-jof-blue-800":
+      "text-slate-800 bg-gradient-to-b from-sky-200 to-jof-blue-light shadow-md hover:shadow-lg hover:from-jof-blue-light hover:to-sky-400 dark:text-sky-200 dark:bg-gradient-to-b dark:from-jof-blue-600 dark:to-jof-blue-900 dark:hover:shadow-xl dark:hover:from-jof-blue-500 dark:hover:to-jof-blue-800 dark:border-2 dark:border-jof-blue-800 dark:hover:text-white dark:hover:border-jof-blue-light":
         confirm && !disabled,
       // Cancel button: rose colored
       "text-slate-800 bg-gradient-to-b from-rose-200 to-rose-300 shadow-md hover:shadow-lg hover:from-rose-300 hover:to-rose-400":

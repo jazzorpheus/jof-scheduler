@@ -140,10 +140,7 @@ export default function CreateEventForm() {
         <TeamBuilder />
 
         <div className="flex justify-center mt-4">
-          <Button
-            confirm
-            className="px-16 py-2 dark:border-2 dark:border-jof-blue-light dark:hover:text-white dark:hover:border-white"
-          >
+          <Button confirm className="px-16 py-2">
             Create Event
           </Button>
         </div>
