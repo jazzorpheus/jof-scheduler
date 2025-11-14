@@ -53,8 +53,8 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
   // Create a portal to send this component/element to the <div class="model-container"> in index.html
   // so that the absolute/fixed position property allows the div with inset-0 to take up entire html body.
   return createPortal(
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
-      <div className="bg-white rounded-xl shadow-lg p-6 relative inline-block max-h-[90vh] overflow-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4 dark:bg-opacity-70">
+      <div className="bg-white rounded-xl shadow-lg p-6 relative inline-block max-h-[90vh] overflow-auto dark:bg-jof-blue-900">
         <div className="sticky top-0 flex justify-end bg-white z-10">
           <Button
             close
@@ -67,8 +67,12 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
 
         <div className="flex flex-wrap items-center justify-between mb-4 gap-2">
           <div>
-            <h2 className="text-lg font-semibold">{formattedDateTime}</h2>
-            <p className="text-sm text-gray-600">Event: {formattedEventName}</p>
+            <h2 className="text-lg font-semibold dark:text-white">
+              {formattedDateTime}
+            </h2>
+            <p className="text-sm text-gray-600 dark:text-gray-300">
+              Event: {formattedEventName}
+            </p>
           </div>
 
           {isSelected ? (
