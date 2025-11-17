@@ -44,7 +44,7 @@ export default function CreateEventForm() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-4 rounded-2xl dark:bg-jof-blue-700 text-gray-600 dark:text-white">
+    <div className="dark:border dark:border-jof-blue-500 max-w-4xl mx-auto p-4 rounded-2xl dark:bg-jof-blue-700 text-gray-600 dark:text-white">
       <h1 className="text-2xl font-bold mb-4 text-center">Create Event</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         {/* Event metadata */}
