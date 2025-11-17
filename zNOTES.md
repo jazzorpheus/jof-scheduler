@@ -1,10 +1,15 @@
 # To Do
 
-- [ ] Do dark theme on Modal
+- [ ] Modal:
   - [x] Add subtle gradient to checkbox menu backgrounds
   - [x] Remove borders on rosters
   - [x] Try adding subtle border to entire modal
+  - [ ] Add transparent (opacity: 0) borders to confirm buttons
+  - Kyp: "..or just border-transparent
+    then it puts transparent as the color
+    i wonder how it looks if instead of border color on hover you switch the gradient from top to bottom"
   - [ ] Fine- [ ]tune things a little to be nicer
+  - [ ] Add functionality to close modal when clicking outside of it
 
 - [ ] DayCard expansions janky and border momentarily appears - [ ]- [ ] Fix.
 
