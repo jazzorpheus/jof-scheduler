@@ -1,6 +1,9 @@
 # To Do
 
-- Do dark theme on Modal, style buttons.
+- Do dark theme on Modal
+  - Remove borders on rosters
+  - Try adding subtle border to entire modal
+  - Fine-tune things a little to be nicer
 
 - DayCard expansions janky and border momentarily appears -- Fix.
 
