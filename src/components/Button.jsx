@@ -24,7 +24,7 @@ export default function Button({
       // Info button: small circular with icon
       "p-1 rounded-full": info && !disabled,
       // Close button: gray absolute top-right x
-      "absolute top-0 right-3 text-gray-500 hover:text-gray-700 text-xl":
+      "absolute top-0 right-3 text-gray-500 hover:text-gray-700 dark:hover:text-gray-400 text-xl":
         close && !disabled,
       // Disabled state: gray, no hover/shadow, cursor-not-allowed
       "bg-gray-300 text-gray-500 shadow-none hover:shadow-none cursor-not-allowed":

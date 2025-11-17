@@ -1,13 +1,15 @@
 // Display a single team's current roster
 export default function TeamRoster({ teamName, teamPlayers, rosterSize }) {
   return (
-    <div className="border rounded-lg p-2 bg-gray-50 flex flex-col dark:bg-jof-blue-700 dark:border-jof-blue-light">
+    <div className="border dark:border-jof-blue-700 rounded-lg p-2 bg-gray-50 flex flex-col dark:bg-jof-blue-700">
       <p className="font-medium text-sm mb-1 dark:text-jof-blue-light">
         {teamName}
       </p>
-      <ul className="list-disc list-inside text-xs flex-1 space-y-5 dark:text-gray-100">
+      <ul className="list-disc list-inside text-xs flex-1 dark:text-gray-100">
         {Array.from({ length: rosterSize }).map((_, i) => (
-          <li key={i}>{teamPlayers[i] || "---"}</li>
+          <li className="bg-jof-blue-900 p-1 mt-3 rounded" key={i}>
+            {teamPlayers[i] || "---"}
+          </li>
         ))}
       </ul>
     </div>

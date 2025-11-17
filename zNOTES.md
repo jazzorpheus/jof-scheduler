@@ -2,8 +2,8 @@
 
 - [ ] Do dark theme on Modal
   - [x] Add subtle gradient to checkbox menu backgrounds
-  - [ ] Remove borders on rosters
-  - [ ] Try adding subtle border to entire modal
+  - [x] Remove borders on rosters
+  - [x] Try adding subtle border to entire modal
   - [ ] Fine- [ ]tune things a little to be nicer
 
 - [ ] DayCard expansions janky and border momentarily appears - [ ]- [ ] Fix.

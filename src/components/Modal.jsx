@@ -54,7 +54,10 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
   // so that the absolute/fixed position property allows the div with inset-0 to take up entire html body.
   return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4 dark:bg-opacity-70">
-      <div className="bg-white rounded-xl shadow-lg p-6 relative inline-block max-h-[90vh] overflow-auto dark:bg-jof-blue-900">
+      <div
+        className="dark:border dark:border-jof-blue-500  bg-white rounded-xl shadow-lg p-6 relative inline-block 
+      max-h-[90vh] overflow-auto dark:bg-jof-blue-900"
+      >
         <div className="sticky top-0 flex justify-end bg-white z-10">
           <Button
             close
