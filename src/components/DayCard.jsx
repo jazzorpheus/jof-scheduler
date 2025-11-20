@@ -45,7 +45,7 @@ export default function DayCard({
         layout: { type: "tween", duration: 0.25, ease: "easeOut" },
       }}
       className={clsx(
-        "rounded-full shadow-sm bg-gray-50 dark:border-jof-blue-light",
+        "rounded-xl shadow-sm overflow-hidden",
         isOpen ? "col-span-full" : ""
       )}
     >
