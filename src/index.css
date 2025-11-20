@@ -60,7 +60,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 
 .animate-slotHighlight-blue {
-  animation: slotHighlightBlue 0.7s ease-out;
+  animation: slotHighlightBlue 0.5s ease-out;
   background-color: var(--saber-blue-highlight);
 }
 
@@ -93,11 +93,11 @@ input[type="date"]:focus::-webkit-datetime-edit {
 
 /* Ignite / extinguish animations */
 .animate-ignite::before {
-  animation: ignite-bg 0.4s ease-out forwards;
+  animation: ignite-bg 0.5s ease-out forwards;
 }
 
 .animate-extinguish::before {
-  animation: extinguish-bg 0.4s ease-out forwards;
+  animation: extinguish-bg 0.8s ease-out forwards;
 }
 
 @keyframes ignite-bg {
@@ -144,7 +144,7 @@ input[type="date"]:focus::-webkit-datetime-edit {
 }
 
 .glow-flash {
-  animation: glow-flare 0.4s ease-out forwards;
+  animation: glow-flare 0.5s ease-out forwards;
 }
 
 /* Steady glow after animation finishes */
