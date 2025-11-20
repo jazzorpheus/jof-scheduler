@@ -143,8 +143,10 @@ input[type="date"]:focus::-webkit-datetime-edit {
   }
 }
 
-.glow-flash {
-  animation: glow-flare 0.5s ease-out forwards;
+@media (min-width: 768px) {
+  .glow-flash {
+    animation: glow-flare 0.5s ease-out forwards;
+  }
 }
 
 /* Steady glow after animation finishes */
