@@ -1,6 +1,8 @@
 # To Do
 
-- [ ] DayCard expansions janky and border momentarily appears - [ ]- [ ] Fix.
+- [ ] DayCard expansion causes reignition of timeslot cells animation, fix.
+
+- [ ] DayCard expansions janky and border momentarily appears - Fix.
 
 - [ ] Refactor \_\_root.jsx focusing on separation of concerns
 

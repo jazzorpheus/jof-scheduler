@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import clsx from "clsx";
 import { Info } from "lucide-react";
 import Button from "./Button";
@@ -10,10 +10,29 @@ export default function TimeslotCell({
   onInfoClick,
 }) {
   const [wasInteracted, setWasInteracted] = useState(false);
+  const [shouldAnimate, setShouldAnimate] = useState(false);
+  const prevSelected = useRef(isSelected);
 
   // Track if user has interacted with this slot at least once
   useEffect(() => {
-    if (isSelected) setWasInteracted(true);
+    if (isSelected) {
+      setWasInteracted(true);
+    }
+  }, [isSelected]);
+
+  // Handle animation logic
+  useEffect(() => {
+    // If transitioning from unselected to selected, animate
+    if (isSelected && !prevSelected.current) {
+      setShouldAnimate(true);
+    }
+    // If transitioning from selected to unselected, stop animation state
+    else if (!isSelected) {
+      setShouldAnimate(false);
+    }
+    
+    // Update ref for next render
+    prevSelected.current = isSelected;
   }, [isSelected]);
 
   const handleClick = () => {
@@ -28,7 +47,9 @@ export default function TimeslotCell({
         "relative px-2 py-2 my-[2px] rounded-xl text-sm flex justify-between items-center cursor-pointer transition-colors dark:text-white dark:bg-gradient-to-b dark:from-jof-blue-600 dark:to-jof-blue-900 dark:hover:bg-gradient-to-b dark:hover:from-jof-blue-500 dark:hover:to-jof-blue-800",
         "saber-blade-blue",
         isSelected
-          ? "animate-ignite glow-flash glow-steady"
+          ? shouldAnimate
+            ? "animate-ignite glow-flash glow-steady"
+            : "ignited glow-steady"
           : wasInteracted && "animate-extinguish"
       )}
     >

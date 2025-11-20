@@ -84,6 +84,12 @@ body {
   animation: extinguish-bg 0.8s ease-out forwards;
 }
 
+/* Static ignited state (no animation) */
+.ignited::before {
+  transform: scaleX(1.02);
+  opacity: 1;
+}
+
 @keyframes ignite-bg {
   from {
     transform: scaleX(0);
