@@ -15,22 +15,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Ensure form dates dd/mm/yyyy are gray */
-/* input[type="date"]::-webkit-datetime-edit {
-  color: #9ca3af; 
-}
-
-input[type="date"]::-webkit-datetime-edit-text,
-input[type="date"]::-webkit-datetime-edit-year-field,
-input[type="date"]::-webkit-datetime-edit-month-field,
-input[type="date"]::-webkit-datetime-edit-day-field {
-  color: #9ca3af;
-}
-
-input[type="date"]:focus::-webkit-datetime-edit {
-  color: #f9fafb; 
-} */
-
 :root {
   --saber-blue-core: rgba(205, 235, 255, 0.95); /* core */
   --saber-blue-glow: rgba(120, 190, 255, 0.6); /* glow */
@@ -149,7 +133,6 @@ input[type="date"]:focus::-webkit-datetime-edit {
   }
 }
 
-/* Steady glow after animation finishes */
 .glow-steady {
   box-shadow:
     0 0 4px 1px var(--saber-blue-core),

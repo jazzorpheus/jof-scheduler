@@ -53,7 +53,12 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
   // Create a portal to send this component/element to the <div class="model-container"> in index.html
   // so that the absolute/fixed position property allows the div with inset-0 to take up entire html body.
   return createPortal(
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4 dark:bg-opacity-70">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4 dark:bg-opacity-70"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+    >
       <div
         className="dark:border dark:border-jof-blue-500  bg-white rounded-xl shadow-lg p-6 relative inline-block 
       max-h-[90vh] overflow-auto dark:bg-jof-blue-900"

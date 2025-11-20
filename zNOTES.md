@@ -1,18 +1,5 @@
 # To Do
 
-- [ ] Have a max-width on page header such that it takes up more space on narrower screens, e.g. max-width: Xpx
-
-- [ ] Modal:
-  - [x] Add subtle gradient to checkbox menu backgrounds
-  - [x] Remove borders on rosters
-  - [x] Try adding subtle border to entire modal
-  - [x] Lighten rose shade on cancel button
-  - [x] Add transparent (opacity: 0) borders to confirm buttons
-  - Kyp: "..or just border-transparent
-    then it puts transparent as the color
-    i wonder how it looks if instead of border color on hover you switch the gradient from top to bottom"
-  - [ ] Add functionality to close modal when clicking outside of it
-
 - [ ] DayCard expansions janky and border momentarily appears - [ ]- [ ] Fix.
 
 - [ ] Refactor \_\_root.jsx focusing on separation of concerns

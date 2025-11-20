@@ -1,8 +1,7 @@
 export default function PageHeader({ title, children }) {
   return (
     <header className="sticky top-0 z-10">
-      {/* This inner div gets the background and width constraint */}
-      <div className="mx-auto w-[75%] bg-white dark:bg-jof-blue-700 shadow-sm px-4 py-6 text-center sm:px-6 lg:px-8 rounded-b-xl">
+      <div className="mx-auto w-full max-w-5xl bg-white dark:bg-jof-blue-700 shadow-sm px-4 py-6 text-center sm:px-6 lg:px-8 rounded-b-xl">
         <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl dark:text-white">
           {title}
         </h1>
