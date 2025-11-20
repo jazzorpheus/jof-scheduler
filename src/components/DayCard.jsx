@@ -45,7 +45,7 @@ export default function DayCard({
         layout: { type: "tween", duration: 0.25, ease: "easeOut" },
       }}
       className={clsx(
-        "rounded-xl shadow-sm overflow-hidden",
+        "shadow-sm overflow-hidden",
         isOpen ? "col-span-full" : ""
       )}
     >
@@ -62,14 +62,21 @@ export default function DayCard({
 
       {/* Timeslots grid */}
       {isOpen && (
-        <TimeslotsGrid
-          timeslots={timeslots}
-          selectedSlots={selectedSlots}
-          highlightedSlot={highlightedSlot}
-          highlightType={highlightType}
-          onSelect={handleSelectSlot}
-          onInfoClick={setSelectedSlot}
-        />
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.3, delay: 0.15, ease: "easeOut" }}
+        >
+          <TimeslotsGrid
+            timeslots={timeslots}
+            selectedSlots={selectedSlots}
+            highlightedSlot={highlightedSlot}
+            highlightType={highlightType}
+            onSelect={handleSelectSlot}
+            onInfoClick={setSelectedSlot}
+          />
+        </motion.div>
       )}
 
       {/* Modal for displaying info on timeslot */}
