@@ -113,18 +113,34 @@ const RootLayout = () => {
       <div className="dark:bg-jof-blue-900">
         {/* NAVBAR */}
         <nav className="flex justify-center items-center gap-6 p-4 bg-white dark:bg-jof-blue-700 shadow-sm mb-3">
-          {navLinks.map(({ to, label }) => (
-            <Link
-              key={to}
-              to={to}
-              className="
-              px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center hover:border-b-2 
-              hover:border-jof-blue-light [&.active]:text-white [&.active]:border-b-2 [&.active]:border-jof-blue-light 
-              dark:text-jof-blue-light dark:[&.active]:text-white dark:hover:text-white dark:hover:border-jof-blue-light"
-            >
-              {label}
-            </Link>
-          ))}
+          {navLinks.map(({ to, label }) => {
+            const isHome = label === "Home";
+            return (
+              <Link
+                key={to}
+                to={to}
+                className={`
+              px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center
+              ${
+                isHome
+                  ? "hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
+                  : "hover:border-b-2 hover:border-jof-blue-light [&.active]:border-b-2 [&.active]:border-jof-blue-light dark:hover:border-jof-blue-light"
+              }
+              [&.active]:text-white
+              dark:text-jof-blue-light dark:[&.active]:text-white dark:hover:text-white`}
+              >
+                {isHome ? (
+                  <img
+                    src="/jof_icon.ico"
+                    alt="Home"
+                    className="w-6 h-6 inline-block"
+                  />
+                ) : (
+                  label
+                )}
+              </Link>
+            );
+          })}
           <ThemeToggle />
         </nav>
 
