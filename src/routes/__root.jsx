@@ -102,7 +102,8 @@ const ThemeToggle = () => {
 const RootLayout = () => {
   const navLinks = [
     { to: "/", label: "Home" },
-    { to: "/create", label: "Create New Event" },
+    { to: "/create", label: "Create Event" },
+    { to: "/view", label: "View Events" },
     { to: "/select", label: "Select Availability" },
     { to: "/plan", label: "Plan Match" },
   ];

@@ -9,11 +9,17 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ViewRouteImport } from './routes/view'
 import { Route as SelectRouteImport } from './routes/select'
 import { Route as PlanRouteImport } from './routes/plan'
 import { Route as CreateRouteImport } from './routes/create'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ViewRoute = ViewRouteImport.update({
+  id: '/view',
+  path: '/view',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SelectRoute = SelectRouteImport.update({
   id: '/select',
   path: '/select',
@@ -40,12 +46,14 @@ export interface FileRoutesByFullPath {
   '/create': typeof CreateRoute
   '/plan': typeof PlanRoute
   '/select': typeof SelectRoute
+  '/view': typeof ViewRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/create': typeof CreateRoute
   '/plan': typeof PlanRoute
   '/select': typeof SelectRoute
+  '/view': typeof ViewRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -53,13 +61,14 @@ export interface FileRoutesById {
   '/create': typeof CreateRoute
   '/plan': typeof PlanRoute
   '/select': typeof SelectRoute
+  '/view': typeof ViewRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/create' | '/plan' | '/select'
+  fullPaths: '/' | '/create' | '/plan' | '/select' | '/view'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/create' | '/plan' | '/select'
-  id: '__root__' | '/' | '/create' | '/plan' | '/select'
+  to: '/' | '/create' | '/plan' | '/select' | '/view'
+  id: '__root__' | '/' | '/create' | '/plan' | '/select' | '/view'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -67,10 +76,18 @@ export interface RootRouteChildren {
   CreateRoute: typeof CreateRoute
   PlanRoute: typeof PlanRoute
   SelectRoute: typeof SelectRoute
+  ViewRoute: typeof ViewRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/view': {
+      id: '/view'
+      path: '/view'
+      fullPath: '/view'
+      preLoaderRoute: typeof ViewRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/select': {
       id: '/select'
       path: '/select'
@@ -107,6 +124,7 @@ const rootRouteChildren: RootRouteChildren = {
   CreateRoute: CreateRoute,
   PlanRoute: PlanRoute,
   SelectRoute: SelectRoute,
+  ViewRoute: ViewRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

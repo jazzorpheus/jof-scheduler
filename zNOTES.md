@@ -1,16 +1,18 @@
 # To Do
 
-- [x] DayCard expansion causes timeslot cells to reanimate -- fix.
+- [ ] Restructure routing:
+  - Design Landing Page: "Create New Event" and "View Registered Events" links, navbar not showing yet.
+  - Once either is clicked, usual navbar shows up (need to add View Registered Events link to navbar).
+  - Home link on navbar takes users back to landing page.
+  - Conditionally render "View Registered Events" link based on token presence.
 
-- [x] DayCard expansion/collapse looks very janky and border momentarily appears -- Fix.
+
 
 - [ ] Refactor \_\_root.jsx focusing on separation of concerns
 
 - [ ] Refactor larger component files, especially those which are 150+ lines
 
 - [ ] Decide whether it's worth connecting Create Event to Select Availability purely in frontend, or go straight to wiring up Create Event to backend and then Select Availability "pulls" relevant data from backend.
-
-- [ ] Design Landing Page: "Create New Event" and "View Registered Events"
 
 - [ ] Discuss "Plan Match" view, decide main features etc.
 
