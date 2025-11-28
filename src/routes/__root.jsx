@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect, useContext } from "react";
 import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
+import { Menu, X } from "lucide-react";
 
 // ! ************************************************************************** THEME-ING!
 
@@ -100,8 +101,8 @@ const ThemeToggle = () => {
 // ! ************************************************************************** ROUTING
 
 const RootLayout = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const navLinks = [
-    { to: "/", label: "Home" },
     { to: "/create", label: "Create Event" },
     { to: "/view", label: "View Events" },
     { to: "/select", label: "Select Availability" },
@@ -110,42 +111,65 @@ const RootLayout = () => {
 
   return (
     <ThemeProvider>
-      <div className="dark:bg-jof-blue-900">
+      <div className="dark:bg-jof-blue-900 min-h-screen relative">
         {/* NAVBAR */}
-        <nav className="flex justify-center items-center gap-6 p-4 bg-white dark:bg-jof-blue-700 shadow-sm mb-3">
-          {navLinks.map(({ to, label }) => {
-            const isHome = label === "Home";
-            return (
+        <nav className="flex justify-between min-[571px]:justify-center items-center min-[571px]:gap-6 p-4 bg-white dark:bg-jof-blue-700 shadow-sm mb-3 relative">
+          {/* Home Icon (Always visible) */}
+          <Link to="/" className="hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
+            <img src="/jof_icon.ico" alt="Home" className="w-8 h-8" />
+          </Link>
+
+          {/* Desktop Links (> 570px) */}
+          <div className="hidden min-[571px]:flex items-center gap-6">
+            {navLinks.map(({ to, label }) => (
               <Link
                 key={to}
                 to={to}
-                className={`
-              px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center
-              ${
-                isHome
-                  ? "hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
-                  : "hover:border-b-2 hover:border-jof-blue-light [&.active]:border-b-2 [&.active]:border-jof-blue-light dark:hover:border-jof-blue-light"
-              }
-              [&.active]:text-white
-              dark:text-jof-blue-light dark:[&.active]:text-white dark:hover:text-white`}
+                className="
+                px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center hover:border-b-2 
+                hover:border-jof-blue-light [&.active]:text-white [&.active]:border-b-2 [&.active]:border-jof-blue-light 
+                dark:text-jof-blue-light dark:[&.active]:text-white dark:hover:text-white dark:hover:border-jof-blue-light"
               >
-                {isHome ? (
-                  <img
-                    src="/jof_icon.ico"
-                    alt="Home"
-                    className="w-6 h-6 inline-block"
-                  />
-                ) : (
-                  label
-                )}
+                {label}
               </Link>
-            );
-          })}
-          <ThemeToggle />
-        </nav>
+            ))}
+          </div>
 
-        {/* Divider */}
-        {/* <hr className="mt-2 py-2 border-gray-300 dark:border-white dark:bg-jof-blue-900" /> */}
+          {/* Mobile Hamburger (<= 570px) */}
+          <div className="block min-[571px]:hidden mr-8">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:bg-jof-blue-900 rounded-md"
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+
+          {/* Theme Toggle */}
+          <ThemeToggle />
+
+          {/* Mobile Menu Dropdown */}
+          {isOpen && (
+            <div className="absolute top-full left-0 right-0 bg-white dark:bg-jof-blue-700 shadow-lg border-t border-gray-100 dark:border-jof-blue-800 z-50 flex flex-col p-4 gap-2 min-[571px]:hidden">
+              {navLinks.map(({ to, label }) => (
+                <Link
+                  key={to}
+                  to={to}
+                  onClick={() => setIsOpen(false)}
+                  className="
+                  px-4 py-3 font-medium text-gray-700 text-base text-left
+                  hover:bg-gray-50 dark:hover:bg-jof-blue-800 rounded-md
+                  hover:border-l-4 hover:border-jof-blue-light
+                  [&.active]:text-jof-blue-light [&.active]:border-l-4 [&.active]:border-jof-blue-light
+                  dark:text-gray-200 dark:[&.active]:text-white"
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+          )}
+        </nav>
 
         {/* Page content */}
         <Outlet />

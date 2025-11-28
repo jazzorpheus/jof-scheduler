@@ -162,12 +162,12 @@ export default function TeamBuilder() {
     <TeamsProvider>
       <div className="relative rounded-lg p-4 shadow-sm bg-white dark:bg-jof-blue-900 w-full mx-auto mt-3 ">
         {/* Heading */}
-        <div className="rounded-full absolute -top-3 left-1/2 transform -translate-x-1/2 flex items-center text-gray-600 dark:text-white dark:bg-jof-blue-light">
-          <div className="border-t border-jof-blue-light flex-grow mr-3 -mt-1"></div>
-          <h2 className="text-xl font-bold text-center leading-none relative -top-0.7 bg-white dark:bg-jof-blue-700 px-4 rounded-xl">
+        <div className="rounded-full p-2 min-w-56 absolute -top-3 left-1/2 transform -translate-x-1/2 flex items-center text-gray-600 dark:text-white dark:bg-jof-blue-900">
+          <div className=" flex-grow mr-3 -mt-1"></div>
+          <h2 className="text-xl font-bold text-center leading-none relative -top-0.7 bg-white dark:bg-jof-blue-900 px-4 rounded-xl">
             Team Builder
           </h2>
-          <div className="border-t border-jof-blue-light flex-grow ml-3 -mt-1"></div>
+          <div className=" flex-grow ml-3 -mt-1"></div>
         </div>
 
         {/* Controls row */}
