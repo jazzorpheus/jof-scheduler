@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect, useContext } from "react";
-import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
+import { createRootRoute, Link, Outlet, useLocation } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
@@ -103,6 +103,7 @@ const ThemeToggle = () => {
 
 const RootLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
   const navLinks = [
     { to: "/create", label: "Create Event" },
     { to: "/view", label: "View Events" },
@@ -114,72 +115,74 @@ const RootLayout = () => {
     <ThemeProvider>
       <div className="dark:bg-jof-blue-900 min-h-screen relative">
         {/* NAVBAR */}
-        <nav className="flex justify-between min-[571px]:justify-center items-center min-[571px]:gap-6 p-4 bg-white dark:bg-jof-blue-700 shadow-sm mb-3 relative">
-          {/* Home Icon (Always visible) */}
-          <Link to="/" className="hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
-            <img src="/jof_icon.ico" alt="Home" className="w-8 h-8" />
-          </Link>
+        {location.pathname !== "/" && (
+          <nav className="flex justify-between min-[571px]:justify-center items-center min-[571px]:gap-6 p-4 bg-white dark:bg-jof-blue-700 shadow-sm mb-3 relative">
+            {/* Home Icon (Always visible) */}
+            <Link to="/" className="hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
+              <img src="/jof_icon.ico" alt="Home" className="w-8 h-8" />
+            </Link>
 
-          {/* Desktop Links (> 570px) */}
-          <div className="hidden min-[571px]:flex items-center gap-6">
-            {navLinks.map(({ to, label }) => (
-              <Link
-                key={to}
-                to={to}
-                className="
+            {/* Desktop Links (> 570px) */}
+            <div className="hidden min-[571px]:flex items-center gap-6">
+              {navLinks.map(({ to, label }) => (
+                <Link
+                  key={to}
+                  to={to}
+                  className="
                 px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center 
                 border-b-2 border-transparent hover:border-b-2 hover:border-jof-blue-light 
                 [&.active]:text-white [&.active]:border-b-2 [&.active]:border-jof-blue-light 
                 dark:text-jof-blue-light dark:[&.active]:text-white dark:hover:text-white dark:hover:border-jof-blue-light"
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+
+            {/* Mobile Hamburger (<= 570px) */}
+            <div className="block min-[571px]:hidden mr-8">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="p-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:bg-jof-blue-900 rounded-md"
+                aria-label="Toggle menu"
               >
-                {label}
-              </Link>
-            ))}
-          </div>
+                {isOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
 
-          {/* Mobile Hamburger (<= 570px) */}
-          <div className="block min-[571px]:hidden mr-8">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:bg-jof-blue-900 rounded-md"
-              aria-label="Toggle menu"
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-
-          {/* Theme Toggle */}
-          <ThemeToggle />
-
-          {/* Mobile Menu Dropdown */}
-          <AnimatePresence>
-            {isOpen && (
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: "auto", opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="absolute border-t top-full left-0 right-0 dark:bg-jof-blue-700 shadow-lg dark:border-jof-blue-900 z-50 flex flex-col overflow-hidden min-[571px]:hidden"
-              >
-                <div className="flex flex-col p-4 gap-2">
-                  {navLinks.map(({ to, label }) => (
-                    <Link
-                      key={to}
-                      to={to}
-                      onClick={() => setIsOpen(false)}
-                      className="
+            {/* Mobile Menu Dropdown */}
+            <AnimatePresence>
+              {isOpen && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="absolute border-t top-full left-0 right-0 dark:bg-jof-blue-700 shadow-lg dark:border-jof-blue-900 z-50 flex flex-col overflow-hidden min-[571px]:hidden"
+                >
+                  <div className="flex flex-col p-4 gap-2">
+                    {navLinks.map(({ to, label }) => (
+                      <Link
+                        key={to}
+                        to={to}
+                        onClick={() => setIsOpen(false)}
+                        className="
                       px-4 py-3 font-medium text-gray-700 text-left rounded-2xl
                       [&.active]:border-l-4 [&.active]:border-jof-blue-light
                       dark:text-jof-blue-light dark:[&.active]:text-white border-t"
-                    >
-                      {label}
-                    </Link>
-                  ))}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </nav>
+                      >
+                        {label}
+                      </Link>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </nav>
+        )}
+
+        {/* Theme Toggle */}
+        <ThemeToggle />
 
         {/* Page content */}
         <Outlet />

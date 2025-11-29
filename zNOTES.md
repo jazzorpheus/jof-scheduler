@@ -1,14 +1,10 @@
 # To Do
 
-- Finalize hamburger menu styling choices
-
 - [ ] Restructure routing:
   - Design Landing Page: "Create New Event" and "View Registered Events" links, navbar not showing yet.
   - Once either is clicked, usual navbar shows up (need to add View Registered Events link to navbar).
   - Home link on navbar takes users back to landing page.
   - Conditionally render "View Registered Events" link based on token presence.
-
-
 
 - [ ] Refactor \_\_root.jsx focusing on separation of concerns
 
