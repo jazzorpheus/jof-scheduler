@@ -2,6 +2,7 @@ import { createContext, useState, useEffect, useContext } from "react";
 import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
 
 // ! ************************************************************************** THEME-ING!
 
@@ -126,8 +127,9 @@ const RootLayout = () => {
                 key={to}
                 to={to}
                 className="
-                px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center hover:border-b-2 
-                hover:border-jof-blue-light [&.active]:text-white [&.active]:border-b-2 [&.active]:border-jof-blue-light 
+                px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center 
+                border-b-2 border-transparent hover:border-b-2 hover:border-jof-blue-light 
+                [&.active]:text-white [&.active]:border-b-2 [&.active]:border-jof-blue-light 
                 dark:text-jof-blue-light dark:[&.active]:text-white dark:hover:text-white dark:hover:border-jof-blue-light"
               >
                 {label}
@@ -150,23 +152,33 @@ const RootLayout = () => {
           <ThemeToggle />
 
           {/* Mobile Menu Dropdown */}
-          {isOpen && (
-            <div className="absolute border-t top-full left-0 right-0 dark:bg-jof-blue-700 shadow-lg dark:border-jof-blue-900 z-50 flex flex-col p-4 gap-2 min-[571px]:hidden">
-              {navLinks.map(({ to, label }) => (
-                <Link
-                  key={to}
-                  to={to}
-                  onClick={() => setIsOpen(false)}
-                  className="
-                  px-4 py-3 font-medium text-gray-700 text-left rounded-2xl
-                  [&.active]:border-l-4 [&.active]:border-jof-blue-light
-                  dark:text-jof-blue-light dark:[&.active]:text-white border-t"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          )}
+          <AnimatePresence>
+            {isOpen && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="absolute border-t top-full left-0 right-0 dark:bg-jof-blue-700 shadow-lg dark:border-jof-blue-900 z-50 flex flex-col overflow-hidden min-[571px]:hidden"
+              >
+                <div className="flex flex-col p-4 gap-2">
+                  {navLinks.map(({ to, label }) => (
+                    <Link
+                      key={to}
+                      to={to}
+                      onClick={() => setIsOpen(false)}
+                      className="
+                      px-4 py-3 font-medium text-gray-700 text-left rounded-2xl
+                      [&.active]:border-l-4 [&.active]:border-jof-blue-light
+                      dark:text-jof-blue-light dark:[&.active]:text-white border-t"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </nav>
 
         {/* Page content */}

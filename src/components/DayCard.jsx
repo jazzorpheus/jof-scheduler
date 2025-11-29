@@ -1,7 +1,7 @@
 // Third-Party Libraries
 import clsx from "clsx";
 // eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 // Custom Hooks
 import { useDayCard } from "../hooks/useDayCard";

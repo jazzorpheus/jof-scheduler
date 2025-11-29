@@ -1,6 +1,6 @@
 // Third-Party Packages
 import clsx from "clsx";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 // Icons
 import { ChevronDown } from "lucide-react";
