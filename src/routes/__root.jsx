@@ -151,18 +151,16 @@ const RootLayout = () => {
 
           {/* Mobile Menu Dropdown */}
           {isOpen && (
-            <div className="absolute top-full left-0 right-0 bg-white dark:bg-jof-blue-700 shadow-lg border-t border-gray-100 dark:border-jof-blue-800 z-50 flex flex-col p-4 gap-2 min-[571px]:hidden">
+            <div className="absolute border-t top-full left-0 right-0 dark:bg-jof-blue-700 shadow-lg dark:border-jof-blue-900 z-50 flex flex-col p-4 gap-2 min-[571px]:hidden">
               {navLinks.map(({ to, label }) => (
                 <Link
                   key={to}
                   to={to}
                   onClick={() => setIsOpen(false)}
                   className="
-                  px-4 py-3 font-medium text-gray-700 text-base text-left
-                  hover:bg-gray-50 dark:hover:bg-jof-blue-800 rounded-md
-                  hover:border-l-4 hover:border-jof-blue-light
-                  [&.active]:text-jof-blue-light [&.active]:border-l-4 [&.active]:border-jof-blue-light
-                  dark:text-gray-200 dark:[&.active]:text-white"
+                  px-4 py-3 font-medium text-gray-700 text-left rounded-2xl
+                  [&.active]:border-l-4 [&.active]:border-jof-blue-light
+                  dark:text-jof-blue-light dark:[&.active]:text-white border-t"
                 >
                   {label}
                 </Link>

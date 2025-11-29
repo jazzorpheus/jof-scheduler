@@ -1,5 +1,9 @@
 # To Do
 
+- Finalize hamburger menu styling choices
+
+- When "Home" is selected on navbar, hovering a different link causes content to drop down vertically. Fix.
+
 - [ ] Restructure routing:
   - Design Landing Page: "Create New Event" and "View Registered Events" links, navbar not showing yet.
   - Once either is clicked, usual navbar shows up (need to add View Registered Events link to navbar).
