@@ -21,8 +21,8 @@ const ThemeProvider = ({ children }) => {
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches;
     // ! Temporarily disabled light theme
-    // return storedTheme || (userPrefersDark ? "dark" : "light");
-    return "dark";
+    return storedTheme || (userPrefersDark ? "dark" : "light");
+    // return "dark";
   });
 
   useEffect(() => {
@@ -34,8 +34,8 @@ const ThemeProvider = ({ children }) => {
 
   const toggleTheme = () => {
     // ! Temporarily disabled light theme
-    // setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    setTheme("dark");
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    // setTheme("dark");
   };
 
   const value = { theme, toggleTheme };
