@@ -4,7 +4,7 @@ import PageFooter from "../components/PageFooter";
 
 export default function HomePage() {
   return (
-    <div className="h-screen overflow-hidden flex flex-col">
+    <div className="h-screen overflow-hidden flex flex-col bg-slate-400 dark:bg-jof-blue-900">
       {/* MAIN CONTENT */}
       <main className="flex-1 flex flex-col items-center justify-center p-6 md:px-12 gap-6 sm:flex-row sm:gap-12 max-w-5xl mx-auto w-full min-h-0">
         

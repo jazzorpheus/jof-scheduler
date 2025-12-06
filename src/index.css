@@ -8,6 +8,20 @@ body {
   background-color: #051a26;
 }
 
+/* Dark mode (default) */
+html.dark,
+body.dark {
+  scrollbar-gutter: stable;
+  background-color: #051a26;
+}
+
+/* Light mode background for the gutter */
+html.light,
+body.light {
+  scrollbar-gutter: stable;
+  background-color: #94a3b8;
+}
+
 /* To ensure borders don't expand elements */
 *,
 ::before,
