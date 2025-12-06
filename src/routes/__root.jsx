@@ -169,7 +169,7 @@ const RootLayout = () => {
                         className="
                       px-4 py-3 font-medium text-gray-700 text-left rounded-2xl
                       [&.active]:border-l-4 [&.active]:border-jof-blue-light
-                      dark:text-jof-blue-light dark:[&.active]:text-white border-t"
+                      dark:text-jof-blue-light dark:[&.active]:text-white"
                       >
                         {label}
                       </Link>
