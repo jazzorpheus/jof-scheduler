@@ -1,7 +1,12 @@
+import { CalendarClock } from "lucide-react";
+
 export default function Loading() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-full bg-slate-50 dark:bg-jof-blue-900 text-gray-800 dark:text-gray-100">
-      <div className="animate-pulse text-xl font-semibold">Loading...</div>
+    <div className="flex flex-col items-center justify-center min-h-[80vh] w-full animate-pulse gap-6 text-gray-400 dark:text-jof-blue-light">
+      <CalendarClock size={64} />
+      <span className="text-2xl font-semibold tracking-wide uppercase">
+        Loading...
+      </span>
     </div>
   );
 }
