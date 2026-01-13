@@ -20,9 +20,7 @@ const ThemeProvider = ({ children }) => {
     const userPrefersDark =
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches;
-    // ! Temporarily disabled light theme
     return storedTheme || (userPrefersDark ? "dark" : "light");
-    // return "dark";
   });
 
   useEffect(() => {
@@ -33,9 +31,7 @@ const ThemeProvider = ({ children }) => {
   }, [theme]);
 
   const toggleTheme = () => {
-    // ! Temporarily disabled light theme
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    // setTheme("dark");
   };
 
   const value = { theme, toggleTheme };
@@ -117,7 +113,7 @@ const RootLayout = () => {
         {/* NAVBAR */}
         {location.pathname !== "/" && (
           <nav className="flex justify-between min-[571px]:justify-center items-center min-[571px]:gap-6 p-4 bg-white dark:bg-jof-blue-700 shadow-sm mb-3 relative">
-            {/* Home Icon (Always visible) */}
+            {/* Home Icon */}
             <Link to="/" className="hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
               <img src="/jof_icon.ico" alt="Home" className="w-8 h-8" />
             </Link>

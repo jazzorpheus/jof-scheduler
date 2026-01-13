@@ -14,8 +14,15 @@ import { routeTree } from "./routeTree.gen";
 // Context Provider (for locale + timezone)
 import { LocaleProvider } from "./utils/lib/LocaleContext";
 
+// Import Loading component
+import Loading from "./components/Loading";
+
 // --- Create router instance ---
-const router = createRouter({ routeTree });
+const router = createRouter({
+  routeTree,
+  defaultPendingComponent: Loading,
+  defaultPendingMs: 0,
+});
 
 // --- Render App with LocaleProvider ---
 createRoot(document.getElementById("root")).render(
