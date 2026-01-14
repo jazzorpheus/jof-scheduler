@@ -1,10 +1,8 @@
 # To Do
 
-- [ ] Fix rendering issue when going landing page -> create event where landing page links linger
+- [ ] Light theme overhaul?
 
-- [ ] Add shimmering skeleton to pending components
-
-- [ ] Light theme quick overhaul
+- [ ] Map form inputs to event schema, event schema to event details and selected availability, and event dates to timeslots.
 
 - [ ] Figure out event creation schema + whether to have backend set up timeslot placeholders initially or dynamically create as users submit availability
 

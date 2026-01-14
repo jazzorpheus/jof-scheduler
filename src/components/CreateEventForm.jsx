@@ -22,7 +22,7 @@ function AutoResizeTextarea({ register, name, id, ...props }) {
       onInput={handleInput}
       rows={3}
       className="peer w-full border dark:border-jof-blue-900 rounded px-2 pt-5 pb-2 
-                 bg-transparent dark:bg-jof-blue-900 dark:hover:border-white
+                 bg-transparent bg-slate-100 dark:bg-jof-blue-900 dark:hover:border-white
                  dark:focus:border-jof-blue-light text-gray-100 overflow-hidden 
                  focus:outline-none focus:border-jof-blue-light transition-[height] duration-150 ease-in-out"
     />
@@ -55,7 +55,7 @@ export default function CreateEventForm() {
               id="title"
               placeholder=" "
               className="peer w-full border dark:border-jof-blue-900 hover:border dark:hover:border-white dark:focus:border-jof-blue-light 
-              rounded px-2 pt-5 pb-2 bg-transparent dark:bg-jof-blue-900 text-gray-100 
+              rounded px-2 pt-5 pb-2 bg-transparent bg-slate-100 dark:bg-jof-blue-900 text-gray-100 
               focus:outline-none focus:border-jof-blue-light"
             />
             <label
