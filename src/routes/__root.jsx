@@ -15,12 +15,9 @@ const useTheme = () => useContext(ThemeContext);
 
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
-    // Check for saved theme in localStorage, fallback to system preference
+    // Check for saved theme in localStorage, default to dark theme
     const storedTheme = localStorage.getItem("theme");
-    const userPrefersDark =
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-    return storedTheme || (userPrefersDark ? "dark" : "light");
+    return storedTheme || "dark";
   });
 
   useEffect(() => {
