@@ -1,6 +1,7 @@
 # To Do
 
-- [ ] Light theme overhaul?
+- [ ] Light theme overhaul
+  - Try subtle blues, e.g. on borders, especially on Create Event form
 
 - [ ] Map form inputs to event schema, event schema to event details and selected availability, and event dates to timeslots.
 
