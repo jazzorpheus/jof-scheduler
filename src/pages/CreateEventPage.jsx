@@ -4,7 +4,7 @@ import PageFooter from "../components/PageFooter";
 
 export default function CreateEventPage() {
   return (
-    <div className="min-h-screen bg-slate-300 dark:bg-jof-blue-900 py-5">
+    <div className="min-h-screen bg-slate-400 dark:bg-jof-blue-900 py-5">
       {/* MAIN CONTENT */}
       <CreateEventForm />
       {/* FOOTER */}

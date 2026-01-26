@@ -106,10 +106,10 @@ const RootLayout = () => {
 
   return (
     <ThemeProvider>
-      <div className="dark:bg-jof-blue-900 min-h-screen relative">
+      <div className="bg-slate-400 dark:bg-jof-blue-900 min-h-screen relative">
         {/* NAVBAR */}
         {location.pathname !== "/" && (
-          <nav className="flex justify-between min-[571px]:justify-center items-center min-[571px]:gap-6 p-4 bg-white dark:bg-jof-blue-700 shadow-sm mb-3 relative">
+          <nav className="flex justify-between shadow-lg min-[571px]:justify-center items-center min-[571px]:gap-6 p-4 bg-slate-300 dark:bg-jof-blue-700 mb-3 relative">
             {/* Home Icon */}
             <Link to="/" className="hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
               <img src="/jof_icon.ico" alt="Home" className="w-8 h-8" />
@@ -124,8 +124,8 @@ const RootLayout = () => {
                   className="
                 px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center 
                 border-b-2 border-transparent hover:border-b-2 hover:border-jof-blue-light 
-                [&.active]:text-white [&.active]:border-b-2 [&.active]:border-jof-blue-light 
-                dark:text-jof-blue-light dark:[&.active]:text-white dark:hover:text-white dark:hover:border-jof-blue-light"
+                [&.active]:text-slate-900 [&.active]:border-b-2 [&.active]:border-blue-500 
+                dark:text-jof-blue-light dark:[&.active]:text-white dark:[&.active]:border-jof-blue-light dark:hover:text-white dark:hover:border-jof-blue-light"
                 >
                   {label}
                 </Link>

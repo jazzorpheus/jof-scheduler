@@ -86,10 +86,10 @@ export default function EditableTeamRoster({
   };
 
   return (
-    <div className="rounded-lg p-2 bg-gray-50 dark:bg-jof-blue-700 flex flex-col space-y-2 dark:text-white">
+    <div className="rounded-lg p-2 bg-slate-400/40 dark:bg-jof-blue-600/70 flex flex-col space-y-2 dark:text-white">
       <div
         onClick={handleNameClick}
-        className="group flex items-center justify-between cursor-pointer dark:text-jof-blue-light dark:hover:text-white"
+        className="group flex items-center justify-between cursor-pointer text-slate-800 hover:text-slate-600 dark:text-jof-blue-light dark:hover:text-white"
       >
         {isEditingName ? (
           <input
@@ -112,7 +112,7 @@ export default function EditableTeamRoster({
             </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-gray-400 group-hover:text-blue-500 
+              className="h-4 w-4 text-slate-800 group-hover:text-slate-600 
               dark:text-jof-blue-light dark:group-hover:text-white"
               fill="none"
               viewBox="0 0 24 24"
@@ -151,7 +151,7 @@ export default function EditableTeamRoster({
                   }}
                   autoFocus
                   className="flex-1 min-w-0 px-1 py-0.5 text-sm rounded 
-                   bg-jof-blue-900 text-white 
+                   bg-slate-500 dark:bg-jof-blue-900 text-white 
                    placeholder-gray-300 
                    outline-none"
                   placeholder=""
@@ -165,14 +165,14 @@ export default function EditableTeamRoster({
               key={i}
               tabIndex={0}
               className={`group flex items-center justify-between px-1 py-0.5 rounded cursor-pointer 
-              dark:bg-jof-blue-900 hover:dark:text-white`}
+              bg-slate-200 dark:bg-jof-blue-900 hover:dark:text-white`}
               onClick={() => startEditPlayer(i, player)}
             >
               <div className="flex items-center space-x-1">
                 {!player && (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-3 w-3 text-gray-400 group-hover:text-white"
+                    className="h-3 w-3 text-gray-500 group-hover:text-gray-900 dark:group-hover:text-white"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -188,8 +188,8 @@ export default function EditableTeamRoster({
                 <span
                   className={
                     player
-                      ? "text-gray-800 cursor-pointer hover:text-blue-500 dark:text-white"
-                      : "text-gray-400 italic select-none group-hover:text-white"
+                      ? "cursor-pointer dark:hover:text-blue-500 dark:text-white"
+                      : "text-gray-500 group-hover:text-slate-900 dark:text-gray-400 italic select-none dark:group-hover:text-white"
                   }
                 >
                   {player || "Add player"}

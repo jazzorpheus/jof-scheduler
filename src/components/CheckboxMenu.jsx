@@ -40,9 +40,9 @@ export default function CheckboxMenu({
     <div className="flex flex-col items-center gap-2 mt-2">
       {/* Full Day */}
       <label
-        className="flex items-center cursor-pointer gap-2 px-4 py-2 text-sm font-medium bg-gray-100 rounded-lg 
-        hover:bg-gray-200 transition-colors dark:bg-gradient-to-b dark:from-jof-blue-700 dark:to-jof-blue-900
-        dark:hover:from-jof-blue-600 dark:hover:to-jof-blue-800"
+        className="flex items-center cursor-pointer gap-2 px-4 py-2 text-sm font-medium rounded-lg transition-colors
+        bg-gradient-to-b from-slate-200 to-slate-400 hover:from-slate-100 hover:to-slate-300
+        dark:bg-gradient-to-b dark:from-jof-blue-700 dark:to-jof-blue-900 dark:hover:from-jof-blue-600 dark:hover:to-jof-blue-800"
         onClick={(e) => e.stopPropagation()}
       >
         <input
@@ -59,9 +59,9 @@ export default function CheckboxMenu({
         {["morning", "afternoon", "evening"].map((period) => (
           <label
             key={period}
-            className="flex items-center cursor-pointer gap-1 px-3 py-1 text-xs bg-gray-100 rounded-lg 
-            hover:bg-gray-200 transition-colors dark:bg-gradient-to-b dark:from-jof-blue-700 
-            dark:to-jof-blue-900 dark:hover:from-jof-blue-600 dark:hover:to-jof-blue-800"
+            className="flex items-center cursor-pointer gap-1 px-3 py-1 text-xs rounded-lg transition-colors 
+            bg-gradient-to-b from-slate-200 to-slate-400 hover:from-slate-100 hover:to-slate-300
+            dark:bg-gradient-to-b dark:from-jof-blue-700 dark:to-jof-blue-900 dark:hover:from-jof-blue-600 dark:hover:to-jof-blue-800"
             onClick={(e) => e.stopPropagation()}
           >
             <input

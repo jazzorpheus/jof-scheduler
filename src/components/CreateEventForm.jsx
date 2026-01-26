@@ -21,10 +21,10 @@ function AutoResizeTextarea({ register, name, id, ...props }) {
       ref={ref}
       onInput={handleInput}
       rows={3}
-      className="peer w-full border dark:border-jof-blue-900 rounded px-2 pt-5 pb-2 
-                 bg-transparent bg-slate-100 dark:bg-jof-blue-900 dark:hover:border-white
-                 dark:focus:border-jof-blue-light text-gray-100 overflow-hidden 
-                 focus:outline-none focus:border-jof-blue-light transition-[height] duration-150 ease-in-out"
+      className="peer w-full border rounded px-2 pt-5 pb-2 overflow-hidden 
+                focus:outline-none transition-[height] duration-150 ease-in-out
+                text-black bg-slate-200 border-slate-400 hover:border-slate-500 focus:border-slate-800
+                dark:text-white dark:bg-jof-blue-900 dark:border-jof-blue-900 dark:hover:border-white dark:focus:border-jof-blue-light"
     />
   );
 }
@@ -44,8 +44,10 @@ export default function CreateEventForm() {
   };
 
   return (
-    <div className="dark:border dark:border-jof-blue-500 max-w-4xl mx-auto p-4 rounded-2xl dark:bg-jof-blue-700 text-gray-600 dark:text-white">
-      <h1 className="text-2xl font-bold mb-4 text-center">Create Event</h1>
+    <div className="text-gray-600 max-w-4xl mx-auto p-4 rounded-2xl 
+                    border border-slate-500 bg-slate-300 text-white
+                    dark:border dark:border-jof-blue-500 dark:bg-jof-blue-700 dark:text-white">
+      <h1 className="text-slate-700 dark:text-white text-2xl font-bold mb-4 text-center">Create Event</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         {/* Event metadata */}
         <div className="space-y-2 mb-[30px]">
@@ -54,16 +56,17 @@ export default function CreateEventForm() {
               {...register("title")}
               id="title"
               placeholder=" "
-              className="peer w-full border dark:border-jof-blue-900 hover:border dark:hover:border-white dark:focus:border-jof-blue-light 
-              rounded px-2 pt-5 pb-2 bg-transparent bg-slate-100 dark:bg-jof-blue-900 text-gray-100 
-              focus:outline-none focus:border-jof-blue-light"
+              className="peer w-full border hover:border rounded px-2 pt-5 pb-2 focus:outline-none 
+                text-black bg-slate-200 border-slate-400 hover:border-slate-500 focus:border-slate-800
+                dark:text-white dark:bg-jof-blue-900 dark:border-jof-blue-900 dark:hover:border-white dark:focus:border-jof-blue-light"
             />
             <label
               htmlFor="title"
               className="absolute left-2 top-2 text-gray-400 transition-all duration-200 
               peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base
-              peer-focus:top-1 peer-focus:text-sm peer-focus:text-jof-blue-light
-              peer-[&:not(:placeholder-shown)]:top-1 peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:text-jof-blue-light"
+              peer-focus:top-1 peer-focus:text-sm peer-focus:text-gray-600 peer-focus:dark:text-jof-blue-light
+              peer-[&:not(:placeholder-shown)]:top-1 peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:text-gray-500 
+              peer-[&:not(:placeholder-shown)]:dark:text-jof-blue-light"
             >
               Title
             </label>
@@ -80,8 +83,9 @@ export default function CreateEventForm() {
               htmlFor="description"
               className="absolute left-2 top-2 text-gray-400 transition-all duration-200 
               peer-placeholder-shown:top-3 peer-placeholder-shown:text-gray-500 peer-placeholder-shown:text-base
-              peer-focus:top-1 peer-focus:text-sm peer-focus:text-jof-blue-light
-              peer-[&:not(:placeholder-shown)]:top-1 peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:text-jof-blue-light"
+              peer-focus:top-1 peer-focus:text-sm peer-focus:text-gray-600 peer-focus:dark:text-jof-blue-light
+              peer-[&:not(:placeholder-shown)]:top-1 peer-[&:not(:placeholder-shown)]:text-sm peer-[&:not(:placeholder-shown)]:text-gray-500 
+              peer-[&:not(:placeholder-shown)]:dark:text-jof-blue-light"
             >
               Description
             </label>
@@ -96,13 +100,13 @@ export default function CreateEventForm() {
               type="date"
               {...register("startDate")}
               id="startDate"
-              className="w-full border dark:border-jof-blue-900 dark:hover:border-white dark:focus:border-jof-blue-light 
-    rounded px-2 pt-5 pb-2 bg-transparent dark:bg-jof-blue-900 text-gray-100 
-    focus:outline-none focus:border-jof-blue-light appearance-none"
+              className="w-full border focus:outline-none appearance-none rounded px-2 pt-5 pb-2
+              text-black bg-slate-200 border-slate-400 hover:border-slate-500 focus:border-slate-800
+              dark:text-gray-100 dark:bg-jof-blue-900 dark:border-jof-blue-900 dark:hover:border-white dark:focus:border-jof-blue-light dark:focus:border-jof-blue-light"
             />
             <label
               htmlFor="startDate"
-              className="absolute left-2 top-1 text-sm text-jof-blue-light"
+              className="absolute left-2 top-1 text-sm text-gray-500 dark:text-jof-blue-light"
             >
               Start Date
             </label>
@@ -116,13 +120,13 @@ export default function CreateEventForm() {
               type="date"
               {...register("endDate")}
               id="endDate"
-              className="w-full border dark:border-jof-blue-900 dark:hover:border-white dark:focus:border-jof-blue-light 
-    rounded px-2 pt-5 pb-2 bg-transparent dark:bg-jof-blue-900 text-gray-100 
-    focus:outline-none focus:border-jof-blue-light appearance-none"
+              className="w-full border focus:outline-none appearance-none rounded px-2 pt-5 pb-2
+              text-black bg-slate-200 border-slate-400 hover:border-slate-500 focus:border-slate-800
+              dark:text-gray-100 dark:bg-jof-blue-900 dark:border-jof-blue-900 dark:hover:border-white dark:focus:border-jof-blue-light dark:focus:border-jof-blue-light"
             />
             <label
               htmlFor="endDate"
-              className="absolute left-2 top-1 text-sm text-jof-blue-light"
+              className="absolute left-2 top-1 text-sm text-gray-500 dark:text-jof-blue-light"
             >
               End Date
             </label>
@@ -136,7 +140,7 @@ export default function CreateEventForm() {
           {/* *************************************************************************************************************************** */}
         </div>
 
-        {/* TeamBuilder placeholder */}
+        {/* Team Builder */}
         <TeamBuilder />
 
         <div className="flex justify-center mt-4">
