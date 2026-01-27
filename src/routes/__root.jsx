@@ -1,5 +1,10 @@
 import { createContext, useState, useEffect, useContext } from "react";
-import { createRootRoute, Link, Outlet, useLocation } from "@tanstack/react-router";
+import {
+  createRootRoute,
+  Link,
+  Outlet,
+  useLocation,
+} from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
@@ -80,17 +85,54 @@ const MoonIcon = () => (
 
 const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
+  const [isHovered, setIsHovered] = useState(false);
+
+  const isLight = theme === "light";
+  const showMoon = isLight ? isHovered : !isHovered;
 
   return (
     <button
       onClick={toggleTheme}
-      className="fixed top-0 right-0 p-2 z-50 scale-75 rounded-full text-gray-600 hover:bg-gray-300 dark:text-white dark:bg-jof-blue-900 dark:hover:bg-blue-800"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       aria-label="Toggle theme"
+      className={`
+        fixed top-0 right-0 p-2 z-50 scale-75 rounded-full transition-colors
+        ${isLight ? "text-slate-700" : "dark:text-gray-400"}
+        ${isHovered && isLight ? "hover:bg-jof-blue-700 hover:text-slate-200" : ""}
+        ${isHovered && !isLight ? "dark:hover:text-black dark:hover:bg-slate-300" : ""}
+      `}
     >
-      {theme === "light" ? <MoonIcon /> : <SunIcon />}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={showMoon ? "moon" : "sun"}
+          initial={{ opacity: 0, y: -6 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 6 }}
+          transition={{ duration: 0.15, ease: [0.4, 0, 0.2, 1] }}
+        >
+          {showMoon ? <MoonIcon /> : <SunIcon />}
+        </motion.div>
+      </AnimatePresence>
     </button>
   );
 };
+
+// const ThemeToggle = () => {
+//   const { theme, toggleTheme } = useTheme();
+
+//   return (
+//     <button
+//       onClick={toggleTheme}
+//       className="fixed top-0 right-0 p-2 z-50 scale-75 rounded-full
+//               text-slate-700 hover:text-slate-200 hover:bg-jof-blue-700
+//               dark:text-gray-400 dark:hover:text-black dark:bg-jof-blue-900 dark:hover:bg-slate-300"
+//       aria-label="Toggle theme"
+//     >
+//       {theme === "light" ? <MoonIcon /> : <SunIcon />}
+//     </button>
+//   );
+// };
 
 // ! ************************************************************************** ROUTING
 
@@ -111,7 +153,10 @@ const RootLayout = () => {
         {location.pathname !== "/" && (
           <nav className="flex justify-between shadow-lg min-[571px]:justify-center items-center min-[571px]:gap-6 p-4 bg-slate-300 dark:bg-jof-blue-700 mb-3 relative">
             {/* Home Icon */}
-            <Link to="/" className="hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
+            <Link
+              to="/"
+              className="hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
+            >
               <img src="/jof_icon.ico" alt="Home" className="w-8 h-8" />
             </Link>
 
