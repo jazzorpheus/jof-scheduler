@@ -97,42 +97,16 @@ const ThemeToggle = () => {
       onMouseLeave={() => setIsHovered(false)}
       aria-label="Toggle theme"
       className={`
-        fixed top-0 right-0 p-2 z-50 scale-75 rounded-full transition-colors
+        fixed top-0 right-0 p-2 z-50 scale-75 rounded-full
         ${isLight ? "text-slate-700" : "dark:text-gray-400"}
         ${isHovered && isLight ? "hover:bg-jof-blue-700 hover:text-slate-200" : ""}
         ${isHovered && !isLight ? "dark:hover:text-black dark:hover:bg-slate-300" : ""}
       `}
     >
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={showMoon ? "moon" : "sun"}
-          initial={{ opacity: 0, y: -6 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 6 }}
-          transition={{ duration: 0.15, ease: [0.4, 0, 0.2, 1] }}
-        >
-          {showMoon ? <MoonIcon /> : <SunIcon />}
-        </motion.div>
-      </AnimatePresence>
+      {showMoon ? <MoonIcon /> : <SunIcon />}
     </button>
   );
 };
-
-// const ThemeToggle = () => {
-//   const { theme, toggleTheme } = useTheme();
-
-//   return (
-//     <button
-//       onClick={toggleTheme}
-//       className="fixed top-0 right-0 p-2 z-50 scale-75 rounded-full
-//               text-slate-700 hover:text-slate-200 hover:bg-jof-blue-700
-//               dark:text-gray-400 dark:hover:text-black dark:bg-jof-blue-900 dark:hover:bg-slate-300"
-//       aria-label="Toggle theme"
-//     >
-//       {theme === "light" ? <MoonIcon /> : <SunIcon />}
-//     </button>
-//   );
-// };
 
 // ! ************************************************************************** ROUTING
 
@@ -196,7 +170,7 @@ const RootLayout = () => {
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="absolute border-t top-full left-0 right-0 dark:bg-jof-blue-700 shadow-lg dark:border-jof-blue-900 z-50 flex flex-col overflow-hidden min-[571px]:hidden"
+                  className="absolute border-t top-full left-0 right-0 bg-slate-300 dark:bg-jof-blue-900 shadow-lg dark:border-jof-blue-light z-50 flex flex-col overflow-hidden min-[571px]:hidden"
                 >
                   <div className="flex flex-col p-4 gap-2">
                     {navLinks.map(({ to, label }) => (
@@ -206,7 +180,7 @@ const RootLayout = () => {
                         onClick={() => setIsOpen(false)}
                         className="
                       px-4 py-3 font-medium text-gray-700 text-left rounded-2xl
-                      [&.active]:border-l-4 [&.active]:border-jof-blue-light
+                      [&.active]:border-l-4 [&.active]:border-slate-600 [&.active]:dark:border-jof-blue-light
                       dark:text-jof-blue-light dark:[&.active]:text-white"
                       >
                         {label}

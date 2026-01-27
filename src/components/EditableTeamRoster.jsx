@@ -86,7 +86,7 @@ export default function EditableTeamRoster({
   };
 
   return (
-    <div className="rounded-lg p-2 bg-slate-400/40 dark:bg-jof-blue-600/70 flex flex-col space-y-2 dark:text-white">
+    <div className="rounded-lg p-2 bg-gradient-to-b from-slate-400/20 to-slate-400 dark:from-jof-blue-700 dark:to-jof-blue-500 flex flex-col space-y-2 dark:text-white">
       <div
         onClick={handleNameClick}
         className="group flex items-center justify-between cursor-pointer text-slate-800 hover:text-slate-600 dark:text-jof-blue-light dark:hover:text-white"

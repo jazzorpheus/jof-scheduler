@@ -50,7 +50,7 @@ function NumTeamsInput() {
       <span className="text-md font-medium dark:text-jof-blue-light">
         Number of Teams:
       </span>
-      <div className="flex items-stretch border border-jof-blue-light rounded-lg overflow-hidden">
+      <div className="flex items-stretch border border-slate-400 dark:border-jof-blue-light rounded-lg overflow-hidden">
         <input
           type="text"
           value={tempValue}
@@ -60,11 +60,11 @@ function NumTeamsInput() {
           onFocus={(e) => e.target.select()}
           className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-slate-200 dark:bg-jof-blue-900 dark:hover:bg-jof-blue-700"
         />
-        <div className="flex flex-col border-l border-jof-blue-light">
+        <div className="flex flex-col border-l border-slate-400 dark:border-jof-blue-light">
           <button
             type="button"
             onClick={increment}
-            className="flex-1 w-6 border-b border-jof-blue-light text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-slate-200 dark:hover:bg-jof-blue-500"
+            className="flex-1 w-6 border-b border-slate-400 dark:border-jof-blue-light text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-slate-200 dark:hover:bg-jof-blue-500"
           >
             +
           </button>
@@ -126,7 +126,7 @@ function RosterSizeInput() {
       <span className="text-md font-medium dark:text-jof-blue-light">
         Players per Team:
       </span>
-      <div className="flex items-stretch border border-jof-blue-light rounded-lg overflow-hidden">
+      <div className="flex items-stretch border border-slate-400 dark:border-jof-blue-light rounded-lg overflow-hidden">
         <input
           type="text"
           value={tempValue}
@@ -136,11 +136,11 @@ function RosterSizeInput() {
           onFocus={(e) => e.target.select()}
           className="w-10 px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-slate-200 dark:bg-jof-blue-900 dark:hover:bg-jof-blue-700"
         />
-        <div className="flex flex-col border-l border-jof-blue-light">
+        <div className="flex flex-col border-l border-slate-400 dark:border-jof-blue-light">
           <button
             type="button"
             onClick={increment}
-            className="flex-1 w-6 border-b border-jof-blue-light text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-slate-200 dark:hover:bg-jof-blue-500"
+            className="flex-1 w-6 border-b border-slate-400 dark:border-jof-blue-light text-gray-700 dark:text-gray-300 px-1 text-sm select-none hover:bg-slate-200 dark:hover:bg-jof-blue-500"
           >
             +
           </button>
