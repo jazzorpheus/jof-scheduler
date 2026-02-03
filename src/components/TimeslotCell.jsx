@@ -30,7 +30,7 @@ export default function TimeslotCell({
     else if (!isSelected) {
       setShouldAnimate(false);
     }
-    
+
     // Update ref for next render
     prevSelected.current = isSelected;
   }, [isSelected]);
@@ -44,26 +44,28 @@ export default function TimeslotCell({
     <div
       onClick={handleClick}
       className={clsx(
-        "relative px-2 py-2 my-[2px] rounded-xl text-sm flex justify-between items-center cursor-pointer transition-colors dark:text-white dark:bg-gradient-to-b dark:from-jof-blue-600 dark:to-jof-blue-900 dark:hover:bg-gradient-to-b dark:hover:from-jof-blue-500 dark:hover:to-jof-blue-800",
+        "relative px-2 py-2 my-[2px] rounded-xl text-sm flex justify-between items-center cursor-pointer transition-colors text-slate-900 bg-gradient-to-b from-slate-300 to-slate-300/30 hover:bg-gradient-to-b hover:from-slate-200/80 hover:to-slate-200/30 dark:text-white dark:bg-gradient-to-b dark:from-jof-blue-600 dark:to-jof-blue-900 dark:hover:bg-gradient-to-b dark:hover:from-jof-blue-500 dark:hover:to-jof-blue-800",
         "saber-blade-blue",
         isSelected
           ? shouldAnimate
             ? "animate-ignite glow-flash glow-steady"
             : "ignited glow-steady"
-          : wasInteracted && "animate-extinguish"
+          : wasInteracted && "animate-extinguish",
       )}
     >
       <span
         className={clsx(
           "font-mono text-sm tabular-nums",
-          isSelected && "text-gray-800 font-bold"
+          isSelected && "text-slate-800 dark:text-gray-800 font-bold",
         )}
       >
         {slot.datetime.split("T")[1].slice(0, 5)}
       </span>
 
       {isSelected && (
-        <span className="ml-2 text-xs font-bold text-gray-800">Selected</span>
+        <span className="ml-2 text-xs font-bold text-slate-700 dark:text-gray-800">
+          Selected
+        </span>
       )}
 
       <div
@@ -75,8 +77,8 @@ export default function TimeslotCell({
           title="View details"
           className={
             !isSelected
-              ? "text-gray-500 hover:text-blue-500 dark:hover:text-white"
-              : "hover:text-white dark:text-jof-blue-600 dark:hover:text-jof-blue-400"
+              ? "text-slate-500 hover:text-slate-700 dark:text-gray-400 dark:hover:text-white"
+              : "text-slate-500 hover:text-slate-700 dark:text-jof-blue-400 dark:hover:text-jof-blue-600"
           }
           onClick={() => onInfoClick(slot)}
         >

@@ -44,10 +44,7 @@ export default function DayCard({
       transition={{
         layout: { type: "tween", duration: 0.25, ease: "easeOut" },
       }}
-      className={clsx(
-        "shadow-sm overflow-hidden",
-        isOpen ? "col-span-full" : ""
-      )}
+      className={clsx("overflow-hidden", isOpen ? "col-span-full" : "")}
     >
       {/* DayCard Header */}
       <DayCardHead

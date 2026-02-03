@@ -1,7 +1,15 @@
 # To Do
 
 - [ ] Light theme overhaul
-  - Try subtle blues, e.g. on borders, especially on Create Event form
+  - [ ] Modal component
+
+- [ ] Make navbar fixed instead of Select Availability banner
+
+- [ ] Make margin-bottom thicker on navbar links
+
+- [ ] Ensure clicking "off" navbar dropdown menu collapses it
+
+- [ ] Make screen width cutoff point for changing landing page links into column wider! (Looks wrong on tablet in portrait.)
 
 - [ ] Map form inputs to event schema, event schema to event details and selected availability, and event dates to timeslots.
 
