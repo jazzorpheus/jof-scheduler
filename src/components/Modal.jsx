@@ -50,8 +50,8 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
     .replace(/_/g, " ")
     .replace(/\b\w/g, (c) => c.toUpperCase());
 
-  // Create a portal to send this component/element to the <div class="model-container"> in index.html
-  // so that the absolute/fixed position property allows the div with inset-0 to take up entire html body.
+  // Create portal to send this element to <div class="model-container"> in index.html
+  // so absolute/fixed position property allows div with inset-0 to take up entire html body
   return createPortal(
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4 dark:bg-opacity-70"
@@ -60,10 +60,11 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
       }}
     >
       <div
-        className="dark:border dark:border-jof-blue-500  bg-white rounded-xl shadow-lg p-6 relative inline-block 
-      max-h-[90vh] overflow-auto dark:bg-jof-blue-900"
+        className="rounded-lg shadow-lg p-6 relative inline-block max-h-[90vh] overflow-auto
+        bg-slate-300 border border-slate-500
+        dark:bg-jof-blue-900 dark:border dark:border-jof-blue-500"
       >
-        <div className="sticky top-0 flex justify-end bg-white z-10">
+        <div className="sticky top-0 flex justify-end z-10">
           <Button
             close
             onClick={onClose}
@@ -75,10 +76,10 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
 
         <div className="flex flex-wrap items-center justify-between mb-4 gap-2">
           <div>
-            <h2 className="text-lg font-semibold dark:text-white">
+            <h2 className="text-lg font-semibold text-slate-800 dark:text-white">
               {formattedDateTime}
             </h2>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
+            <p className="text-sm text-slate-700 dark:text-gray-300">
               Event: {formattedEventName}
             </p>
           </div>
@@ -116,6 +117,6 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
       </div>
     </div>,
     // 2nd argument is used to select the element to 'portal' the above into!
-    document.querySelector(".modal-container")
+    document.querySelector(".modal-container"),
   );
 }
