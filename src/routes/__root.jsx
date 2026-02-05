@@ -126,7 +126,7 @@ const RootLayout = () => {
       <div className="bg-slate-400 dark:bg-jof-blue-900 min-h-screen relative">
         {/* NAVBAR */}
         {location.pathname !== "/" && (
-          <nav className="flex justify-between shadow-lg min-[571px]:justify-center items-center min-[571px]:gap-6 p-4 bg-slate-300 dark:bg-jof-blue-700 mb-3 relative">
+          <nav className="sticky top-0 z-40 flex justify-between shadow-lg min-[571px]:justify-center items-center min-[571px]:gap-6 p-4 bg-slate-300 dark:bg-jof-blue-700 mb-3">
             {/* Home Icon */}
             <Link
               to="/"
