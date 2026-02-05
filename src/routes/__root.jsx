@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, useContext } from "react";
+import { createContext, useState, useEffect, useContext, useRef } from "react";
 import {
   createRootRoute,
   Link,
@@ -113,6 +113,8 @@ const ThemeToggle = () => {
 
 const RootLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
   const location = useLocation();
   const navLinks = [
     { to: "/create", label: "Create Event" },
@@ -120,6 +122,24 @@ const RootLayout = () => {
     { to: "/select", label: "Select Availability" },
     { to: "/plan", label: "Plan Match" },
   ];
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleClickOutside = (event) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isOpen]);
 
   return (
     <ThemeProvider>
@@ -142,8 +162,8 @@ const RootLayout = () => {
                   key={to}
                   to={to}
                   className="
-                px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center 
-                border-b-2 border-transparent hover:border-b-2 hover:border-jof-blue-light 
+                px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center
+                border-b-2 border-transparent hover:border-b-2 hover:border-blue-400 
                 [&.active]:text-slate-900 [&.active]:border-b-2 [&.active]:border-blue-500 
                 dark:text-jof-blue-light dark:[&.active]:text-white dark:[&.active]:border-jof-blue-light dark:hover:text-white dark:hover:border-jof-blue-light"
                 >
@@ -155,8 +175,9 @@ const RootLayout = () => {
             {/* Mobile Hamburger (<= 570px) */}
             <div className="block min-[571px]:hidden mr-8">
               <button
+                ref={buttonRef}
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-2 text-gray-700 dark:text-white hover:bg-gray-100 dark:bg-jof-blue-900 rounded-md"
+                className="p-2 text-gray-700 dark:text-white bg-slate-200 dark:bg-jof-blue-900 rounded-md"
                 aria-label="Toggle menu"
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -167,6 +188,7 @@ const RootLayout = () => {
             <AnimatePresence>
               {isOpen && (
                 <motion.div
+                  ref={menuRef}
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
@@ -181,7 +203,7 @@ const RootLayout = () => {
                         onClick={() => setIsOpen(false)}
                         className="
                       px-4 py-3 font-medium text-gray-700 text-left rounded-2xl
-                      [&.active]:border-l-4 [&.active]:border-slate-600 [&.active]:dark:border-jof-blue-light
+                      [&.active]:border-l-4 [&.active]:border-blue-600 [&.active]:dark:border-jof-blue-light
                       dark:text-jof-blue-light dark:[&.active]:text-white"
                       >
                         {label}

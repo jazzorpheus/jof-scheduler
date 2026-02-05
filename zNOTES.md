@@ -1,9 +1,5 @@
 # To Do
 
-- [ ] Make navbar fixed instead of Select Availability banner
-
-- [ ] Make margin-bottom thicker on navbar links
-
 - [ ] Ensure clicking "off" navbar dropdown menu collapses it
 
 - [ ] Make screen width cutoff point for changing landing page links into column wider! (Looks wrong on tablet in portrait.)
