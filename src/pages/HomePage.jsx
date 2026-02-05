@@ -6,11 +6,11 @@ export default function HomePage() {
   return (
     <div className="h-screen overflow-hidden flex flex-col bg-slate-400 dark:bg-jof-blue-900">
       {/* MAIN CONTENT */}
-      <main className="flex-1 flex flex-col items-center justify-center p-6 md:px-12 gap-6 sm:flex-row sm:gap-12 max-w-5xl mx-auto w-full min-h-0">
+      <main className="flex-1 flex flex-col items-center justify-center p-6 md:px-12 gap-6 md:flex-row md:gap-12 max-w-5xl mx-auto w-full min-h-0">
         {/* Create Event Card */}
         <Link
           to="/create"
-          className="group flex flex-col items-center justify-center gap-4 w-full flex-1 sm:flex-none sm:w-1/2 sm:h-80 bg-slate-300 dark:bg-jof-blue-800 rounded-3xl shadow-xl border-2 border-transparent hover:border-sky-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-4 sm:p-8 cursor-pointer min-h-0"
+          className="group flex flex-col items-center justify-center gap-4 w-full flex-1 md:flex-none md:w-1/2 md:h-80 bg-slate-300 dark:bg-jof-blue-800 rounded-3xl shadow-xl border-2 border-transparent hover:border-sky-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-4 sm:p-8 cursor-pointer min-h-0"
         >
           <div className="p-4 sm:p-6 rounded-full bg-slate-300 dark:bg-jof-blue-900 group-hover:bg-blue-100 dark:group-hover:bg-jof-blue-700 transition-colors">
             <CalendarPlus
@@ -26,7 +26,7 @@ export default function HomePage() {
         {/* View Events Card */}
         <Link
           to="/view"
-          className="group flex flex-col items-center justify-center gap-4 w-full flex-1 sm:flex-none sm:w-1/2 sm:h-80 bg-slate-300 dark:bg-jof-blue-800 rounded-3xl shadow-xl border-2 border-transparent hover:border-sky-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-4 sm:p-8 cursor-pointer min-h-0"
+          className="group flex flex-col items-center justify-center gap-4 w-full flex-1 md:flex-none md:w-1/2 md:h-80 bg-slate-300 dark:bg-jof-blue-800 rounded-3xl shadow-xl border-2 border-transparent hover:border-sky-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-4 sm:p-8 cursor-pointer min-h-0"
         >
           <div className="p-4 sm:p-6 rounded-full bg-slate-300 dark:bg-jof-blue-900 group-hover:bg-blue-100 dark:group-hover:bg-jof-blue-700 transition-colors">
             <CalendarSearch

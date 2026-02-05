@@ -1,9 +1,5 @@
 # To Do
 
-- [ ] Ensure clicking "off" navbar dropdown menu collapses it
-
-- [ ] Make screen width cutoff point for changing landing page links into column wider! (Looks wrong on tablet in portrait.)
-
 - [ ] Set up mock API in frontend for testing form/event schema and GETing/POSTing data.
 
 - [ ] Refactor \_\_root.jsx focusing on separation of concerns
