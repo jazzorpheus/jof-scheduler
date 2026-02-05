@@ -1,5 +1,7 @@
 # To Do
 
+- [ ] Make light theme cancel button lighter
+
 - [ ] Make navbar fixed instead of Select Availability banner
 
 - [ ] Make margin-bottom thicker on navbar links
