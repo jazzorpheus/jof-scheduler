@@ -38,11 +38,21 @@ export default function EditableTeamRoster({
   const handleNameClick = () => setIsEditingName(true);
   const handleNameChange = (e) => setEditableName(e.target.value);
   const handleNameBlur = () => {
-    if (editableName.trim() && editableName !== teamName) {
-      renameTeam(gridPosition, editableName.trim());
+    const val = editableName.trim();
+
+    if (val) {
+      if (val !== teamName) {
+        renameTeam(gridPosition, val);
+      }
+    } else {
+      // revert to default Team X
+      const defaultName = `Team ${gridPosition + 1}`;
+      renameTeam(gridPosition, defaultName);
     }
+
     setIsEditingName(false);
   };
+
   const handleNameKeyPress = (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
@@ -58,14 +68,20 @@ export default function EditableTeamRoster({
 
   const commitPlayerEditOnEnter = () => {
     if (editingIndex === null) return;
+
     const val = editingValue.trim();
+
     if (val) {
       onAddPlayer(gridPosition, val, editingIndex);
+    } else {
+      onRemovePlayer(gridPosition, editingIndex);
     }
 
     const nextIndex = editingIndex + 1;
+
     setEditingIndex(null);
     setEditingValue("");
+
     if (nextIndex < rosterSize) {
       startEditPlayer(nextIndex, teamPlayers[nextIndex] || "");
     }
@@ -73,10 +89,15 @@ export default function EditableTeamRoster({
 
   const commitPlayerEditOnBlur = () => {
     if (editingIndex === null) return;
+
     const val = editingValue.trim();
+
     if (val) {
       onAddPlayer(gridPosition, val, editingIndex);
+    } else {
+      onRemovePlayer(gridPosition, editingIndex);
     }
+
     setEditingIndex(null);
     setEditingValue("");
   };
@@ -105,7 +126,7 @@ export default function EditableTeamRoster({
         ) : (
           <>
             <span
-              className="text-md font-medium text-center"
+              className="text-md font-medium text-center break-all"
               onClick={handleNameClick}
             >
               {teamName}
@@ -186,11 +207,11 @@ export default function EditableTeamRoster({
                   </svg>
                 )}
                 <span
-                  className={
+                  className={`break-all ${
                     player
                       ? "cursor-pointer dark:hover:text-blue-500 dark:text-white"
                       : "text-gray-500 group-hover:text-slate-900 dark:text-gray-400 italic select-none dark:group-hover:text-white"
-                  }
+                  }`}
                 >
                   {player || "Add player"}
                 </span>

@@ -1,5 +1,7 @@
 # To Do
 
+- [ ] Ensure long team names and player names wrap onto new line.
+
 - [ ] Set up mock API in frontend for testing form/event schema and GETing/POSTing data.
 
 - [ ] Refactor \_\_root.jsx focusing on separation of concerns
