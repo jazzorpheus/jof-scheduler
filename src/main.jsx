@@ -14,7 +14,7 @@ import { routeTree } from "./routeTree.gen";
 // Context Provider (for locale + timezone)
 import { LocaleProvider } from "./utils/lib/LocaleContext";
 
-// Import Loading component
+// Loading component
 import Loading from "./components/Loading";
 
 // --- Create router instance ---
@@ -24,11 +24,20 @@ const router = createRouter({
   defaultPendingMs: 0,
 });
 
+// --- Start MSW (non-blocking) ---
+if (import.meta.env.DEV) {
+  import("./mocks/browser").then(({ worker }) => {
+    worker.start({
+      onUnhandledRequest: "warn",
+    });
+  });
+}
+
 // --- Render App with LocaleProvider ---
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <LocaleProvider>
       <RouterProvider router={router} />
     </LocaleProvider>
-  </StrictMode>
+  </StrictMode>,
 );
