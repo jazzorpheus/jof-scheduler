@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect, useContext, useRef } from "react";
+import { EventProvider } from "../context/EventContext";
 import {
   createRootRoute,
   Link,
@@ -143,88 +144,90 @@ const RootLayout = () => {
 
   return (
     <ThemeProvider>
-      <div className="bg-slate-400 dark:bg-jof-blue-900 min-h-screen relative">
-        {/* NAVBAR */}
-        {location.pathname !== "/" && (
-          <nav className="sticky top-0 z-40 flex justify-between shadow-lg min-[571px]:justify-center items-center min-[571px]:gap-6 p-4 bg-slate-300 dark:bg-jof-blue-700 mb-3">
-            {/* Home Icon */}
-            <Link
-              to="/"
-              className="hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
-            >
-              <img src="/jof_icon.ico" alt="Home" className="w-8 h-8" />
-            </Link>
+      <EventProvider>
+        <div className="bg-slate-400 dark:bg-jof-blue-900 min-h-screen relative">
+          {/* NAVBAR */}
+          {location.pathname !== "/" && (
+            <nav className="sticky top-0 z-40 flex justify-between shadow-lg min-[571px]:justify-center items-center min-[571px]:gap-6 p-4 bg-slate-300 dark:bg-jof-blue-700 mb-3">
+              {/* Home Icon */}
+              <Link
+                to="/"
+                className="hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.5)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
+              >
+                <img src="/jof_icon.ico" alt="Home" className="w-8 h-8" />
+              </Link>
 
-            {/* Desktop Links (> 570px) */}
-            <div className="hidden min-[571px]:flex items-center gap-6">
-              {navLinks.map(({ to, label }) => (
-                <Link
-                  key={to}
-                  to={to}
-                  className="
+              {/* Desktop Links (> 570px) */}
+              <div className="hidden min-[571px]:flex items-center gap-6">
+                {navLinks.map(({ to, label }) => (
+                  <Link
+                    key={to}
+                    to={to}
+                    className="
                 px-2 py-1 font-medium text-gray-700 text-sm sm:text-base md:text-md text-center
                 border-b-2 border-transparent hover:border-b-2 hover:border-blue-400 
                 [&.active]:text-slate-900 [&.active]:border-b-2 [&.active]:border-blue-500 
                 dark:text-jof-blue-light dark:[&.active]:text-white dark:[&.active]:border-jof-blue-light dark:hover:text-white dark:hover:border-jof-blue-light"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
 
-            {/* Mobile Hamburger (<= 570px) */}
-            <div className="block min-[571px]:hidden mr-8">
-              <button
-                ref={buttonRef}
-                onClick={() => setIsOpen(!isOpen)}
-                className="p-2 text-gray-700 dark:text-white bg-slate-200 dark:bg-jof-blue-900 rounded-md"
-                aria-label="Toggle menu"
-              >
-                {isOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
-            </div>
-
-            {/* Mobile Menu Dropdown */}
-            <AnimatePresence>
-              {isOpen && (
-                <motion.div
-                  ref={menuRef}
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="absolute border-t top-full left-0 right-0 bg-slate-300 dark:bg-jof-blue-900 shadow-lg dark:border-jof-blue-light z-50 flex flex-col overflow-hidden min-[571px]:hidden"
+              {/* Mobile Hamburger (<= 570px) */}
+              <div className="block min-[571px]:hidden mr-8">
+                <button
+                  ref={buttonRef}
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="p-2 text-gray-700 dark:text-white bg-slate-200 dark:bg-jof-blue-900 rounded-md"
+                  aria-label="Toggle menu"
                 >
-                  <div className="flex flex-col p-4 gap-2">
-                    {navLinks.map(({ to, label }) => (
-                      <Link
-                        key={to}
-                        to={to}
-                        onClick={() => setIsOpen(false)}
-                        className="
+                  {isOpen ? <X size={24} /> : <Menu size={24} />}
+                </button>
+              </div>
+
+              {/* Mobile Menu Dropdown */}
+              <AnimatePresence>
+                {isOpen && (
+                  <motion.div
+                    ref={menuRef}
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    className="absolute border-t top-full left-0 right-0 bg-slate-300 dark:bg-jof-blue-900 shadow-lg dark:border-jof-blue-light z-50 flex flex-col overflow-hidden min-[571px]:hidden"
+                  >
+                    <div className="flex flex-col p-4 gap-2">
+                      {navLinks.map(({ to, label }) => (
+                        <Link
+                          key={to}
+                          to={to}
+                          onClick={() => setIsOpen(false)}
+                          className="
                       px-4 py-3 font-medium text-gray-700 text-left rounded-2xl
                       [&.active]:border-l-4 [&.active]:border-blue-600 [&.active]:dark:border-jof-blue-light
                       dark:text-jof-blue-light dark:[&.active]:text-white"
-                      >
-                        {label}
-                      </Link>
-                    ))}
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </nav>
-        )}
+                        >
+                          {label}
+                        </Link>
+                      ))}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </nav>
+          )}
 
-        {/* Theme Toggle */}
-        <ThemeToggle />
+          {/* Theme Toggle */}
+          <ThemeToggle />
 
-        {/* Page content */}
-        <Outlet />
+          {/* Page content */}
+          <Outlet />
 
-        {/* Devtools */}
-        <TanStackRouterDevtools />
-      </div>
+          {/* Devtools */}
+          <TanStackRouterDevtools />
+        </div>
+      </EventProvider>
     </ThemeProvider>
   );
 };

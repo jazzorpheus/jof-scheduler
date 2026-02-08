@@ -1,7 +1,7 @@
 // Group timeslots by day and add formatted strings
 export function groupByDay(
   timeslots,
-  { locale = "en-GB", timeZone = "UTC" } = {}
+  { locale = "en-GB", timeZone = "UTC" } = {},
 ) {
   const days = timeslots.reduce((acc, slot) => {
     const day = slot.datetime.split("T")[0];

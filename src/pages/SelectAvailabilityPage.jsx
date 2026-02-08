@@ -1,28 +1,50 @@
 // React
-import { useState } from "react";
-
-// Sample Data
-import sampleTimeslots from "../data/sampleTimeslots24h.json";
+import { useState, useMemo } from "react";
 
 // Custom Hooks
 import { useLocale } from "../utils/lib/LocaleContext";
+import { useSelectedEvent } from "../context/EventContext";
 
 // Local Utilities
 import { groupByDay } from "../utils/lib/groupByDay";
+import { generateTimeslotsForEvent } from "../utils/lib/generateTimeslotsForEvent";
 
 // Local Components
 import DayCard from "../components/DayCard";
 import PageHeader from "../components/PageHeader";
 import PageFooter from "../components/PageFooter";
 
-// Page for selecting available timeslots
 export default function SelectAvailabilityPage() {
-  // Read from context
   const { locale, timeZone } = useLocale();
+  const { selectedEvent } = useSelectedEvent();
 
-  // Group timeslots by day using the user's locale & time zone
-  const days = groupByDay(sampleTimeslots, { locale, timeZone });
+  // Temporary: hard-coded team IDs for now
+  const teamKeys = [
+    "team_flaggots",
+    "team_jediman",
+    "team_idontgiveaflagidgaf",
+    "team_rotkindlessteam",
+    "team_theflagevarines",
+    "team_jerkingonflags",
+    "team_flag",
+    "team_opcm",
+    "team_creyonstinyfriends",
+    "team_jimmytherentboys",
+  ];
 
+  // Generate timeslots dynamically for the selected event
+  const timeslots = useMemo(() => {
+    if (!selectedEvent) return [];
+    return generateTimeslotsForEvent(selectedEvent, teamKeys);
+  }, [selectedEvent]);
+
+  // Group by day
+  const days = useMemo(
+    () => groupByDay(timeslots, { locale, timeZone }),
+    [timeslots, locale, timeZone],
+  );
+
+  // Open/closed state per day
   const [openStates, setOpenStates] = useState(
     days.reduce((acc, day) => {
       acc[day.date] = false;
@@ -30,6 +52,7 @@ export default function SelectAvailabilityPage() {
     }, {}),
   );
 
+  // Selected slots
   const [selectedSlots, setSelectedSlots] = useState({});
 
   const toggleSingle = (date) => {
@@ -42,6 +65,16 @@ export default function SelectAvailabilityPage() {
       [slotId]: !prev[slotId],
     }));
   };
+
+  if (!selectedEvent) {
+    return (
+      <div className="min-h-screen bg-slate-400 dark:bg-jof-blue-900 flex flex-col items-center justify-center text-white">
+        <PageHeader title="No Event Selected">
+          Please select an event from the View Events page first.
+        </PageHeader>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-slate-400 dark:bg-jof-blue-900">

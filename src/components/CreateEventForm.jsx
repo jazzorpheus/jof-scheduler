@@ -39,8 +39,25 @@ export default function CreateEventForm() {
     },
   });
 
-  const onSubmit = (data) => {
-    console.log("Form Data:", data);
+  const onSubmit = async (data) => {
+    try {
+      const res = await fetch("/api/events", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) {
+        throw new Error(`Request failed: ${res.status}`);
+      }
+
+      const createdEvent = await res.json();
+      console.log("Created event:", createdEvent);
+    } catch (err) {
+      console.error("Failed to create event:", err);
+    }
   };
 
   return (
