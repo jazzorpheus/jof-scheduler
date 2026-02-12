@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { useTeams } from "../context/TeamsContext";
 
 export default function EditableTeamRoster({
-  gridPosition, // stable identifier
+  gridPosition,
   teamName,
   teamPlayers,
   rosterSize,
@@ -10,11 +10,13 @@ export default function EditableTeamRoster({
   onRemovePlayer,
 }) {
   const { renameTeam } = useTeams();
+
   const [isEditingName, setIsEditingName] = useState(false);
   const [editableName, setEditableName] = useState(teamName);
 
   const [editingIndex, setEditingIndex] = useState(null);
   const [editingValue, setEditingValue] = useState("");
+  const [pendingNextIndex, setPendingNextIndex] = useState(null);
 
   const nameInputRef = useRef(null);
   const playerInputRef = useRef(null);
@@ -24,19 +26,39 @@ export default function EditableTeamRoster({
     setEditableName(teamName);
   }, [teamName]);
 
-  // Autofocus and select input
+  // Autofocus team name
   useEffect(() => {
-    if (isEditingName && nameInputRef.current) nameInputRef.current.select();
+    if (isEditingName && nameInputRef.current) {
+      nameInputRef.current.select();
+    }
   }, [isEditingName]);
 
+  // Autofocus player input
   useEffect(() => {
-    if (editingIndex !== null && playerInputRef.current)
+    if (editingIndex !== null && playerInputRef.current) {
       playerInputRef.current.select();
+    }
   }, [editingIndex]);
 
+  // Handle deferred next edit AFTER teamPlayers updates
+  useEffect(() => {
+    if (pendingNextIndex === null) return;
+
+    if (pendingNextIndex < rosterSize) {
+      startEditPlayer(pendingNextIndex, teamPlayers[pendingNextIndex] || "");
+    }
+
+    setPendingNextIndex(null);
+  }, [teamPlayers, pendingNextIndex, rosterSize]);
+
+  // ------------------------
   // Team name handlers
+  // ------------------------
+
   const handleNameClick = () => setIsEditingName(true);
+
   const handleNameChange = (e) => setEditableName(e.target.value);
+
   const handleNameBlur = () => {
     const val = editableName.trim();
 
@@ -45,8 +67,7 @@ export default function EditableTeamRoster({
         renameTeam(gridPosition, val);
       }
     } else {
-      // revert to default Team X
-      const defaultName = `Team ${gridPosition + 1}`;
+      const defaultName = `Team ${gridPosition}`;
       renameTeam(gridPosition, defaultName);
     }
 
@@ -60,7 +81,10 @@ export default function EditableTeamRoster({
     }
   };
 
+  // ------------------------
   // Player handlers
+  // ------------------------
+
   const startEditPlayer = (i, initialValue) => {
     setEditingIndex(i);
     setEditingValue(initialValue || "");
@@ -81,10 +105,7 @@ export default function EditableTeamRoster({
 
     setEditingIndex(null);
     setEditingValue("");
-
-    if (nextIndex < rosterSize) {
-      startEditPlayer(nextIndex, teamPlayers[nextIndex] || "");
-    }
+    setPendingNextIndex(nextIndex);
   };
 
   const commitPlayerEditOnBlur = () => {
@@ -106,8 +127,13 @@ export default function EditableTeamRoster({
     onRemovePlayer(gridPosition, i);
   };
 
+  // ------------------------
+  // Render
+  // ------------------------
+
   return (
     <div className="rounded-lg p-2 bg-gradient-to-b from-slate-400/20 to-slate-400 dark:from-jof-blue-700 dark:to-jof-blue-500 flex flex-col space-y-2 dark:text-white">
+      {/* Team Name */}
       <div
         onClick={handleNameClick}
         className="group flex items-center justify-between cursor-pointer text-slate-800 hover:text-slate-600 dark:text-jof-blue-light dark:hover:text-white"
@@ -151,6 +177,7 @@ export default function EditableTeamRoster({
         )}
       </div>
 
+      {/* Players */}
       <ul className="list-none text-sm flex-1 space-y-1">
         {Array.from({ length: rosterSize }).map((_, i) => {
           const player = teamPlayers[i];
@@ -175,7 +202,6 @@ export default function EditableTeamRoster({
                    bg-slate-500 dark:bg-jof-blue-900 text-white 
                    placeholder-gray-300 
                    outline-none"
-                  placeholder=""
                 />
               </li>
             );
@@ -185,8 +211,8 @@ export default function EditableTeamRoster({
             <li
               key={i}
               tabIndex={0}
-              className={`group flex items-center justify-between px-1 py-0.5 rounded cursor-pointer 
-              bg-slate-200 dark:bg-jof-blue-900 hover:dark:text-white`}
+              className="group flex items-center justify-between px-1 py-0.5 rounded cursor-pointer 
+              bg-slate-200 dark:bg-jof-blue-900 hover:dark:text-white"
               onClick={() => startEditPlayer(i, player)}
             >
               <div className="flex items-center space-x-1">
@@ -216,6 +242,7 @@ export default function EditableTeamRoster({
                   {player || "Add player"}
                 </span>
               </div>
+
               {player && (
                 <button
                   type="button"
