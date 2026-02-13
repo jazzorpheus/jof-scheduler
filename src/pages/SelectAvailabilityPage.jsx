@@ -6,8 +6,8 @@ import { useLocale } from "../context/LocaleContext";
 import { useSelectedEvent } from "../context/EventContext";
 
 // Local Utilities
-import { groupByDay } from "../utils/lib/groupByDay";
-import { generateTimeslotsForEvent } from "../utils/lib/generateTimeslotsForEvent";
+import { groupByDay } from "../utils/groupByDay";
+import { generateTimeslotsForEvent } from "../utils/generateTimeslotsForEvent";
 
 // Local Components
 import DayCard from "../components/DayCard";
