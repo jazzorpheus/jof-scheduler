@@ -31,8 +31,8 @@ export const events = [
     description:
       "The first round of JoF's annual Capture the Flag Tournament. You have one month to play every other team registered in the tourny. Please bear in mind that finding a time in which all players across two teams are available to play can be quite a challenge in itself, so please be patient and willing to put some effort into the process! The first step is to select ANY and ALL timeslots where there is at least a medium-high probability that you will be able to make it. Organization involving regular communication between team players and effective forward planning are key. Good luck!",
     type: "multi-team", // "multi-team" or "1v1"
-    startDate: "2026-07-18",
-    endDate: "2026-08-18",
+    startDate: "2026-10-18",
+    endDate: "2026-11-18",
     numTeams: 10, // 2-15
     playersPerTeam: 4, // 2-15
     numParticipants: 40, // 1-100

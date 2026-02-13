@@ -12,7 +12,7 @@ import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { routeTree } from "./routeTree.gen";
 
 // Context Provider (for locale + timezone)
-import { LocaleProvider } from "./utils/lib/LocaleContext";
+import { LocaleProvider } from "./context/LocaleContext";
 
 // Loading component
 import Loading from "./components/Loading";

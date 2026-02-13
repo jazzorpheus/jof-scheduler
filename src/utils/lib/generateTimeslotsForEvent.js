@@ -11,11 +11,8 @@
  */
 export function generateTimeslotsForEvent(event, teamKeys = []) {
   const timeslots = [];
-  const start = new Date(event.startDate);
-  start.setHours(0, 0, 0, 0);
-
-  const end = new Date(event.endDate);
-  end.setHours(23, 0, 0, 0); // last hour of the day
+  const start = new Date(`${event.startDate}T00:00:00Z`);
+  const end = new Date(`${event.endDate}T23:00:00Z`);
 
   const oneHourMs = 1000 * 60 * 60;
   let current = new Date(start);
@@ -32,7 +29,7 @@ export function generateTimeslotsForEvent(event, teamKeys = []) {
     timeslots.push({
       timeslotId: slotId,
       eventId: event.id,
-      datetime: current.toISOString().slice(0, 19), // "YYYY-MM-DDTHH:MM:SS"
+      datetimeUtc: current.toISOString(),
       selected,
     });
 

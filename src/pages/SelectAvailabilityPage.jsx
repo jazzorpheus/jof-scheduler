@@ -2,7 +2,7 @@
 import { useState, useMemo } from "react";
 
 // Custom Hooks
-import { useLocale } from "../utils/lib/LocaleContext";
+import { useLocale } from "../context/LocaleContext";
 import { useSelectedEvent } from "../context/EventContext";
 
 // Local Utilities

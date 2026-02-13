@@ -10,7 +10,7 @@ import Button from "./Button";
 import TeamRostersGrid from "./TeamRostersGrid";
 
 // Local Context
-import { LocaleContext } from "../utils/lib/LocaleContext";
+import { LocaleContext } from "../context/LocaleContext";
 
 // Modal Component
 export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
@@ -30,7 +30,7 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
 
   const isSelected = selectedSlots[slot.timeslotId];
 
-  const dateObj = new Date(slot.datetime);
+  const dateObj = new Date(slot.datetimeUtc); // was slot.datetime
   const formattedTime = dateObj.toLocaleTimeString(locale, {
     hour: "2-digit",
     minute: "2-digit",

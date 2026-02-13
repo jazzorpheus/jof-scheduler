@@ -1,27 +1,37 @@
-// Group timeslots by day and add formatted strings
 export function groupByDay(
   timeslots,
   { locale = "en-GB", timeZone = "UTC" } = {},
 ) {
-  const days = timeslots.reduce((acc, slot) => {
-    const day = slot.datetime.split("T")[0];
-    (acc[day] ||= []).push(slot);
-    return acc;
-  }, {});
+  const dayKeyFmt = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
 
   const weekdayFmt = new Intl.DateTimeFormat(locale, {
     weekday: "long",
     timeZone,
   });
+
   const dayMonthFmt = new Intl.DateTimeFormat(locale, {
     day: "numeric",
     month: "short",
     timeZone,
   });
 
+  const days = timeslots.reduce((acc, slot) => {
+    const d = new Date(slot.datetimeUtc);
+    const localDayKey = dayKeyFmt.format(d);
+
+    (acc[localDayKey] ||= []).push(slot);
+    return acc;
+  }, {});
+
   return Object.entries(days)
     .map(([date, ts]) => {
-      const d = new Date(date + "T00:00:00"); // avoid time zone issues
+      const d = new Date(ts[0].datetimeUtc);
+
       return {
         date,
         timeslots: ts,

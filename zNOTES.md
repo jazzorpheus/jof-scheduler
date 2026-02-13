@@ -1,7 +1,6 @@
 # To Do
 
 - [ ] Set up mock API in frontend for testing form/event schema and GETing/POSTing data.
-  - Figure out how to deal with local clock changes, e.g. UK going from UTC/GMT to BST = UTC/GMT + 1 on 29-30 March
   - Write algorithm to create a unique event id from event title
   - Come up with way of indicating which event is currently selected on select availability page
   - Integrate the team builder into form data submitted to handlers (for now assume event is 2+ team tournament, i.e. jofball or ctf tourny)

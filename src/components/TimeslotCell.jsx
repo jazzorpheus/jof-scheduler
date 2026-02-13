@@ -13,6 +13,13 @@ export default function TimeslotCell({
   const [shouldAnimate, setShouldAnimate] = useState(false);
   const prevSelected = useRef(isSelected);
 
+  const timeFmt = new Intl.DateTimeFormat(undefined, {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+  });
+
   // Track if user has interacted with this slot at least once
   useEffect(() => {
     if (isSelected) {
@@ -59,7 +66,7 @@ export default function TimeslotCell({
           isSelected && "text-slate-800 dark:text-gray-800 font-bold",
         )}
       >
-        {slot.datetime.split("T")[1].slice(0, 5)}
+        {timeFmt.format(new Date(slot.datetimeUtc))}
       </span>
 
       {isSelected && (
