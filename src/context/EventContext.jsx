@@ -1,4 +1,3 @@
-// context/SelectedEventContext.jsx
 import { createContext, useContext, useState } from "react";
 
 const SelectedEventContext = createContext(null);

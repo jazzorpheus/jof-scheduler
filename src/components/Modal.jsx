@@ -2,19 +2,25 @@
 import { useContext, useEffect } from "react";
 import { createPortal } from "react-dom";
 
-// Local Data
-import sampleEvent from "../data/sampleEvent.json";
-
 // Local Components
 import Button from "./Button";
 import TeamRostersGrid from "./TeamRostersGrid";
 
 // Local Context
 import { LocaleContext } from "../context/LocaleContext";
+import { useSelectedEvent } from "../context/EventContext";
 
 // Modal Component
 export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
   const { locale, timeZone } = useContext(LocaleContext);
+  const { selectedEvent } = useSelectedEvent();
+
+  const teamArray = Object.entries(selectedEvent.teams).map(
+    ([teamId, players]) => ({
+      id: teamId,
+      players,
+    }),
+  );
 
   // Make sure user can't scroll while modal is shown on-screen
   useEffect(() => {
@@ -111,8 +117,8 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
 
         <TeamRostersGrid
           slotSelected={slot.selected}
-          teams={sampleEvent.teams}
-          rosterSize={sampleEvent.settings.maxPlayersPerTeam}
+          teams={teamArray}
+          rosterSize={selectedEvent.playersPerTeam}
         />
       </div>
     </div>,
