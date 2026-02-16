@@ -1,4 +1,4 @@
-// utils//lib/generateTimeslotsForEvent.js
+// utils/generateTimeslotsForEvent.js
 
 /**
  * Generates hourly timeslots for an event between startDate and endDate
@@ -17,20 +17,24 @@ export function generateTimeslotsForEvent(event, teamKeys = []) {
   const oneHourMs = 1000 * 60 * 60;
   let current = new Date(start);
 
+  // Hardcoded current player for testing
+  const currentPlayer = { id: "plyr_a1b2c3", name: "Akr" };
+
   while (current <= end) {
     const slotId = `ts${Math.floor(current.getTime() / 1000)}`;
     const selected = {};
 
     // initialize empty arrays for each team
-    teamKeys.forEach((team) => {
-      selected[team] = [];
+    teamKeys.forEach((teamId) => {
+      // Pre-fill currentPlayer in the first team for demo purposes
+      selected[teamId] = teamId === teamKeys[0] ? [currentPlayer.id] : [];
     });
 
     timeslots.push({
       timeslotId: slotId,
       eventId: event.id,
       datetimeUtc: current.toISOString(),
-      selected,
+      selected, // { teamId: [playerId, ...], ... }
     });
 
     current = new Date(current.getTime() + oneHourMs);

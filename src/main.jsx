@@ -22,6 +22,7 @@ const router = createRouter({
   routeTree,
   defaultPendingComponent: Loading,
   defaultPendingMs: 0,
+  scrollRestoration: true,
 });
 
 // --- Start MSW (non-blocking) ---

@@ -18,24 +18,13 @@ export default function SelectAvailabilityPage() {
   const { locale, timeZone } = useLocale();
   const { selectedEvent } = useSelectedEvent();
 
-  // Temporary: hard-coded team IDs for now
-  const teamKeys = [
-    "team_flaggots",
-    "team_jediman",
-    "team_idontgiveaflagidgaf",
-    "team_rotkindlessteam",
-    "team_theflagevarines",
-    "team_jerkingonflags",
-    "team_flag",
-    "team_opcm",
-    "team_creyonstinyfriends",
-    "team_jimmytherentboys",
-  ];
-
   // Generate timeslots dynamically for the selected event
   const timeslots = useMemo(() => {
     if (!selectedEvent) return [];
-    return generateTimeslotsForEvent(selectedEvent, teamKeys);
+
+    const teamIds = selectedEvent.teams.map((team) => team.id);
+
+    return generateTimeslotsForEvent(selectedEvent, teamIds);
   }, [selectedEvent]);
 
   // Group by day

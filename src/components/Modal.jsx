@@ -15,18 +15,22 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
   const { locale, timeZone } = useContext(LocaleContext);
   const { selectedEvent } = useSelectedEvent();
 
-  const teamArray = Object.entries(selectedEvent.teams).map(
-    ([teamId, players]) => ({
-      id: teamId,
-      players,
-    }),
-  );
+  const teams = selectedEvent?.teams ?? [];
+
+  // Resolve player IDs in slot.selected to actual player objects
+  const slotWithPlayers = {};
+  Object.entries(slot.selected).forEach(([teamId, playerIds]) => {
+    const team = teams.find((t) => t.id === teamId);
+    if (!team) return;
+    // Map each player ID to the full player object
+    slotWithPlayers[teamId] = playerIds
+      .map((pid) => team.players.find((p) => p.id === pid))
+      .filter(Boolean); // Remove any undefined if not found
+  });
 
   // Make sure user can't scroll while modal is shown on-screen
   useEffect(() => {
     document.body.classList.add("overflow-hidden");
-
-    // CleanUp function
     return () => {
       document.body.classList.remove("overflow-hidden");
     };
@@ -36,7 +40,7 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
 
   const isSelected = selectedSlots[slot.timeslotId];
 
-  const dateObj = new Date(slot.datetimeUtc); // was slot.datetime
+  const dateObj = new Date(slot.datetimeUtc);
   const formattedTime = dateObj.toLocaleTimeString(locale, {
     hour: "2-digit",
     minute: "2-digit",
@@ -52,12 +56,6 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
   });
   const formattedDateTime = `${formattedTime}  ${formattedDate}`;
 
-  const formattedEventName = slot.eventId
-    .replace(/_/g, " ")
-    .replace(/\b\w/g, (c) => c.toUpperCase());
-
-  // Create portal to send this element to <div class="model-container"> in index.html
-  // so absolute/fixed position property allows div with inset-0 to take up entire html body
   return createPortal(
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4 dark:bg-opacity-70"
@@ -86,7 +84,7 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
               {formattedDateTime}
             </h2>
             <p className="text-sm text-slate-700 dark:text-gray-300">
-              Event: {formattedEventName}
+              Event: {selectedEvent?.title ?? "Unknown Event"}
             </p>
           </div>
 
@@ -116,13 +114,12 @@ export default function Modal({ slot, onClose, selectedSlots, onSelectSlot }) {
         </div>
 
         <TeamRostersGrid
-          slotSelected={slot.selected}
-          teams={teamArray}
+          slotSelected={slotWithPlayers} // pass resolved player objects
+          teams={teams}
           rosterSize={selectedEvent.playersPerTeam}
         />
       </div>
     </div>,
-    // 2nd argument is used to select the element to 'portal' the above into!
     document.querySelector(".modal-container"),
   );
 }
