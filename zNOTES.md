@@ -1,8 +1,16 @@
 # To Do
 
-- Change events schema so players is an array of objects with id and name instead of just name.
+- Morning, afternoon, evening, checkbox menu not working!!!
 
-- Update relevant code to work with this.
+- Selecting a newly created event then going -> Select availability causes crash
+  -- Must be schema mismatch (mapping not working)
+
+- Decide how currentUser is going to be stored and hardcode one for now.
+  - Could be extracted from URL and put into a CurrentUserContext?
+  - Try uuid v5 to generate ID based on user's name (deterministic)
+  - Decide whether to use context or session or both?
+
+- Ensure registering for a timeslot updates TeamRostersGrid in Modal to show registered player.
 
 - Wire up TeamBuilder to formData and integrate into workflow so new events don't crash app!
 
